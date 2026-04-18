@@ -19,6 +19,7 @@ internal enum CompilerSupport {
   enum IsolationStrategy {
     case isolatedParameter
     case nonisolatedNonsending
+    case none
   }
 
 }

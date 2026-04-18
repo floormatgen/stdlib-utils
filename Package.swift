@@ -58,7 +58,7 @@ let package = Package(
     .testTarget(
       name: "ConcurrencyUtilsMacrosTests",
       dependencies: [
-        .target(name: "ConcurrencyUtils"),
+        .target(name: "ConcurrencyUtilsMacros"),
         .product(name: "SwiftSyntaxMacrosTestSupport", package: "swift-syntax"),
       ]
     )

@@ -1,8 +1,14 @@
 import SwiftSyntax
 import SwiftSyntaxMacros
+import SwiftDiagnostics
 
 public struct AsyncAlternative: PeerMacro {
-  static let name: String = "AsyncAlternative"
+  static let name = "AsyncAlternative"
+  static let diagnosticMessageID = MessageID(domain: Plugin.moduleName, id: AsyncAlternative.name)
+
+  public static var formatMode: FormatMode {
+    .auto
+  }
   
   public static func expansion(
     of node: AttributeSyntax,
@@ -55,6 +61,8 @@ public struct AsyncAlternative: PeerMacro {
         addNonisolatedNonsending(to: &asyncFunctionDecl.modifiers)
       case .isolatedParameter:
         // TODO: Add "isolation: isolated (any Actor)? = #isolation"
+        break
+      case .none:
         break
     }
     
@@ -207,7 +215,9 @@ private final class FunctionBodySyntaxRewriter: SyntaxRewriter {
     }
     
     // If we do, wrap the call in an 'await'
-    let awaitExpr = AwaitExprSyntax(expression: node)
+    var awaitExpr = AwaitExprSyntax(expression: node)
+    awaitExpr.leadingTrivia = node.leadingTrivia
+    awaitExpr.expression.leadingTrivia = .spaces(1)
     return ExprSyntax(awaitExpr)
   }
   
@@ -217,6 +227,7 @@ private final class FunctionBodySyntaxRewriter: SyntaxRewriter {
   }
   
   override func visit(_ node: MemberAccessExprSyntax) -> ExprSyntax {
+    // Make sure we don't add await to other unrelated functions
     didAccessMember = true
     return super.visit(node)
   }
