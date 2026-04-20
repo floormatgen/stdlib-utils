@@ -32,6 +32,12 @@ let package = Package(
         .product(name: "AsyncAlgorithms", package: "swift-async-algorithms"),
       ]
     ),
+    .testTarget(
+      name: "ObservationUtilsTests",
+      dependencies: [
+        .target(name: "ObservationUtils"),
+      ]
+    ),
     
     // Concurrency
     .target(
@@ -48,20 +54,18 @@ let package = Package(
         .product(name: "SwiftDiagnostics", package: "swift-syntax"),
       ]
     ),
-    
-    // Internal
-    .target(
-      name: "Compatability"
-    ),
-    
-    // Tests
     .testTarget(
       name: "ConcurrencyUtilsMacrosTests",
       dependencies: [
         .target(name: "ConcurrencyUtilsMacros"),
         .product(name: "SwiftSyntaxMacrosTestSupport", package: "swift-syntax"),
       ]
-    )
+    ),
+    
+    // Internal
+    .target(
+      name: "Compatability"
+    ),
     
   ],
   swiftLanguageModes: [.v6]
@@ -70,7 +74,7 @@ let package = Package(
 // MARK: - Swift Settings
 
 let swiftSettings: [SwiftSetting] = [
-  .enableUpcomingFeature("NonisolatedNonsendingByDefault"),
+  // .enableUpcomingFeature("NonisolatedNonsendingByDefault"),
   .enableUpcomingFeature("ExistentialAny"),
   .enableUpcomingFeature("MemberImportVisibility"),
 ]

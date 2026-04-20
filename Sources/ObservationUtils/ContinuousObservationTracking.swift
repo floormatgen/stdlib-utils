@@ -1,6 +1,8 @@
 public import Observation
 public import Compatability
 
+#if compiler(>=6.2)
+
 @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, visionOS 1.0, *)
 @discardableResult
 public func withContinuousDeferredObservationTracking<T: Observable & _SendableMetatype, V>(
@@ -18,9 +20,11 @@ public func withContinuousDeferredObservationTracking<T: Observable & _SendableM
       continuation.yield(Void())
     }
   }
-  
+
   Task {
-    _ = isolation // Force the task to inherit isolation
+    // Force the task to inherit isolation of the onChange closure
+    // This should match the isolation of the observable parameter
+    _ = isolation
     for await _ in stream {
       let newValue = observable[keyPath: keyPath]
       let shouldContinue = await onChange(newValue)
@@ -34,3 +38,5 @@ public func withContinuousDeferredObservationTracking<T: Observable & _SendableM
   
   return observe()
 }
+
+#endif // compiler(>=6.2)
