@@ -7,6 +7,14 @@ internal enum CompilerSupport {
     false
     #endif
   }
+  
+  static var concurrentAttribute: Bool {
+    #if compiler(>=6.2)
+    true
+    #else
+    false
+    #endif
+  }
 
   static var bestIsolationStrategy: IsolationStrategy {
     if nonisolatedNonsending {

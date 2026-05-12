@@ -1,3 +1,4 @@
+#if canImport(Observation)
 public import Observation
 public import Compatability
 
@@ -20,7 +21,7 @@ public func withContinuousDeferredObservationTracking<T: Observable & _SendableM
       continuation.yield(Void())
     }
   }
-
+  
   Task {
     // Force the task to inherit isolation of the onChange closure
     // This should match the isolation of the observable parameter
@@ -40,3 +41,5 @@ public func withContinuousDeferredObservationTracking<T: Observable & _SendableM
 }
 
 #endif // compiler(>=6.2)
+
+#endif // canImport(Observation)

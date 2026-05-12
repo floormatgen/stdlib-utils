@@ -26,4 +26,11 @@ internal enum FunctionDiagnostic {
     )
   }
 
+  static func alreadyMarkedConcurrent(decl: FunctionDeclSyntax) -> Diagnostic {
+    Diagnostic(
+      node: decl, 
+      message: MacroExpansionErrorMessage("Function is already marked as @concurrent")
+    )
+  }
+
 }

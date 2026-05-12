@@ -8,6 +8,7 @@ struct Plugin: CompilerPlugin {
   static let hostingModuleName: String = "ConcurrencyUtils"
   
   let providingMacros: [any Macro.Type] = [
-    AsyncAlternative.self
+    AsyncAlternative.self,
+    ConcurrentAlternative.self
   ]
 }

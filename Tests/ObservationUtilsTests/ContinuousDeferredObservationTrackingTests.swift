@@ -1,4 +1,6 @@
 import Testing
+
+#if canImport(Observation)
 import Observation
 import ObservationUtils
 
@@ -83,3 +85,5 @@ struct ContinuousDeferredObservationTrackingTests {
 }
 
 #endif // compiler(>=6.2)
+
+#endif // canImport(Observation) 
