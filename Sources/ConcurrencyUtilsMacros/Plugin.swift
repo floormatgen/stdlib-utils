@@ -9,6 +9,6 @@ struct Plugin: CompilerPlugin {
   
   let providingMacros: [any Macro.Type] = [
     Reasync.self,
-    ConcurrentAlternative.self
+    AddConcurrent.self
   ]
 }

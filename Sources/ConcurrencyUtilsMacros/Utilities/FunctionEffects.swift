@@ -1,10 +1,27 @@
 import SwiftSyntax
 
-package enum FunctionEffects {
+extension FunctionEffectSpecifiersSyntax {
   
-  static func isThrowing(tokenSyntax: TokenSyntax?) -> Bool {
-    guard let tokenSyntax = tokenSyntax else { return false }
-    return false
+  func addingAsync() -> Self {
+    var newSpecifiers = self
+    newSpecifiers.asyncSpecifier = .keyword(.async)
+    return newSpecifiers
   }
+  
+  mutating func addAsync() {
+    self = addingAsync()
+  }
+  
+}
 
+extension Optional<FunctionEffectSpecifiersSyntax> {
+  
+  func addingAsync() -> Self {
+    return .some((self ?? FunctionEffectSpecifiersSyntax()).addingAsync())
+  }
+  
+  mutating func addAsync() {
+    self = addingAsync()
+  }
+  
 }

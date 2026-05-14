@@ -10,6 +10,10 @@ extension AttributeListSyntax {
     }
   }
   
+  mutating func excludeMacro(withName name: String) {
+    self = excludingMacro(withName: name)
+  }
+  
 }
 
 // MARK: - Syntax Visitor
