@@ -15,30 +15,13 @@ let package = Package(
   ],
   products: [
     // Products define the executables and libraries a package produces, making them visible to other packages.
-    .library(name: "ObservationUtils", targets: ["ObservationUtils"]),
     .library(name: "ConcurrencyUtils", targets: ["ConcurrencyUtils"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/apple/swift-async-algorithms", from: "1.0.0"),
     .package(url: "https://github.com/swiftlang/swift-syntax.git", from: "603.0.0"),
     .package(url: "https://github.com/swiftlang/swift-docc-plugin", from: "1.1.0"),
   ],
   targets: [
-    
-    // Observation
-    .target(
-      name: "ObservationUtils",
-      dependencies: [
-        .target(name: "Compatability"),
-        .product(name: "AsyncAlgorithms", package: "swift-async-algorithms"),
-      ]
-    ),
-    .testTarget(
-      name: "ObservationUtilsTests",
-      dependencies: [
-        .target(name: "ObservationUtils"),
-      ]
-    ),
     
     // Concurrency
     .target(
