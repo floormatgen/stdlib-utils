@@ -5,6 +5,7 @@ import SwiftDiagnostics
 public struct AddConcurrent: PeerMacro {
   
   static let name = "AddConcurrent"
+  static let globalName = "GlobalAddConcurrent"
   static let defaultConcurrentSuffix = "Concurrently"
 
   public static var formatMode: FormatMode {
@@ -22,6 +23,9 @@ public struct AddConcurrent: PeerMacro {
       context.diagnose(FunctionDiagnostic.notAFunction(decl: declaration))
       return []
     }
+    
+    // Get options from the attribute
+    let options = try Options(from: node)
 
     // Make sure the function doesn't already have the @concurrent attribute
     let attributes = functionDeclaration.attributes
@@ -63,7 +67,7 @@ public struct AddConcurrent: PeerMacro {
     var newDecl = functionDeclaration
     
     // Remove the @AddConcurrent macro from the copy
-    newDecl.attributes.excludeMacro(withName: Self.name)
+    newDecl.attributes.excludeMacro(withName: options.isGlobal ? Self.globalName : Self.name)
     // Replace the body with the forwarding one
     newDecl.body = codeBlock
     // Replace the signature if needed
@@ -74,12 +78,16 @@ public struct AddConcurrent: PeerMacro {
     newDecl.modifiers.removeNonisolatedNonsending()
     
     // Replace the name
-    // TODO: Handle custom name
-    var (newName, didUnwrap) = RawIdentifiers.unwrapIdentifierIfNeeded(newDecl.name.text)
-    newName.append(contentsOf: Self.defaultConcurrentSuffix)
-    newDecl.name = didUnwrap
-      ? .identifier(RawIdentifiers.wrapIdentifier(newName))
-      : .identifier(newName)
+    if let customName = options.name {
+      newDecl.name = .identifier(customName)
+    } else {
+      // Prefix "Concurrently" to the old name
+      var (newName, didUnwrap) = RawIdentifiers.unwrapIdentifierIfNeeded(newDecl.name.text)
+      newName.append(contentsOf: Self.defaultConcurrentSuffix)
+      newDecl.name = didUnwrap
+        ? .identifier(RawIdentifiers.wrapIdentifier(newName))
+        : .identifier(newName)
+    }
     
     // Add @concurrent if it is supported
     if CompilerSupport.concurrentAttribute {

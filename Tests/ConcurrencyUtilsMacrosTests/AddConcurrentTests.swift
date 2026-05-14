@@ -6,7 +6,8 @@ import ConcurrencyUtilsMacros
 final class AddConcurrentTests: XCTestCase {
   
   static let testMacros: [String : any Macro.Type] = [
-    "AddConcurrent": AddConcurrent.self
+    "AddConcurrent":        AddConcurrent.self,
+    "GlobalAddConcurrent":  AddConcurrent.self
   ]
   
 #if compiler(>=6.2)
@@ -144,6 +145,58 @@ final class AddConcurrentTests: XCTestCase {
       
       @concurrent func fooConcurrently() async {
           await foo()
+      }
+      """,
+      macros: Self.testMacros
+    )
+  }
+  
+  func test_customName() {
+    assertMacroExpansion(
+      """
+      @AddConcurrent(named: "customFoo")
+      func foo() {
+      }
+      """,
+      expandedSource: """
+      func foo() {
+      }
+      
+      @concurrent
+      func customFoo() async {
+          foo()
+      }
+      """,
+      macros: Self.testMacros
+    )
+  }
+  
+#endif // compiler(>=6.2)
+  
+}
+
+final class GlobalAddConcurrentTests: XCTestCase {
+  
+  static var testMacros: [String : any Macro.Type] {
+    AddConcurrentTests.testMacros
+  }
+  
+#if compiler(>=6.2)
+  
+  func test_macroRemovedOnExpansion() {
+    assertMacroExpansion(
+      """
+      @GlobalAddConcurrent
+      func foo() {
+      }
+      """,
+      expandedSource: """
+      func foo() {
+      }
+      
+      @concurrent
+      func fooConcurrently() async {
+          foo()
       }
       """,
       macros: Self.testMacros
