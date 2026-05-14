@@ -1,15 +1,15 @@
 
 // MARK: - Macro
 
-/// Creates an async mirror of a provided function
-/// 
+/// Creates an async overload of a provided function
+///
 /// This is useful for "with-style" methods that take a body closure.
 /// It prefixes all calls to function parameters with `await` 
 /// and makes function arguments `async`.
 ///
 /// ```swift
 /// // Source
-/// @AsyncAlternative
+/// @Reasync
 /// func withFoo<E: Error, R: ~Copyable>(
 ///   operation: (Foo) throws(E) -> R
 /// ) throws(E) -> R {
@@ -32,4 +32,5 @@
 /// ```
 @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, visionOS 1.0, *)
 @attached(peer, names: overloaded)
-public macro AsyncAlternative() = #externalMacro(module: "ConcurrencyUtilsMacros", type: "AsyncAlternative")
+public macro Reasync(named: StaticString? = nil)
+  = #externalMacro(module: "ConcurrencyUtilsMacros", type: "Reasync")

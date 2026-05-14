@@ -54,7 +54,7 @@ struct ContinuousDeferredObservationTrackingTests {
 
       for n in sequence {
         observable.foo = n
-        try await Task.sleep(for: .milliseconds(1))
+        try await Task.sleep(for: .milliseconds(5))
       }
       
     }
@@ -76,7 +76,7 @@ struct ContinuousDeferredObservationTrackingTests {
 
       for n in sequence {
         observable.foo = n
-        try await Task.sleep(for: .milliseconds(1))
+        try await Task.sleep(for: .milliseconds(5))
       }
 
     }

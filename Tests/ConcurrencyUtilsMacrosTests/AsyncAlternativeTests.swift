@@ -6,7 +6,7 @@ import ConcurrencyUtilsMacros
 final class AsyncAlternativeTests: XCTestCase {
   
   static let testMacros: [String: any Macro.Type] = [
-    "AsyncAlternative": AsyncAlternative.self
+    "Reasync": Reasync.self
   ]
   
 #if compiler(>=6.2)
@@ -14,7 +14,7 @@ final class AsyncAlternativeTests: XCTestCase {
   func test_macroRemovedOnExpansion() {
     assertMacroExpansion(
       """
-      @AsyncAlternative
+      @Reasync
       func foo(operation: () -> Void) -> Void {
       }
       """,
@@ -33,7 +33,7 @@ final class AsyncAlternativeTests: XCTestCase {
   func test_addsAsyncToParameters() {
     assertMacroExpansion(
       """
-      @AsyncAlternative
+      @Reasync
       func foo(operation: () -> Void) -> Void {
         return operation()
       }
@@ -60,7 +60,7 @@ final class AsyncAlternativeTests: XCTestCase {
         }
       }
 
-      @AsyncAlternative
+      @Reasync
       func foo(operation: () -> Void) -> Void {
         Foo.operation()
         return operation()
@@ -94,7 +94,7 @@ final class AsyncAlternativeTests: XCTestCase {
         func body() {
         }
       
-        @AsyncAlternative
+        @Reasync
         func withResource(
           _ body: () -> Void
         ) -> Void {
@@ -124,6 +124,25 @@ final class AsyncAlternativeTests: XCTestCase {
             await body()
           }
       
+      }
+      """,
+      macros: Self.testMacros
+    )
+  }
+  
+  func test_cutomNameUsed() {
+    assertMacroExpansion(
+      """
+      @Reasync(named: "fooAsync")
+      func foo(_ operation: () -> Void) {
+      }
+      """,
+      expandedSource: """
+      func foo(_ operation: () -> Void) {
+      }
+      
+      nonisolated(nonsending)
+      func fooAsync(_ operation: nonisolated(nonsending) () async -> Void) async {
       }
       """,
       macros: Self.testMacros

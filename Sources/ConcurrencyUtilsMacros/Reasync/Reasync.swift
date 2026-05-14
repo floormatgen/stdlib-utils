@@ -2,9 +2,9 @@ import SwiftSyntax
 import SwiftSyntaxMacros
 import SwiftDiagnostics
 
-public struct AsyncAlternative: PeerMacro {
-  static let name = "AsyncAlternative"
-  static let diagnosticMessageID = MessageID(domain: Plugin.moduleName, id: AsyncAlternative.name)
+public struct Reasync: PeerMacro {
+  static let name = "Reasync"
+  static let diagnosticMessageID = MessageID(domain: Plugin.moduleName, id: Reasync.name)
 
   public static var formatMode: FormatMode {
     .auto
@@ -35,9 +35,12 @@ public struct AsyncAlternative: PeerMacro {
     if analysis.localFunctionNames.isEmpty {
       context.diagnose(FunctionDiagnostic.noClosureParameters(decl: functionDeclSyntax))
     }
+    
+    // Get the options from the reasync attribute
+    let options = try Options(from: node)
 
     // Make a copy of the function declaration for the async alternative
-    let asyncFunctionDecl = try asyncFunctionDecl(from: functionDeclSyntax, analysis: analysis)
+    let asyncFunctionDecl = try asyncFunctionDecl(from: functionDeclSyntax, analysis: analysis, options: options)
 
     return [
       DeclSyntax(asyncFunctionDecl)
@@ -47,7 +50,8 @@ public struct AsyncAlternative: PeerMacro {
 
   private static func asyncFunctionDecl(
     from functionDecl: FunctionDeclSyntax,
-    analysis: FunctionAnalysis
+    analysis: FunctionAnalysis,
+    options: Options
   ) throws -> FunctionDeclSyntax {
     var asyncFunctionDecl = functionDecl
     
@@ -73,6 +77,11 @@ public struct AsyncAlternative: PeerMacro {
 
     // Add async specifiers to function parameters
     addAsyncSpecifiers(to: &asyncFunctionDecl.signature.parameterClause.parameters, isolationStrategy: isolationStrategy)
+    
+    // Update the name if required
+    if let newName = options.name {
+      asyncFunctionDecl.name = .identifier(newName)
+    }
     
     // Rewrite function body
     if var body = asyncFunctionDecl.body {
