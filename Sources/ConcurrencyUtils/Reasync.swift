@@ -31,6 +31,20 @@
 /// }
 /// ```
 @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, visionOS 1.0, *)
+@attached(peer, names: arbitrary)
+public macro Reasync(named: StaticString? = nil) = #externalMacro(
+  module: "ConcurrencyUtilsMacros",
+  type: "Reasync"
+)
+
+/// A version of ``Reasync`` suitable for use at the global scope
+///
+/// This version exists because arbritrary names are not allowed at the global scope,
+/// which is needed to support custom names for ``Reasync``. As such, this version
+/// doesn't allow custom names, with only overloading supported.
+@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, visionOS 1.0, *)
 @attached(peer, names: overloaded)
-public macro Reasync(named: StaticString? = nil)
-  = #externalMacro(module: "ConcurrencyUtilsMacros", type: "Reasync")
+public macro GlobalReasync() = #externalMacro(
+  module: "ConcurrencyUtilsMacros",
+  type: "Reasync"
+)

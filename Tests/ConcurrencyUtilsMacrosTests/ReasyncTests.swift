@@ -3,10 +3,11 @@ import SwiftSyntaxMacros
 import SwiftSyntaxMacrosTestSupport
 import ConcurrencyUtilsMacros
 
-final class AsyncAlternativeTests: XCTestCase {
+final class ReasyncTests: XCTestCase {
   
   static let testMacros: [String: any Macro.Type] = [
-    "Reasync": Reasync.self
+    "Reasync":        Reasync.self,
+    "GlobalReasync":  Reasync.self,
   ]
   
 #if compiler(>=6.2)
@@ -143,6 +144,37 @@ final class AsyncAlternativeTests: XCTestCase {
       
       nonisolated(nonsending)
       func fooAsync(_ operation: nonisolated(nonsending) () async -> Void) async {
+      }
+      """,
+      macros: Self.testMacros
+    )
+  }
+  
+#endif // compiler(>=6.2)
+
+}
+
+final class GlobalTests: XCTestCase {
+  
+  static var testMacros: [String : any Macro.Type] {
+    ReasyncTests.testMacros
+  }
+  
+#if compiler(>=6.2)
+  
+  func test_macroRemovedOnExpansion() {
+    assertMacroExpansion(
+      """
+      @GlobalReasync
+      func foo(_ operation: () -> Void) {
+      }
+      """,
+      expandedSource: """
+      func foo(_ operation: () -> Void) {
+      }
+      
+      nonisolated(nonsending)
+      func foo(_ operation: nonisolated(nonsending) () async -> Void) async {
       }
       """,
       macros: Self.testMacros

@@ -4,6 +4,7 @@ import SwiftDiagnostics
 
 public struct Reasync: PeerMacro {
   static let name = "Reasync"
+  static let globalName = "GlobalReasync"
   static let diagnosticMessageID = MessageID(domain: Plugin.moduleName, id: Reasync.name)
 
   public static var formatMode: FormatMode {
@@ -56,7 +57,9 @@ public struct Reasync: PeerMacro {
     var asyncFunctionDecl = functionDecl
     
     // Remove the AsyncAlternative Macro
-    asyncFunctionDecl.attributes = asyncFunctionDecl.attributes.excludingMacro(withName: name)
+    asyncFunctionDecl.attributes = asyncFunctionDecl.attributes.excludingMacro(
+      withName: options.isGlobal ? Self.globalName : Self.name
+    )
     
     // Choose the best isolation control supported
     let isolationStrategy = CompilerSupport.bestIsolationStrategy

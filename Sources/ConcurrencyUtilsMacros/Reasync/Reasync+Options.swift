@@ -6,8 +6,15 @@ import SwiftParser
 extension Reasync {
   
   struct Options {
+    
     /// A custom name for the async function, or `nil` if one wasn't specified
     var name: String?
+    
+    /// Whether the decleration used the ``GlobalReasync`` macro
+    ///
+    /// This is needed to declare global functions `reasync`, as declaring arbritrary names
+    /// is not allowed (see [Swift Forums](https://forums.swift.org/t/update-restrictions-on-arbitrary-names-at-global-scope-in-se-0389-and-se-0397/66289))
+    var isGlobal: Bool
     
     /// Get options from the attribute decl
     ///
@@ -16,6 +23,10 @@ extension Reasync {
       
       // Set everything to defaults first
       self = .default
+      
+      // Check if the global version was used
+      let checker = GlobalMacroChecker()
+      self.isGlobal = checker.checkGlobalMacroUsed(in: attributeSyntax)
       
       // Check if there are any provided options, otherwise fallback to defaults
       guard
@@ -37,13 +48,15 @@ extension Reasync {
       
     }
     
-    private init(name: String?) {
-      self.name = name
+    private init(name: String?, isGlobal: Bool) {
+      self.name     = name
+      self.isGlobal = isGlobal
     }
     
     static var `default`: Self {
       .init(
-        name: nil
+        name: nil,
+        isGlobal: false
       )
     }
     
@@ -86,6 +99,41 @@ extension Reasync.Options {
       ])
     }
     
+  }
+  
+}
+
+// MARK: - SyntaxVistors
+
+private final class GlobalMacroChecker: SyntaxVisitor {
+  var containsGlobalMacro: Bool = false
+  
+  private static var gloablMacroName: String { Reasync.globalName }
+  
+  init() {
+    super.init(viewMode: .sourceAccurate)
+  }
+  
+  func checkGlobalMacroUsed(in node: AttributeSyntax) -> Bool {
+    containsGlobalMacro = false
+    walk(node.attributeName)
+    return containsGlobalMacro
+  }
+  
+  override func visit(_ node: IdentifierTypeSyntax) -> SyntaxVisitorContinueKind {
+    if node.name.text == Self.gloablMacroName {
+      containsGlobalMacro = true
+      return .skipChildren
+    }
+    return .visitChildren
+  }
+  
+  override func visit(_ node: MemberTypeSyntax) -> SyntaxVisitorContinueKind {
+    if node.name.text == Self.gloablMacroName {
+      containsGlobalMacro = true
+      return .skipChildren
+    }
+    return .visitChildren
   }
   
 }
