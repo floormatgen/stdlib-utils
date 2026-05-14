@@ -70,6 +70,8 @@ public struct AddConcurrent: PeerMacro {
     newDecl.signature = modifiedSignature
     // Add `async` if needed
     newDecl.signature.effectSpecifiers.addAsync()
+    // Remove `nonisolated(nonsending)` as it conflicts with `@concurrent`
+    newDecl.modifiers.removeNonisolatedNonsending()
     
     // Replace the name
     // TODO: Handle custom name
@@ -78,8 +80,6 @@ public struct AddConcurrent: PeerMacro {
     newDecl.name = didUnwrap
       ? .identifier(RawIdentifiers.wrapIdentifier(newName))
       : .identifier(newName)
-    
-    // TODO: Handle nonisolated(nonsending)
     
     // Add @concurrent if it is supported
     if CompilerSupport.concurrentAttribute {

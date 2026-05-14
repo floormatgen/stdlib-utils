@@ -111,6 +111,45 @@ final class AddConcurrentTests: XCTestCase {
     )
   }
   
+  func test_respectsRawIdentifiers() {
+    assertMacroExpansion(
+      """
+      @AddConcurrent
+      func `default`() {
+      }
+      """,
+      expandedSource: """
+      func `default`() {
+      }
+      
+      @concurrent
+      func `defaultConcurrently`() async {
+          `default`()
+      }
+      """,
+      macros: Self.testMacros
+    )
+  }
+  
+  func test_removeNonisolatedNonsending() {
+    assertMacroExpansion(
+      """
+      @AddConcurrent
+      nonisolated(nonsending) func foo() async {
+      }
+      """,
+      expandedSource: """
+      nonisolated(nonsending) func foo() async {
+      }
+      
+      @concurrent func fooConcurrently() async {
+          await foo()
+      }
+      """,
+      macros: Self.testMacros
+    )
+  }
+  
 #endif // compiler(>=6.2)
   
 }

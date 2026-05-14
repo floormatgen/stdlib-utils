@@ -154,7 +154,7 @@ final class ReasyncTests: XCTestCase {
 
 }
 
-final class GlobalTests: XCTestCase {
+final class GlobalReasyncTests: XCTestCase {
   
   static var testMacros: [String : any Macro.Type] {
     ReasyncTests.testMacros
