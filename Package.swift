@@ -33,7 +33,8 @@ let package = Package(
     .macro(
       name: "ConcurrencyUtilsMacros",
       dependencies: [
-        .target(name: "MacroUtils"),
+//        .target(name: "MacroUtils"),
+        .product(name: "SwiftSyntax", package: "swift-syntax"),
         .product(name: "SwiftSyntaxMacros", package: "swift-syntax"),
         .product(name: "SwiftCompilerPlugin", package: "swift-syntax"),
         .product(name: "SwiftDiagnostics", package: "swift-syntax"),
@@ -42,6 +43,7 @@ let package = Package(
     .testTarget(
       name: "ConcurrencyUtilsMacrosTests",
       dependencies: [
+        .target(name: "ConcurrencyUtils"),
         .target(name: "ConcurrencyUtilsMacros"),
         .product(name: "SwiftSyntaxMacrosTestSupport", package: "swift-syntax"),
       ]
@@ -51,9 +53,15 @@ let package = Package(
     .target(
       name: "Compatability"
     ),
+    
+    // FIXME: Known issue with macro dependencies, see
+    // https://forums.swift.org/t/swift-macro-linker-failures-on-linux-and-when-building-with-xcodebuild/84306
+    //
+    // Currently using symlinks to prevent code duplication
     .target(
       name: "MacroUtils",
       dependencies: [
+        .product(name: "SwiftSyntax", package: "swift-syntax"),
         .product(name: "SwiftSyntaxMacros", package: "swift-syntax"),
         .product(name: "SwiftCompilerPlugin", package: "swift-syntax"),
         .product(name: "SwiftDiagnostics", package: "swift-syntax"),
