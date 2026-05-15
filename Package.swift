@@ -15,7 +15,9 @@ let package = Package(
   ],
   products: [
     // Products define the executables and libraries a package produces, making them visible to other packages.
+    .library(name: "TypeUtils", targets: ["TypeUtils"]),
     .library(name: "ConcurrencyUtils", targets: ["ConcurrencyUtils"]),
+    .library(name: "StdlibUtils", targets: ["TypeUtils", "ConcurrencyUtils"]),
   ],
   dependencies: [
     .package(url: "https://github.com/swiftlang/swift-syntax.git", from: "603.0.0"),
@@ -23,7 +25,18 @@ let package = Package(
   ],
   targets: [
     
-    // Concurrency
+    // MARK: Types
+    .target(
+      name: "TypeUtils",
+    ),
+    .testTarget(
+      name: "TypeUtilsTests",
+      dependencies: [
+        .target(name: "TypeUtils"),
+      ]
+    ),
+    
+    // MARK: Concurrency
     .target(
       name: "ConcurrencyUtils",
       dependencies: [
@@ -33,7 +46,7 @@ let package = Package(
     .macro(
       name: "ConcurrencyUtilsMacros",
       dependencies: [
-//        .target(name: "MacroUtils"),
+        .target(name: "MacroUtils"),
         .product(name: "SwiftSyntax", package: "swift-syntax"),
         .product(name: "SwiftSyntaxMacros", package: "swift-syntax"),
         .product(name: "SwiftCompilerPlugin", package: "swift-syntax"),
@@ -43,17 +56,15 @@ let package = Package(
     .testTarget(
       name: "ConcurrencyUtilsMacrosTests",
       dependencies: [
-        .target(name: "ConcurrencyUtils"),
         .target(name: "ConcurrencyUtilsMacros"),
         .product(name: "SwiftSyntaxMacrosTestSupport", package: "swift-syntax"),
       ]
     ),
     
-    // Internal
+    // MARK: Internal
     .target(
       name: "Compatability"
     ),
-    
     // FIXME: Known issue with macro dependencies, see
     // https://forums.swift.org/t/swift-macro-linker-failures-on-linux-and-when-building-with-xcodebuild/84306
     //
