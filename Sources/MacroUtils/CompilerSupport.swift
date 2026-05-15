@@ -1,6 +1,6 @@
-internal enum CompilerSupport {
+package enum CompilerSupport {
 
-  static var nonisolatedNonsending: Bool {
+  package static var nonisolatedNonsending: Bool {
     #if compiler(>=6.2)
     true
     #else
@@ -8,7 +8,7 @@ internal enum CompilerSupport {
     #endif
   }
   
-  static var concurrentAttribute: Bool {
+  package static var concurrentAttribute: Bool {
     #if compiler(>=6.2)
     true
     #else
@@ -16,7 +16,7 @@ internal enum CompilerSupport {
     #endif
   }
 
-  static var bestIsolationStrategy: IsolationStrategy {
+  package static var bestIsolationStrategy: IsolationStrategy {
     if nonisolatedNonsending {
       .nonisolatedNonsending
     } else {
@@ -24,7 +24,7 @@ internal enum CompilerSupport {
     }
   }
 
-  enum IsolationStrategy {
+  package enum IsolationStrategy {
     case isolatedParameter
     case nonisolatedNonsending
     case none

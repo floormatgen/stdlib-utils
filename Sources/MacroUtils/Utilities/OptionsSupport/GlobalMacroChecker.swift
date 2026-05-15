@@ -1,21 +1,21 @@
 import SwiftSyntax
 
-internal final class GlobalMacroChecker: SyntaxVisitor {
+package final class GlobalMacroChecker: SyntaxVisitor {
   private var containsGlobalMacro: Bool = false
-  let macroName: String
+  package let macroName: String
   
-  init(macroName: String) {
+  package init(macroName: String) {
     self.macroName = macroName
     super.init(viewMode: .sourceAccurate)
   }
   
-  func checkGlobalMacroUsed(in node: AttributeSyntax) -> Bool {
+  package func checkGlobalMacroUsed(in node: AttributeSyntax) -> Bool {
     containsGlobalMacro = false
     walk(node.attributeName)
     return containsGlobalMacro
   }
   
-  override func visit(_ node: IdentifierTypeSyntax) -> SyntaxVisitorContinueKind {
+  package override func visit(_ node: IdentifierTypeSyntax) -> SyntaxVisitorContinueKind {
     if node.name.text == macroName {
       containsGlobalMacro = true
       return .skipChildren
@@ -23,7 +23,7 @@ internal final class GlobalMacroChecker: SyntaxVisitor {
     return .visitChildren
   }
   
-  override func visit(_ node: MemberTypeSyntax) -> SyntaxVisitorContinueKind {
+  package override func visit(_ node: MemberTypeSyntax) -> SyntaxVisitorContinueKind {
     if node.name.text == macroName {
       containsGlobalMacro = true
       return .skipChildren

@@ -1,11 +1,11 @@
 import SwiftSyntax
 import SwiftSyntaxMacros
 
-struct FunctionAnalysis {
-  var isAsync: Bool
-  var localFunctionNames: Set<TokenSyntax> 
+package struct FunctionAnalysis {
+  package var isAsync: Bool
+  package var localFunctionNames: Set<TokenSyntax> 
 
-  init(from decl: FunctionDeclSyntax) {
+  package init(from decl: FunctionDeclSyntax) {
     let signature = decl.signature
 
     // Function Effects

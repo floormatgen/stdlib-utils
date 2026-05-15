@@ -1,6 +1,6 @@
 import SwiftSyntax
 
-extension FunctionEffectSpecifiersSyntax {
+package extension FunctionEffectSpecifiersSyntax {
   
   func addingAsync() -> Self {
     var newSpecifiers = self
@@ -14,7 +14,7 @@ extension FunctionEffectSpecifiersSyntax {
   
 }
 
-extension Optional<FunctionEffectSpecifiersSyntax> {
+package extension Optional<FunctionEffectSpecifiersSyntax> {
   
   func addingAsync() -> Self {
     return .some((self ?? FunctionEffectSpecifiersSyntax()).addingAsync())

@@ -1,24 +1,24 @@
 import SwiftSyntax
 
-extension AttributeListSyntax {
+package extension AttributeListSyntax {
   
-  func excludingMacro(withName name: String) -> Self {
-    let visitor = MacroExcludingVisitor(macroName: name, moduleName: Plugin.hostingModuleName)
+  func excludingMacro(withName name: String, moduleName: String) -> Self {
+    let visitor = MacroExcludingVisitor(macroName: name, moduleName: moduleName)
     return self.filter { element in
       guard let attribute = element.as(AttributeSyntax.self) else { return true }
       return !visitor.shouldRemove(attribute)
     }
   }
   
-  mutating func excludeMacro(withName name: String) {
-    self = excludingMacro(withName: name)
+  mutating func excludeMacro(withName name: String, moduleName: String) {
+    self = excludingMacro(withName: name, moduleName: moduleName)
   }
   
 }
 
 // MARK: - Syntax Visitor
 
-private final class MacroExcludingVisitor: SyntaxVisitor {
+internal final class MacroExcludingVisitor: SyntaxVisitor {
   let macroName: String
   let moduleName: String
   

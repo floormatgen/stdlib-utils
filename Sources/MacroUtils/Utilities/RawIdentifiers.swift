@@ -1,6 +1,6 @@
 package enum RawIdentifiers {
   
-  static func unwrapIdentifierIfNeeded(
+  package static func unwrapIdentifierIfNeeded(
     _ identifier: String
   ) -> (wrapped: String, isWrapped: Bool) {
     guard !identifier.isEmpty else { return (identifier, false) }
@@ -12,7 +12,7 @@ package enum RawIdentifiers {
     }
   }
   
-  static func wrapIdentifier(
+  package static func wrapIdentifier(
     _ identifier: String
   ) -> String {
     "`\(identifier)`"

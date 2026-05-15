@@ -1,6 +1,7 @@
 import SwiftSyntax
 import SwiftSyntaxMacros
 import SwiftDiagnostics
+import MacroUtils
 
 public struct AddConcurrent: PeerMacro {
   
@@ -67,7 +68,10 @@ public struct AddConcurrent: PeerMacro {
     var newDecl = functionDeclaration
     
     // Remove the @AddConcurrent macro from the copy
-    newDecl.attributes.excludeMacro(withName: options.isGlobal ? Self.globalName : Self.name)
+    newDecl.attributes.excludeMacro(
+      withName: options.isGlobal ? Self.globalName : Self.name, 
+      moduleName: Plugin.moduleName
+    )
     // Replace the body with the forwarding one
     newDecl.body = codeBlock
     // Replace the signature if needed

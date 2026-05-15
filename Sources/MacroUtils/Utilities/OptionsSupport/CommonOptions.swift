@@ -5,9 +5,9 @@ import SwiftParser
 
 package enum CommonOptions {
   
-  static let named = "named"
+  package static let named = "named"
   
-  static func named(from labeledExpr: LabeledExprSyntax) throws -> String {
+  package static func named(from labeledExpr: LabeledExprSyntax) throws -> String {
     precondition(labeledExpr.label?.text == "named")
     
     // Make sure the name is provided as a string literal
@@ -29,7 +29,7 @@ extension CommonOptions {
   
   package enum Error {
     
-    static func nameNotValidStringLiteral(node: some SyntaxProtocol) -> DiagnosticsError {
+    package static func nameNotValidStringLiteral(node: some SyntaxProtocol) -> DiagnosticsError {
       DiagnosticsError(diagnostics: [
         Diagnostic(
           node: node,

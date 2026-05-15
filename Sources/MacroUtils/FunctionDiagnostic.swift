@@ -2,9 +2,9 @@ import SwiftSyntax
 import SwiftSyntaxMacros
 import SwiftDiagnostics
 
-internal enum FunctionDiagnostic {
+package enum FunctionDiagnostic {
 
-  static func notAFunction(decl: some DeclSyntaxProtocol) -> Diagnostic {
+  package static func notAFunction(decl: some DeclSyntaxProtocol) -> Diagnostic {
     assert(!decl.is(FunctionDeclSyntax.self))
     return Diagnostic(
       node: decl, 
@@ -12,21 +12,21 @@ internal enum FunctionDiagnostic {
     )
   }
 
-  static func alreadyAsync(decl: FunctionDeclSyntax) -> Diagnostic {
+  package static func alreadyAsync(decl: FunctionDeclSyntax) -> Diagnostic {
     Diagnostic(
       node: decl,
       message: MacroExpansionErrorMessage("Function is already marked async")
     )
   }
 
-  static func noClosureParameters(decl: FunctionDeclSyntax) -> Diagnostic {
+  package static func noClosureParameters(decl: FunctionDeclSyntax) -> Diagnostic {
     Diagnostic(
       node: decl,
       message: MacroExpansionWarningMessage("No function parameters detected, adding this macro does nothing")
     )
   }
 
-  static func alreadyMarkedConcurrent(decl: FunctionDeclSyntax) -> Diagnostic {
+  package static func alreadyMarkedConcurrent(decl: FunctionDeclSyntax) -> Diagnostic {
     Diagnostic(
       node: decl, 
       message: MacroExpansionErrorMessage("Function is already marked as @concurrent")

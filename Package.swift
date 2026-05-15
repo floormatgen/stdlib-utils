@@ -33,6 +33,7 @@ let package = Package(
     .macro(
       name: "ConcurrencyUtilsMacros",
       dependencies: [
+        .target(name: "MacroUtils"),
         .product(name: "SwiftSyntaxMacros", package: "swift-syntax"),
         .product(name: "SwiftCompilerPlugin", package: "swift-syntax"),
         .product(name: "SwiftDiagnostics", package: "swift-syntax"),
@@ -49,6 +50,14 @@ let package = Package(
     // Internal
     .target(
       name: "Compatability"
+    ),
+    .target(
+      name: "MacroUtils",
+      dependencies: [
+        .product(name: "SwiftSyntaxMacros", package: "swift-syntax"),
+        .product(name: "SwiftCompilerPlugin", package: "swift-syntax"),
+        .product(name: "SwiftDiagnostics", package: "swift-syntax"),
+      ]
     ),
     
   ],

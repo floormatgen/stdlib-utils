@@ -1,6 +1,6 @@
 import SwiftSyntax
 
-extension DeclModifierListSyntax {
+package extension DeclModifierListSyntax {
   
   mutating func removeNonisolatedNonsending() {
     self = filter { modifier in

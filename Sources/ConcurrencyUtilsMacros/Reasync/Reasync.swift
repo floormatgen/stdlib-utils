@@ -1,6 +1,7 @@
 import SwiftSyntax
 import SwiftSyntaxMacros
 import SwiftDiagnostics
+import MacroUtils
 
 public struct Reasync: PeerMacro {
   static let name = "Reasync"
@@ -58,7 +59,8 @@ public struct Reasync: PeerMacro {
     
     // Remove the AsyncAlternative Macro
     asyncFunctionDecl.attributes = asyncFunctionDecl.attributes.excludingMacro(
-      withName: options.isGlobal ? Self.globalName : Self.name
+      withName: options.isGlobal ? Self.globalName : Self.name,
+      moduleName: Plugin.moduleName
     )
     
     // Choose the best isolation control supported

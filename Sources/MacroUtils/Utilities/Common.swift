@@ -2,7 +2,7 @@ import SwiftSyntax
 
 package enum Common {
   
-  static var concurrentAttribute: AttributeSyntax {
+  package static var concurrentAttribute: AttributeSyntax {
     AttributeSyntax(
       attributeName: IdentifierTypeSyntax(
         name: .identifier("concurrent")
