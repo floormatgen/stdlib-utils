@@ -1,0 +1,61 @@
+#! /bin/bash
+
+absolute-path() {
+    if [[ $1 = /* ]]; then
+        echo "$1"
+    else
+        echo "$PWD/$1"
+    fi
+}
+
+PACKAGE_ROOT="$(dirname $(dirname $(absolute-path $0)))"
+PACKAGE_TARGETS=("ConcurrencyUtils" "ObservationUtils" "TypeUtils")
+HOSTING_BASE_PATH="stdlib-utils"
+OUTPUT_PATH="${PACKAGE_ROOT}/gh-pages/docs"
+
+# Move to the package root
+cd "$PACKAGE_ROOT"
+
+# checkout the gh-pages branch
+git fetch
+git worktree add --checkout gh-pages origin/gh-pages
+
+# pretty-print output for diffing
+export DOCC_JSON_PRETTYPRINT="YES"
+
+# Generate target flags
+target_flags=""
+for target_name in "${PACKAGE_TARGETS[@]}"; do
+    target_flags="${target_flags} --target ${target_name}"
+done
+
+# Generate documentation for each target
+swift package \
+    --allow-writing-to-directory "${OUTPUT_PATH}" \
+    generate-documentation \
+    --enable-experimental-combined-documentation \
+    ${target_flags} \
+    --disable-indexing \
+    --transform-for-static-hosting \
+    --hosting-base-path "${HOSTING_BASE_PATH}" \
+    --output-path "${OUTPUT_PATH}"
+
+# Get current commit hash for current branch
+current_commit_hash=$(git rev-parse --short HEAD)
+
+# Commit changes on pages branch
+cd gh-pages
+git add docs
+
+# Check if there are any documentation updates
+if [ -n "$(git status --porcelain)" ]; then
+    echo "Documentation updates detected. Committing new documentation"
+    git commit -m "Update Pages documentation to '${current_commit_hash}'"
+    git push origin HEAD:gh-pages
+else
+    echo "No documentation changes found"
+fi
+
+# Remove created pages worktree worktree
+cd ..
+git worktree remove gh-pages
