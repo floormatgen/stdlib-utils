@@ -1,0 +1,81 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/TypeUtils\/documentation\/TypeUtils"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "TypeUtils",
+    "modules" : [
+      {
+        "name" : "TypeUtils"
+      }
+    ],
+    "role" : "collection",
+    "roleHeading" : "Framework",
+    "symbolKind" : "module",
+    "title" : "TypeUtils"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Extended-Modules",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift"
+      ],
+      "title" : "Extended Modules"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/typeutils"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://TypeUtils/documentation/TypeUtils": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "TypeUtils",
+  "type" : "topic",
+  "url" : "\/documentation\/typeutils"
+},
+"doc://TypeUtils/documentation/TypeUtils/Swift": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Swift",
+  "type" : "topic",
+  "url" : "\/documentation\/typeutils\/swift"
+}
+}
+}

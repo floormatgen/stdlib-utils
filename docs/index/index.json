@@ -1,0 +1,301 @@
+{
+  "includedArchiveIdentifiers" : [
+    "TypeUtils",
+    "ConcurrencyUtils",
+    "ObservationUtils"
+  ],
+  "interfaceLanguages" : {
+    "swift" : [
+      {
+        "children" : [
+          {
+            "children" : [
+              {
+                "title" : "Extended Modules",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Extended Enumerations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/typeutils\/swift\/optional\/unwrap(_:file:line:)",
+                        "title" : "func unwrap(@autoclosure () -> String, file: StaticString, line: UInt) -> Wrapped",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/typeutils\/swift\/optional",
+                    "title" : "Optional",
+                    "type" : "extension"
+                  }
+                ],
+                "path" : "\/documentation\/typeutils\/swift",
+                "title" : "Swift",
+                "type" : "extension"
+              }
+            ],
+            "path" : "\/documentation\/typeutils",
+            "title" : "TypeUtils",
+            "type" : "module"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Macros",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/concurrencyutils\/addconcurrent()",
+                "title" : "macro AddConcurrent()",
+                "type" : "macro"
+              },
+              {
+                "path" : "\/documentation\/concurrencyutils\/customaddconcurrent(named:)",
+                "title" : "macro CustomAddConcurrent(named: StaticString?)",
+                "type" : "macro"
+              },
+              {
+                "path" : "\/documentation\/concurrencyutils\/customreasync(named:)",
+                "title" : "macro CustomReasync(named: StaticString?)",
+                "type" : "macro"
+              },
+              {
+                "path" : "\/documentation\/concurrencyutils\/reasync()",
+                "title" : "macro Reasync()",
+                "type" : "macro"
+              }
+            ],
+            "path" : "\/documentation\/concurrencyutils",
+            "title" : "ConcurrencyUtils",
+            "type" : "module"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Classes",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/observationutils\/propertychanges\/init(observing:on:)",
+                    "title" : "convenience init(observing: T, on: KeyPath<T, U>)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Structures",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "children" : [
+                          {
+                            "title" : "Instance Methods",
+                            "type" : "groupMarker"
+                          },
+                          {
+                            "path" : "\/documentation\/observationutils\/propertychanges\/asynciterator\/next()",
+                            "title" : "func next() async -> U?",
+                            "type" : "method"
+                          },
+                          {
+                            "title" : "Default Implementations",
+                            "type" : "groupMarker"
+                          },
+                          {
+                            "children" : [
+                              {
+                                "title" : "Instance Methods",
+                                "type" : "groupMarker"
+                              },
+                              {
+                                "path" : "\/documentation\/observationutils\/propertychanges\/asynciterator\/next()-8c1yh",
+                                "title" : "func next() async throws(Self.Failure) -> Self.Element?",
+                                "type" : "method"
+                              },
+                              {
+                                "path" : "\/documentation\/observationutils\/propertychanges\/asynciterator\/next(isolation:)",
+                                "title" : "func next(isolation: isolated (any Actor)?) async throws(Self.Failure) -> Self.Element?",
+                                "type" : "method"
+                              }
+                            ],
+                            "path" : "\/documentation\/observationutils\/propertychanges\/asynciterator\/asynciteratorprotocol-implementations",
+                            "title" : "AsyncIteratorProtocol Implementations",
+                            "type" : "symbol"
+                          }
+                        ],
+                        "path" : "\/documentation\/observationutils\/propertychanges\/asynciterator",
+                        "title" : "PropertyChanges.AsyncIterator",
+                        "type" : "struct"
+                      },
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/allsatisfy(_:)",
+                        "title" : "func allSatisfy((Self.Element) async throws -> Bool) async rethrows -> Bool",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/compactmap(_:)-9vzg2",
+                        "title" : "func compactMap<ElementOfResult>((Self.Element) async throws -> ElementOfResult?) -> AsyncThrowingCompactMapSequence<Self, ElementOfResult>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/compactmap(_:)-w8fv",
+                        "title" : "func compactMap<ElementOfResult>((Self.Element) async -> ElementOfResult?) -> AsyncCompactMapSequence<Self, ElementOfResult>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/contains(_:)",
+                        "title" : "func contains(Self.Element) async rethrows -> Bool",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/contains(where:)",
+                        "title" : "func contains(where: (Self.Element) async throws -> Bool) async rethrows -> Bool",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/drop(while:)",
+                        "title" : "func drop(while: (Self.Element) async -> Bool) -> AsyncDropWhileSequence<Self>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/dropfirst(_:)",
+                        "title" : "func dropFirst(Int) -> AsyncDropFirstSequence<Self>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/filter(_:)",
+                        "title" : "func filter((Self.Element) async -> Bool) -> AsyncFilterSequence<Self>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/first(where:)",
+                        "title" : "func first(where: (Self.Element) async throws -> Bool) async rethrows -> Self.Element?",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/flatmap(_:)-2cswo",
+                        "title" : "func flatMap<SegmentOfResult>((Self.Element) async -> SegmentOfResult) -> AsyncFlatMapSequence<Self, SegmentOfResult>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/flatmap(_:)-7g7sn",
+                        "title" : "func flatMap<SegmentOfResult>((Self.Element) async throws -> SegmentOfResult) -> AsyncThrowingFlatMapSequence<Self, SegmentOfResult>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/flatmap(_:)-9c0em",
+                        "title" : "func flatMap<SegmentOfResult>((Self.Element) async -> SegmentOfResult) -> AsyncFlatMapSequence<Self, SegmentOfResult>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/flatmap(_:)-p2jn",
+                        "title" : "func flatMap<SegmentOfResult>((Self.Element) async -> SegmentOfResult) -> AsyncFlatMapSequence<Self, SegmentOfResult>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/makeasynciterator()",
+                        "title" : "func makeAsyncIterator() -> PropertyChanges<T, U>.AsyncIterator",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/map(_:)-4ghyr",
+                        "title" : "func map<Transformed>((Self.Element) async -> Transformed) -> AsyncMapSequence<Self, Transformed>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/map(_:)-9liij",
+                        "title" : "func map<Transformed>((Self.Element) async throws -> Transformed) -> AsyncThrowingMapSequence<Self, Transformed>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/max()",
+                        "title" : "func max() async rethrows -> Self.Element?",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/max(by:)",
+                        "title" : "func max(by: (Self.Element, Self.Element) async throws -> Bool) async rethrows -> Self.Element?",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/min()",
+                        "title" : "func min() async rethrows -> Self.Element?",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/min(by:)",
+                        "title" : "func min(by: (Self.Element, Self.Element) async throws -> Bool) async rethrows -> Self.Element?",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/prefix(_:)",
+                        "title" : "func prefix(Int) -> AsyncPrefixSequence<Self>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/prefix(while:)",
+                        "title" : "func prefix(while: (Self.Element) async -> Bool) rethrows -> AsyncPrefixWhileSequence<Self>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/reduce(_:_:)",
+                        "title" : "func reduce<Result>(Result, (Result, Self.Element) async throws -> Result) async rethrows -> Result",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/observationutils\/propertychanges\/reduce(into:_:)",
+                        "title" : "func reduce<Result>(into: Result, (inout Result, Self.Element) async throws -> Void) async rethrows -> Result",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/observationutils\/propertychanges\/asyncsequence-implementations",
+                    "title" : "AsyncSequence Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "deprecated" : true,
+                "path" : "\/documentation\/observationutils\/propertychanges",
+                "title" : "PropertyChanges",
+                "type" : "class"
+              }
+            ],
+            "path" : "\/documentation\/observationutils",
+            "title" : "ObservationUtils",
+            "type" : "module"
+          }
+        ],
+        "path" : "\/documentation",
+        "title" : "swift-stdlib-utils",
+        "type" : "module"
+      }
+    ]
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 2
+  }
+}

@@ -1,0 +1,511 @@
+{
+  "abstract" : [
+    {
+      "text" : "Creates a new ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " sequence",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/init(observing:on:)"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:16ObservationUtils15PropertyChangesC9observing2onACyxq_Gx_s7KeyPathCyxq_Gtcfc",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "convenience"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "init"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "observing"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "T"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "on"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s7KeyPathC",
+        "text" : "KeyPath"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "T"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "U"
+      },
+      {
+        "kind" : "text",
+        "text" : ">)"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "ObservationUtils"
+      }
+    ],
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "26.0",
+        "introducedAt" : "17.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "26.0",
+        "introducedAt" : "14.0",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "26.0",
+        "introducedAt" : "17.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "26.0",
+        "introducedAt" : "1.0",
+        "name" : "visionOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "26.0",
+        "introducedAt" : "10.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Initializer",
+    "symbolKind" : "init",
+    "title" : "init(observing:on:)"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "@"
+            },
+            {
+              "kind" : "attribute",
+              "preciseIdentifier" : "s:ScM",
+              "text" : "MainActor"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "convenience"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "init"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "observing"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "observable"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "T"
+            },
+            {
+              "kind" : "text",
+              "text" : ", "
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "on"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "keyPath"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s7KeyPathC",
+              "text" : "KeyPath"
+            },
+            {
+              "kind" : "text",
+              "text" : "<"
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "T"
+            },
+            {
+              "kind" : "text",
+              "text" : ", "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "U"
+            },
+            {
+              "kind" : "text",
+              "text" : ">)"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "Observable",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : " to observe",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "observable"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The property to observe on the ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "observable",
+                  "type" : "codeVoice"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "keyPath"
+        }
+      ]
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "discussion",
+          "level" : 2,
+          "text" : "Discussion",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "When the observed property changes, the sequence produces a new element.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The new element is the new value of the observed property. (i.e. ",
+              "type" : "text"
+            },
+            {
+              "code" : "didSet",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " semantics)",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/observationutils\/propertychanges\/init(observing:on:)"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://ObservationUtils/documentation/ObservationUtils": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "ObservationUtils",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges": {
+  "abstract" : [
+    {
+      "text" : "Provided new values of an ",
+      "type" : "text"
+    },
+    {
+      "code" : "Observable",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " property",
+      "type" : "text"
+    }
+  ],
+  "deprecated" : true,
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "PropertyChanges"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "PropertyChanges"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "PropertyChanges",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/init(observing:on:)": {
+  "abstract" : [
+    {
+      "text" : "Creates a new ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " sequence",
+      "type" : "text"
+    }
+  ],
+  "deprecated" : true,
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "convenience"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "observing"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "on"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s7KeyPathC",
+      "text" : "KeyPath"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "U"
+    },
+    {
+      "kind" : "text",
+      "text" : ">)"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/init(observing:on:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(observing:on:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/init(observing:on:)"
+}
+}
+}

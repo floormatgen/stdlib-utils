@@ -1,0 +1,349 @@
+{
+  "abstract" : [
+    {
+      "text" : "A version of ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/AddConcurrent()",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " that accepts a custom name",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/CustomAddConcurrent(named:)"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:16ConcurrencyUtils19CustomAddConcurrent5namedys12StaticStringVSg_tcfm",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "macro"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "CustomAddConcurrent"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "named"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s12StaticStringV",
+        "text" : "StaticString"
+      },
+      {
+        "kind" : "text",
+        "text" : "?)"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "ConcurrencyUtils"
+      }
+    ],
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "1.0",
+        "name" : "visionOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Macro",
+    "symbolKind" : "macro",
+    "title" : "CustomAddConcurrent(named:)"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "@attached"
+            },
+            {
+              "kind" : "text",
+              "text" : "(peer, names: arbitrary) "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "macro"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "CustomAddConcurrent"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "named"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s12StaticStringV",
+              "text" : "StaticString"
+            },
+            {
+              "kind" : "text",
+              "text" : "? = nil)"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "This macro exists due to the fact that declaring arbritrary names at the global scope",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "is not supported.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "For most functions, use ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/AddConcurrent()",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " instead.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Use this name when you want to override the default name.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/concurrencyutils\/customaddconcurrent(named:)"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://ConcurrencyUtils/documentation/ConcurrencyUtils": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "ConcurrencyUtils",
+  "type" : "topic",
+  "url" : "\/documentation\/concurrencyutils"
+},
+"doc://ConcurrencyUtils/documentation/ConcurrencyUtils/AddConcurrent()": {
+  "abstract" : [
+    {
+      "text" : "Adds a concurrent alternative for a function",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "macro"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "AddConcurrent"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/AddConcurrent()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "AddConcurrent()",
+  "type" : "topic",
+  "url" : "\/documentation\/concurrencyutils\/addconcurrent()"
+},
+"doc://ConcurrencyUtils/documentation/ConcurrencyUtils/CustomAddConcurrent(named:)": {
+  "abstract" : [
+    {
+      "text" : "A version of ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/AddConcurrent()",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " that accepts a custom name",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "macro"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "CustomAddConcurrent"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "named"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s12StaticStringV",
+      "text" : "StaticString"
+    },
+    {
+      "kind" : "text",
+      "text" : "?)"
+    }
+  ],
+  "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/CustomAddConcurrent(named:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "CustomAddConcurrent(named:)",
+  "type" : "topic",
+  "url" : "\/documentation\/concurrencyutils\/customaddconcurrent(named:)"
+}
+}
+}

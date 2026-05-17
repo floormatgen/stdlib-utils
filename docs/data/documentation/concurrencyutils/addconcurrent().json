@@ -1,0 +1,250 @@
+{
+  "abstract" : [
+    {
+      "text" : "Adds a concurrent alternative for a function",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/AddConcurrent()"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:16ConcurrencyUtils13AddConcurrentyycfm",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "macro"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "AddConcurrent"
+      },
+      {
+        "kind" : "text",
+        "text" : "()"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "ConcurrencyUtils"
+      }
+    ],
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "1.0",
+        "name" : "visionOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Macro",
+    "symbolKind" : "macro",
+    "title" : "AddConcurrent()"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "@attached"
+            },
+            {
+              "kind" : "text",
+              "text" : "(peer, names: suffixed(Concurrently)) "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "macro"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "AddConcurrent"
+            },
+            {
+              "kind" : "text",
+              "text" : "()"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "This is useful to move expensive work into the background.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "This macro adds the ",
+              "type" : "text"
+            },
+            {
+              "code" : "@concurrent",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " attribute to the generated function if it is supported.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "\/\/ Source",
+            "func expensiveWork() {",
+            "  veryExpensive()",
+            "}",
+            "",
+            "\/\/ Result",
+            "func expensiveWork() {",
+            "  veryExpensive()",
+            "}",
+            "",
+            "@concurrent",
+            "func expensiveWorkConcurrently() async {",
+            "  expensiveWork()",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/concurrencyutils\/addconcurrent()"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://ConcurrencyUtils/documentation/ConcurrencyUtils": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "ConcurrencyUtils",
+  "type" : "topic",
+  "url" : "\/documentation\/concurrencyutils"
+},
+"doc://ConcurrencyUtils/documentation/ConcurrencyUtils/AddConcurrent()": {
+  "abstract" : [
+    {
+      "text" : "Adds a concurrent alternative for a function",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "macro"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "AddConcurrent"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/AddConcurrent()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "AddConcurrent()",
+  "type" : "topic",
+  "url" : "\/documentation\/concurrencyutils\/addconcurrent()"
+}
+}
+}

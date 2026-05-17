@@ -1,0 +1,2581 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/AsyncSequence-Implementations"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "modules" : [
+      {
+        "name" : "ObservationUtils"
+      }
+    ],
+    "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
+    "title" : "AsyncSequence Implementations"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Structures",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/AsyncIterator"
+      ],
+      "title" : "Structures"
+    },
+    {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/allSatisfy(_:)",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/compactMap(_:)-9vzg2",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/compactMap(_:)-w8fv",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/contains(_:)",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/contains(where:)",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/drop(while:)",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/dropFirst(_:)",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/filter(_:)",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/first(where:)",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/flatMap(_:)-2cswo",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/flatMap(_:)-7g7sn",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/flatMap(_:)-9c0em",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/flatMap(_:)-p2jn",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/makeAsyncIterator()",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/map(_:)-4ghyr",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/map(_:)-9liij",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/max()",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/max(by:)",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/min()",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/min(by:)",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/prefix(_:)",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/prefix(while:)",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/reduce(_:_:)",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/reduce(into:_:)"
+      ],
+      "title" : "Instance Methods"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/observationutils\/propertychanges\/asyncsequence-implementations"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://ObservationUtils/documentation/ObservationUtils": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "ObservationUtils",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges": {
+  "abstract" : [
+    {
+      "text" : "Provided new values of an ",
+      "type" : "text"
+    },
+    {
+      "code" : "Observable",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " property",
+      "type" : "text"
+    }
+  ],
+  "deprecated" : true,
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "PropertyChanges"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "PropertyChanges"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "PropertyChanges",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/AsyncIterator": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "T",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Observable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " and ",
+        "type" : "text"
+      },
+      {
+        "code" : "U",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "AsyncIterator"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/AsyncIterator",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "AsyncIterator"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "PropertyChanges.AsyncIterator",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/asynciterator"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/allSatisfy(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "allSatisfy"
+    },
+    {
+      "kind" : "text",
+      "text" : "(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/allSatisfy(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "allSatisfy(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/allsatisfy(_:)"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/compactMap(_:)-9vzg2": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "compactMap"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "ElementOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "ElementOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12_Concurrency31AsyncThrowingCompactMapSequenceV",
+      "text" : "AsyncThrowingCompactMapSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "ElementOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/compactMap(_:)-9vzg2",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "compactMap(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/compactmap(_:)-9vzg2"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/compactMap(_:)-w8fv": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "compactMap"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "ElementOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "ElementOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12_Concurrency23AsyncCompactMapSequenceV",
+      "text" : "AsyncCompactMapSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "ElementOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/compactMap(_:)-w8fv",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "compactMap(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/compactmap(_:)-w8fv"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/contains(_:)": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Equatable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "contains"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/contains(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "contains(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/contains(_:)"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/contains(where:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "contains"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "where"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/contains(where:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "contains(where:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/contains(where:)"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/drop(while:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "drop"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "while"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12_Concurrency22AsyncDropWhileSequenceV",
+      "text" : "AsyncDropWhileSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/drop(while:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "drop(while:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/drop(while:)"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/dropFirst(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "dropFirst"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12_Concurrency22AsyncDropFirstSequenceV",
+      "text" : "AsyncDropFirstSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/dropFirst(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "dropFirst(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/dropfirst(_:)"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/filter(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "filter"
+    },
+    {
+      "kind" : "text",
+      "text" : "(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12_Concurrency19AsyncFilterSequenceV",
+      "text" : "AsyncFilterSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/filter(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "filter(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/filter(_:)"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/first(where:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "first"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "where"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/first(where:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "first(where:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/first(where:)"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/flatMap(_:)-2cswo": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "flatMap"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12_Concurrency20AsyncFlatMapSequenceV",
+      "text" : "AsyncFlatMapSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/flatMap(_:)-2cswo",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "flatMap(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/flatmap(_:)-2cswo"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/flatMap(_:)-7g7sn": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "flatMap"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12_Concurrency28AsyncThrowingFlatMapSequenceV",
+      "text" : "AsyncThrowingFlatMapSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/flatMap(_:)-7g7sn",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "flatMap(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/flatmap(_:)-7g7sn"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/flatMap(_:)-9c0em": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "flatMap"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12_Concurrency20AsyncFlatMapSequenceV",
+      "text" : "AsyncFlatMapSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/flatMap(_:)-9c0em",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "flatMap(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/flatmap(_:)-9c0em"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/flatMap(_:)-p2jn": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "flatMap"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12_Concurrency20AsyncFlatMapSequenceV",
+      "text" : "AsyncFlatMapSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/flatMap(_:)-p2jn",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "flatMap(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/flatmap(_:)-p2jn"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/makeAsyncIterator()": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "T",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Observable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " and ",
+        "type" : "text"
+      },
+      {
+        "code" : "U",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "makeAsyncIterator"
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:16ObservationUtils15PropertyChangesC",
+      "text" : "PropertyChanges"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "U"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:16ObservationUtils15PropertyChangesC13AsyncIteratorV",
+      "text" : "AsyncIterator"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/makeAsyncIterator()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "makeAsyncIterator()",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/makeasynciterator()"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/map(_:)-4ghyr": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "map"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Transformed"
+    },
+    {
+      "kind" : "text",
+      "text" : ">(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Transformed"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12_Concurrency16AsyncMapSequenceV",
+      "text" : "AsyncMapSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Transformed"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/map(_:)-4ghyr",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "map(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/map(_:)-4ghyr"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/map(_:)-9liij": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "map"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Transformed"
+    },
+    {
+      "kind" : "text",
+      "text" : ">(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Transformed"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12_Concurrency24AsyncThrowingMapSequenceV",
+      "text" : "AsyncThrowingMapSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Transformed"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/map(_:)-9liij",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "map(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/map(_:)-9liij"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/max()": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Comparable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "max"
+    },
+    {
+      "kind" : "text",
+      "text" : "() "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/max()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "max()",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/max()"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/max(by:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "max"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "by"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/max(by:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "max(by:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/max(by:)"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/min()": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Comparable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "min"
+    },
+    {
+      "kind" : "text",
+      "text" : "() "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/min()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "min()",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/min()"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/min(by:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "min"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "by"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/min(by:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "min(by:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/min(by:)"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/prefix(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "prefix"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12_Concurrency19AsyncPrefixSequenceV",
+      "text" : "AsyncPrefixSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/prefix(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "prefix(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/prefix(_:)"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/prefix(while:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "prefix"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "while"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12_Concurrency24AsyncPrefixWhileSequenceV",
+      "text" : "AsyncPrefixWhileSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/prefix(while:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "prefix(while:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/prefix(while:)"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/reduce(_:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "reduce"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Result"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Result"
+    },
+    {
+      "kind" : "text",
+      "text" : ", ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Result"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Result"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Result"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/reduce(_:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "reduce(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/reduce(_:_:)"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/reduce(into:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "reduce"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Result"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "into"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Result"
+    },
+    {
+      "kind" : "text",
+      "text" : ", ("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "inout"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Result"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Result"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/reduce(into:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "reduce(into:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/reduce(into:_:)"
+}
+}
+}

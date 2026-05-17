@@ -1,0 +1,253 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "ConcurrencyUtils",
+    "modules" : [
+      {
+        "name" : "ConcurrencyUtils"
+      }
+    ],
+    "role" : "collection",
+    "roleHeading" : "Framework",
+    "symbolKind" : "module",
+    "title" : "ConcurrencyUtils"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Macros",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/AddConcurrent()",
+        "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/CustomAddConcurrent(named:)",
+        "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/CustomReasync(named:)",
+        "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/Reasync()"
+      ],
+      "title" : "Macros"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/concurrencyutils"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://ConcurrencyUtils/documentation/ConcurrencyUtils": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "ConcurrencyUtils",
+  "type" : "topic",
+  "url" : "\/documentation\/concurrencyutils"
+},
+"doc://ConcurrencyUtils/documentation/ConcurrencyUtils/AddConcurrent()": {
+  "abstract" : [
+    {
+      "text" : "Adds a concurrent alternative for a function",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "macro"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "AddConcurrent"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/AddConcurrent()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "AddConcurrent()",
+  "type" : "topic",
+  "url" : "\/documentation\/concurrencyutils\/addconcurrent()"
+},
+"doc://ConcurrencyUtils/documentation/ConcurrencyUtils/CustomAddConcurrent(named:)": {
+  "abstract" : [
+    {
+      "text" : "A version of ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/AddConcurrent()",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " that accepts a custom name",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "macro"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "CustomAddConcurrent"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "named"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s12StaticStringV",
+      "text" : "StaticString"
+    },
+    {
+      "kind" : "text",
+      "text" : "?)"
+    }
+  ],
+  "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/CustomAddConcurrent(named:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "CustomAddConcurrent(named:)",
+  "type" : "topic",
+  "url" : "\/documentation\/concurrencyutils\/customaddconcurrent(named:)"
+},
+"doc://ConcurrencyUtils/documentation/ConcurrencyUtils/CustomReasync(named:)": {
+  "abstract" : [
+    {
+      "text" : "A version of ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/Reasync()",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " that allows a custom name",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "macro"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "CustomReasync"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "named"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s12StaticStringV",
+      "text" : "StaticString"
+    },
+    {
+      "kind" : "text",
+      "text" : "?)"
+    }
+  ],
+  "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/CustomReasync(named:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "CustomReasync(named:)",
+  "type" : "topic",
+  "url" : "\/documentation\/concurrencyutils\/customreasync(named:)"
+},
+"doc://ConcurrencyUtils/documentation/ConcurrencyUtils/Reasync()": {
+  "abstract" : [
+    {
+      "text" : "Creates an async overload of a provided function",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "macro"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Reasync"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/Reasync()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "Reasync()",
+  "type" : "topic",
+  "url" : "\/documentation\/concurrencyutils\/reasync()"
+}
+}
+}

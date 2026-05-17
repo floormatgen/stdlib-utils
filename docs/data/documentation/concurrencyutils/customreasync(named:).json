@@ -1,0 +1,350 @@
+{
+  "abstract" : [
+    {
+      "text" : "A version of ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/Reasync()",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " that allows a custom name",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/CustomReasync(named:)"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:16ConcurrencyUtils13CustomReasync5namedys12StaticStringVSg_tcfm",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "macro"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "CustomReasync"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "named"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s12StaticStringV",
+        "text" : "StaticString"
+      },
+      {
+        "kind" : "text",
+        "text" : "?)"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "ConcurrencyUtils"
+      }
+    ],
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "1.0",
+        "name" : "visionOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Macro",
+    "symbolKind" : "macro",
+    "title" : "CustomReasync(named:)"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "@attached"
+            },
+            {
+              "kind" : "text",
+              "text" : "(peer, names: arbitrary) "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "macro"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "CustomReasync"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "named"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "name"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s12StaticStringV",
+              "text" : "StaticString"
+            },
+            {
+              "kind" : "text",
+              "text" : "? = nil)"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The custom name to given to the ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "async",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : " version of the function.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "name"
+        }
+      ]
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "This is not allowed at the global scope, as macros that declare arbritray names are not allowed.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/concurrencyutils\/customreasync(named:)"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://ConcurrencyUtils/documentation/ConcurrencyUtils": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "ConcurrencyUtils",
+  "type" : "topic",
+  "url" : "\/documentation\/concurrencyutils"
+},
+"doc://ConcurrencyUtils/documentation/ConcurrencyUtils/CustomReasync(named:)": {
+  "abstract" : [
+    {
+      "text" : "A version of ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/Reasync()",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " that allows a custom name",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "macro"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "CustomReasync"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "named"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s12StaticStringV",
+      "text" : "StaticString"
+    },
+    {
+      "kind" : "text",
+      "text" : "?)"
+    }
+  ],
+  "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/CustomReasync(named:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "CustomReasync(named:)",
+  "type" : "topic",
+  "url" : "\/documentation\/concurrencyutils\/customreasync(named:)"
+},
+"doc://ConcurrencyUtils/documentation/ConcurrencyUtils/Reasync()": {
+  "abstract" : [
+    {
+      "text" : "Creates an async overload of a provided function",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "macro"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Reasync"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/Reasync()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "Reasync()",
+  "type" : "topic",
+  "url" : "\/documentation\/concurrencyutils\/reasync()"
+}
+}
+}

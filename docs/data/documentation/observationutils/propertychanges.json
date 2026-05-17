@@ -1,0 +1,510 @@
+{
+  "abstract" : [
+    {
+      "text" : "Provided new values of an ",
+      "type" : "text"
+    },
+    {
+      "code" : "Observable",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " property",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:16ObservationUtils15PropertyChangesC",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "class"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "PropertyChanges"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "ObservationUtils"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "PropertyChanges"
+      }
+    ],
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "26.0",
+        "introducedAt" : "17.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "26.0",
+        "introducedAt" : "14.0",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "26.0",
+        "introducedAt" : "17.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "26.0",
+        "introducedAt" : "1.0",
+        "name" : "visionOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "26.0",
+        "introducedAt" : "10.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Class",
+    "symbolKind" : "class",
+    "title" : "PropertyChanges"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "final"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "class"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "PropertyChanges"
+            },
+            {
+              "kind" : "text",
+              "text" : "<"
+            },
+            {
+              "kind" : "genericParameter",
+              "text" : "T"
+            },
+            {
+              "kind" : "text",
+              "text" : ", "
+            },
+            {
+              "kind" : "genericParameter",
+              "text" : "U"
+            },
+            {
+              "kind" : "text",
+              "text" : "> "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "where"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "T"
+            },
+            {
+              "kind" : "text",
+              "text" : " : "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:11Observation10ObservableP",
+              "text" : "Observable"
+            },
+            {
+              "kind" : "text",
+              "text" : ", "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "U"
+            },
+            {
+              "kind" : "text",
+              "text" : " : "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s8SendableP",
+              "text" : "Sendable"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "This type is meant to be used when the ",
+              "type" : "text"
+            },
+            {
+              "code" : "Observations",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " type is unavailable,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "such as for Apple OS versions before ",
+              "type" : "text"
+            },
+            {
+              "code" : "26.0",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "After the minimum deployment target has been set to ",
+              "type" : "text"
+            },
+            {
+              "code" : "26.0",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " or higher, it is recommended",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to migrate away from this type and to use ",
+              "type" : "text"
+            },
+            {
+              "code" : "Observations",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " instead.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/ObservationUtils\/s8CopyableP",
+        "doc:\/\/ObservationUtils\/s9EscapableP",
+        "doc:\/\/ObservationUtils\/s8SendableP",
+        "doc:\/\/ObservationUtils\/s16SendableMetatypeP",
+        "doc:\/\/ObservationUtils\/Sci"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Initializers",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/init(observing:on:)"
+      ],
+      "title" : "Initializers"
+    },
+    {
+      "anchor" : "Default-Implementations",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/AsyncSequence-Implementations"
+      ],
+      "title" : "Default Implementations"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/observationutils\/propertychanges"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://ObservationUtils/Sci": {
+  "identifier" : "doc:\/\/ObservationUtils\/Sci",
+  "title" : "_Concurrency.AsyncSequence",
+  "type" : "unresolvable"
+},
+"doc://ObservationUtils/documentation/ObservationUtils": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "ObservationUtils",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges": {
+  "abstract" : [
+    {
+      "text" : "Provided new values of an ",
+      "type" : "text"
+    },
+    {
+      "code" : "Observable",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " property",
+      "type" : "text"
+    }
+  ],
+  "deprecated" : true,
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "PropertyChanges"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "PropertyChanges"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "PropertyChanges",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/AsyncSequence-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/AsyncSequence-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "AsyncSequence Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/asyncsequence-implementations"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/init(observing:on:)": {
+  "abstract" : [
+    {
+      "text" : "Creates a new ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " sequence",
+      "type" : "text"
+    }
+  ],
+  "deprecated" : true,
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "convenience"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "observing"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "on"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s7KeyPathC",
+      "text" : "KeyPath"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "U"
+    },
+    {
+      "kind" : "text",
+      "text" : ">)"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/init(observing:on:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(observing:on:)",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/init(observing:on:)"
+},
+"doc://ObservationUtils/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/ObservationUtils\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
+"doc://ObservationUtils/s8CopyableP": {
+  "identifier" : "doc:\/\/ObservationUtils\/s8CopyableP",
+  "title" : "Swift.Copyable",
+  "type" : "unresolvable"
+},
+"doc://ObservationUtils/s8SendableP": {
+  "identifier" : "doc:\/\/ObservationUtils\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
+},
+"doc://ObservationUtils/s9EscapableP": {
+  "identifier" : "doc:\/\/ObservationUtils\/s9EscapableP",
+  "title" : "Swift.Escapable",
+  "type" : "unresolvable"
+}
+}
+}

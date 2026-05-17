@@ -1,0 +1,534 @@
+{
+  "abstract" : [
+    {
+      "text" : "Force unwraps the wrapped value, with the provided reason",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/TypeUtils\/documentation\/TypeUtils",
+        "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift",
+        "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional\/unwrap(_:file:line:)"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "Swift",
+    "externalID" : "s:Sq9TypeUtilsRi_zrlE6unwrap_4file4linexSSyXK_s12StaticStringVSutF",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "unwrap"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "attribute",
+        "text" : "@autoclosure "
+      },
+      {
+        "kind" : "text",
+        "text" : "() -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:SS",
+        "text" : "String"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "file"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s12StaticStringV",
+        "text" : "StaticString"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "line"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Su",
+        "text" : "UInt"
+      },
+      {
+        "kind" : "text",
+        "text" : ") -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Wrapped"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "TypeUtils",
+        "relatedModules" : [
+          "Swift"
+        ]
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "unwrap(_:file:line:)"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "consuming"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "func"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "unwrap"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "_"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "reason"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "attribute",
+              "text" : "@autoclosure "
+            },
+            {
+              "kind" : "text",
+              "text" : "() -> "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:SS",
+              "text" : "String"
+            },
+            {
+              "kind" : "text",
+              "text" : ", "
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "file"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s12StaticStringV",
+              "text" : "StaticString"
+            },
+            {
+              "kind" : "text",
+              "text" : " = "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "#file"
+            },
+            {
+              "kind" : "text",
+              "text" : ", "
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "line"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:Su",
+              "text" : "UInt"
+            },
+            {
+              "kind" : "text",
+              "text" : " = "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "#line"
+            },
+            {
+              "kind" : "text",
+              "text" : ") -> "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Wrapped"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The reason the optional can be unwrapped",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "reason"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The file",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "file"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The line",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "line"
+        }
+      ]
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "return-value",
+          "level" : 2,
+          "text" : "Return Value",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The wrapped value. If there is no wrapped value,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "stops program execution.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "discussion",
+          "level" : 2,
+          "text" : "Discussion",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Functions similar to the ",
+              "type" : "text"
+            },
+            {
+              "code" : "!(_:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " operator, but provides a reason",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "code" : "preconditionFailure(_:file:line:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " when the optional is ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/typeutils\/swift\/optional\/unwrap(_:file:line:)"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://TypeUtils/documentation/TypeUtils": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "TypeUtils",
+  "type" : "topic",
+  "url" : "\/documentation\/typeutils"
+},
+"doc://TypeUtils/documentation/TypeUtils/Swift": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Swift",
+  "type" : "topic",
+  "url" : "\/documentation\/typeutils\/swift"
+},
+"doc://TypeUtils/documentation/TypeUtils/Swift/Optional": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:Sq",
+      "text" : "Optional"
+    }
+  ],
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Optional"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Optional",
+  "type" : "topic",
+  "url" : "\/documentation\/typeutils\/swift\/optional"
+},
+"doc://TypeUtils/documentation/TypeUtils/Swift/Optional/unwrap(_:file:line:)": {
+  "abstract" : [
+    {
+      "text" : "Force unwraps the wrapped value, with the provided reason",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "unwrap"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@autoclosure "
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "file"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s12StaticStringV",
+      "text" : "StaticString"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "line"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Su",
+      "text" : "UInt"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Wrapped"
+    }
+  ],
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional\/unwrap(_:file:line:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "unwrap(_:file:line:)",
+  "type" : "topic",
+  "url" : "\/documentation\/typeutils\/swift\/optional\/unwrap(_:file:line:)"
+}
+}
+}

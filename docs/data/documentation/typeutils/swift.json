@@ -1,0 +1,113 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/TypeUtils\/documentation\/TypeUtils"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:m:s:e:s:Sq9TypeUtilsRi_zrlE6unwrap_4file4linexSSyXK_s12StaticStringVSutF",
+    "modules" : [
+      {
+        "name" : "TypeUtils"
+      }
+    ],
+    "role" : "collection",
+    "roleHeading" : "Extended Module",
+    "symbolKind" : "extension",
+    "title" : "Swift"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Extended-Enumerations",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional"
+      ],
+      "title" : "Extended Enumerations"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/typeutils\/swift"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://TypeUtils/documentation/TypeUtils": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "TypeUtils",
+  "type" : "topic",
+  "url" : "\/documentation\/typeutils"
+},
+"doc://TypeUtils/documentation/TypeUtils/Swift": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Swift",
+  "type" : "topic",
+  "url" : "\/documentation\/typeutils\/swift"
+},
+"doc://TypeUtils/documentation/TypeUtils/Swift/Optional": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:Sq",
+      "text" : "Optional"
+    }
+  ],
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Optional"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Optional",
+  "type" : "topic",
+  "url" : "\/documentation\/typeutils\/swift\/optional"
+}
+}
+}

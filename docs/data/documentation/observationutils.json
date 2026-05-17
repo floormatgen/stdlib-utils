@@ -1,0 +1,113 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "ObservationUtils",
+    "modules" : [
+      {
+        "name" : "ObservationUtils"
+      }
+    ],
+    "role" : "collection",
+    "roleHeading" : "Framework",
+    "symbolKind" : "module",
+    "title" : "ObservationUtils"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Classes",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges"
+      ],
+      "title" : "Classes"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/observationutils"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://ObservationUtils/documentation/ObservationUtils": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "ObservationUtils",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges": {
+  "abstract" : [
+    {
+      "text" : "Provided new values of an ",
+      "type" : "text"
+    },
+    {
+      "code" : "Observable",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " property",
+      "type" : "text"
+    }
+  ],
+  "deprecated" : true,
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "PropertyChanges"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "PropertyChanges"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "PropertyChanges",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges"
+}
+}
+}

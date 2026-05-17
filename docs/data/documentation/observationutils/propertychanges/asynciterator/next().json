@@ -1,0 +1,371 @@
+{
+  "abstract" : [
+    {
+      "text" : "Inherited from ",
+      "type" : "text"
+    },
+    {
+      "code" : "AsyncIteratorProtocol.next()",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/AsyncIterator"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/AsyncIterator\/next()"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:16ObservationUtils15PropertyChangesC13AsyncIteratorV4nextq_SgyYaF",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "next"
+      },
+      {
+        "kind" : "text",
+        "text" : "() "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "U"
+      },
+      {
+        "kind" : "text",
+        "text" : "?"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "ObservationUtils"
+      }
+    ],
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "17.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "14.0",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "17.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "1.0",
+        "name" : "visionOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "next()"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "mutating"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "func"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "next"
+            },
+            {
+              "kind" : "text",
+              "text" : "() "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "async"
+            },
+            {
+              "kind" : "text",
+              "text" : " -> "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "U"
+            },
+            {
+              "kind" : "text",
+              "text" : "?"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/observationutils\/propertychanges\/asynciterator\/next()"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://ObservationUtils/documentation/ObservationUtils": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "ObservationUtils",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges": {
+  "abstract" : [
+    {
+      "text" : "Provided new values of an ",
+      "type" : "text"
+    },
+    {
+      "code" : "Observable",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " property",
+      "type" : "text"
+    }
+  ],
+  "deprecated" : true,
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "PropertyChanges"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "PropertyChanges"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "PropertyChanges",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/AsyncIterator": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "T",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Observable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " and ",
+        "type" : "text"
+      },
+      {
+        "code" : "U",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sendable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "AsyncIterator"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/AsyncIterator",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "AsyncIterator"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "PropertyChanges.AsyncIterator",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/asynciterator"
+},
+"doc://ObservationUtils/documentation/ObservationUtils/PropertyChanges/AsyncIterator/next()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "next"
+    },
+    {
+      "kind" : "text",
+      "text" : "() "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "U"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/AsyncIterator\/next()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "next()",
+  "type" : "topic",
+  "url" : "\/documentation\/observationutils\/propertychanges\/asynciterator\/next()"
+}
+}
+}

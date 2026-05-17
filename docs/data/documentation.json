@@ -1,0 +1,65 @@
+{
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/swift-stdlib-utils\/documentation"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "role" : "collection",
+    "roleHeading" : "Package",
+    "title" : "swift-stdlib-utils"
+  },
+  "references" : {
+    "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils" : {
+      "abstract" : [
+
+      ],
+      "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils",
+      "kind" : "symbol",
+      "role" : "collection",
+      "title" : "ConcurrencyUtils",
+      "type" : "topic",
+      "url" : "\/documentation\/concurrencyutils"
+    },
+    "doc:\/\/ObservationUtils\/documentation\/ObservationUtils" : {
+      "abstract" : [
+
+      ],
+      "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils",
+      "kind" : "symbol",
+      "role" : "collection",
+      "title" : "ObservationUtils",
+      "type" : "topic",
+      "url" : "\/documentation\/observationutils"
+    },
+    "doc:\/\/TypeUtils\/documentation\/TypeUtils" : {
+      "abstract" : [
+
+      ],
+      "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils",
+      "kind" : "symbol",
+      "role" : "collection",
+      "title" : "TypeUtils",
+      "type" : "topic",
+      "url" : "\/documentation\/typeutils"
+    }
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils",
+        "doc:\/\/ObservationUtils\/documentation\/ObservationUtils",
+        "doc:\/\/TypeUtils\/documentation\/TypeUtils"
+      ]
+    }
+  ],
+  "topicSectionsStyle" : "detailedGrid"
+}

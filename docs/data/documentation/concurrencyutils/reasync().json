@@ -1,0 +1,269 @@
+{
+  "abstract" : [
+    {
+      "text" : "Creates an async overload of a provided function",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/Reasync()"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:16ConcurrencyUtils7Reasyncyycfm",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "macro"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "Reasync"
+      },
+      {
+        "kind" : "text",
+        "text" : "()"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "ConcurrencyUtils"
+      }
+    ],
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "1.0",
+        "name" : "visionOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Macro",
+    "symbolKind" : "macro",
+    "title" : "Reasync()"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "@attached"
+            },
+            {
+              "kind" : "text",
+              "text" : "(peer, names: overloaded) "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "macro"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "Reasync"
+            },
+            {
+              "kind" : "text",
+              "text" : "()"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "This is useful for “with-style” methods that take a body closure.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "It prefixes all calls to function parameters with ",
+              "type" : "text"
+            },
+            {
+              "code" : "await",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and makes function arguments ",
+              "type" : "text"
+            },
+            {
+              "code" : "async",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "\/\/ Source",
+            "@Reasync",
+            "func withFoo<E: Error, R: ~Copyable>(",
+            "  operation: (Foo) throws(E) -> R",
+            ") throws(E) -> R {",
+            "  return try operation(foo)",
+            "}",
+            "",
+            "\/\/ Result",
+            "func withFoo<E: Error, R: ~Copyable>(",
+            "  operation: (Foo) throws(E) -> R",
+            ") throws(E) -> R {",
+            "  return try operation(foo)",
+            "}",
+            "",
+            "nonisolated(nonsending)",
+            "func withFoo<E: Error, R: ~Copyable>(",
+            "  operation: (Foo) async throws(E) -> R",
+            ") async throws(E) -> R {",
+            "  return try await operation(foo)",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/concurrencyutils\/reasync()"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://ConcurrencyUtils/documentation/ConcurrencyUtils": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "ConcurrencyUtils",
+  "type" : "topic",
+  "url" : "\/documentation\/concurrencyutils"
+},
+"doc://ConcurrencyUtils/documentation/ConcurrencyUtils/Reasync()": {
+  "abstract" : [
+    {
+      "text" : "Creates an async overload of a provided function",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "macro"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Reasync"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/Reasync()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "Reasync()",
+  "type" : "topic",
+  "url" : "\/documentation\/concurrencyutils\/reasync()"
+}
+}
+}
