@@ -4,8 +4,8 @@ import SwiftDiagnostics
 //import MacroUtils
 
 public struct Reasync: PeerMacro {
-  static let name = "Reasync"
-  static let globalName = "GlobalReasync"
+  static let name = "CustomReasync"
+  static let globalName = "Reasync"
   static let diagnosticMessageID = MessageID(domain: Plugin.moduleName, id: Reasync.name)
 
   public static var formatMode: FormatMode {

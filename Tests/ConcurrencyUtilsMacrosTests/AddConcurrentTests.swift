@@ -3,11 +3,11 @@ import SwiftSyntaxMacros
 import SwiftSyntaxMacrosTestSupport
 import ConcurrencyUtilsMacros
 
-final class AddConcurrentTests: XCTestCase {
+final class CustomAddConcurrentTests: XCTestCase {
   
   static let testMacros: [String : any Macro.Type] = [
     "AddConcurrent":        AddConcurrent.self,
-    "GlobalAddConcurrent":  AddConcurrent.self
+    "CustomAddConcurrent":  AddConcurrent.self
   ]
   
 #if compiler(>=6.2)
@@ -15,7 +15,7 @@ final class AddConcurrentTests: XCTestCase {
   func test_addsConcurrent() {
     assertMacroExpansion(
       """
-      @AddConcurrent
+      @CustomAddConcurrent
       func foo() {
       }
       """,
@@ -35,7 +35,7 @@ final class AddConcurrentTests: XCTestCase {
   func test_withLabeledArguments() {
     assertMacroExpansion(
       """
-      @AddConcurrent
+      @CustomAddConcurrent
       func foo(bar: String, baz: Bool) {
       }
       """,
@@ -55,7 +55,7 @@ final class AddConcurrentTests: XCTestCase {
   func test_withUnlabeledArgumentsAndThrows() {
     assertMacroExpansion(
       """
-      @AddConcurrent
+      @CustomAddConcurrent
       func foo(_ bar: String, _ baz: Bool) throws {
       }
       """,
@@ -75,7 +75,7 @@ final class AddConcurrentTests: XCTestCase {
   func test_withIgnoredArguments() {
     assertMacroExpansion(
       """
-      @AddConcurrent
+      @CustomAddConcurrent
       func foo(_: String, _: Bool, _: Int) {
       }
       """,
@@ -95,7 +95,7 @@ final class AddConcurrentTests: XCTestCase {
   func test_alreadyAsync() {
     assertMacroExpansion(
       """
-      @AddConcurrent
+      @CustomAddConcurrent
       func foo() async {
       }
       """,
@@ -115,7 +115,7 @@ final class AddConcurrentTests: XCTestCase {
   func test_respectsRawIdentifiers() {
     assertMacroExpansion(
       """
-      @AddConcurrent
+      @CustomAddConcurrent
       func `default`() {
       }
       """,
@@ -135,7 +135,7 @@ final class AddConcurrentTests: XCTestCase {
   func test_removeNonisolatedNonsending() {
     assertMacroExpansion(
       """
-      @AddConcurrent
+      @CustomAddConcurrent
       nonisolated(nonsending) func foo() async {
       }
       """,
@@ -154,7 +154,7 @@ final class AddConcurrentTests: XCTestCase {
   func test_customName() {
     assertMacroExpansion(
       """
-      @AddConcurrent(named: "customFoo")
+      @CustomAddConcurrent(named: "customFoo")
       func foo() {
       }
       """,
@@ -175,10 +175,10 @@ final class AddConcurrentTests: XCTestCase {
   
 }
 
-final class GlobalAddConcurrentTests: XCTestCase {
+final class AddConcurrentTests: XCTestCase {
   
   static var testMacros: [String : any Macro.Type] {
-    AddConcurrentTests.testMacros
+    CustomAddConcurrentTests.testMacros
   }
   
 #if compiler(>=6.2)
@@ -186,7 +186,7 @@ final class GlobalAddConcurrentTests: XCTestCase {
   func test_macroRemovedOnExpansion() {
     assertMacroExpansion(
       """
-      @GlobalAddConcurrent
+      @AddConcurrent
       func foo() {
       }
       """,

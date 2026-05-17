@@ -15,13 +15,13 @@ let package = Package(
   ],
   products: [
     // Products define the executables and libraries a package produces, making them visible to other packages.
-    .library(name: "TypeUtils", targets: ["TypeUtils"]),
-    .library(name: "ConcurrencyUtils", targets: ["ConcurrencyUtils"]),
-    .library(name: "ObservationUtils", targets: ["ObservationUtils"]),
-    .library(name: "StdlibUtils", targets: ["TypeUtils", "ConcurrencyUtils", "ObservationUtils"]),
+    .library(name: "TypeUtils",         targets: ["TypeUtils"]),
+    .library(name: "ConcurrencyUtils",  targets: ["ConcurrencyUtils"]),
+    .library(name: "ObservationUtils",  targets: ["ObservationUtils"]),
+    .library(name: "StdlibUtils",       targets: ["TypeUtils", "ConcurrencyUtils", "ObservationUtils"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/swiftlang/swift-syntax.git", from: "603.0.0"),
+    .package(url: "https://github.com/swiftlang/swift-syntax.git",  from: "603.0.0"),
     .package(url: "https://github.com/swiftlang/swift-docc-plugin", from: "1.1.0"),
   ],
   targets: [

@@ -3,11 +3,11 @@ import SwiftSyntaxMacros
 import SwiftSyntaxMacrosTestSupport
 import ConcurrencyUtilsMacros
 
-final class ReasyncTests: XCTestCase {
+final class CustomReasyncTests: XCTestCase {
   
   static let testMacros: [String: any Macro.Type] = [
     "Reasync":        Reasync.self,
-    "GlobalReasync":  Reasync.self,
+    "CustomReasync":  Reasync.self,
   ]
   
 #if compiler(>=6.2)
@@ -15,7 +15,7 @@ final class ReasyncTests: XCTestCase {
   func test_macroRemovedOnExpansion() {
     assertMacroExpansion(
       """
-      @Reasync
+      @CustomReasync
       func foo(operation: () -> Void) -> Void {
       }
       """,
@@ -34,7 +34,7 @@ final class ReasyncTests: XCTestCase {
   func test_addsAsyncToParameters() {
     assertMacroExpansion(
       """
-      @Reasync
+      @CustomReasync
       func foo(operation: () -> Void) -> Void {
         return operation()
       }
@@ -61,7 +61,7 @@ final class ReasyncTests: XCTestCase {
         }
       }
 
-      @Reasync
+      @CustomReasync
       func foo(operation: () -> Void) -> Void {
         Foo.operation()
         return operation()
@@ -95,7 +95,7 @@ final class ReasyncTests: XCTestCase {
         func body() {
         }
       
-        @Reasync
+        @CustomReasync
         func withResource(
           _ body: () -> Void
         ) -> Void {
@@ -134,7 +134,7 @@ final class ReasyncTests: XCTestCase {
   func test_cutomNameUsed() {
     assertMacroExpansion(
       """
-      @Reasync(named: "fooAsync")
+      @CustomReasync(named: "fooAsync")
       func foo(_ operation: () -> Void) {
       }
       """,
@@ -154,10 +154,10 @@ final class ReasyncTests: XCTestCase {
 
 }
 
-final class GlobalReasyncTests: XCTestCase {
+final class ReasyncTests: XCTestCase {
   
   static var testMacros: [String : any Macro.Type] {
-    ReasyncTests.testMacros
+    CustomReasyncTests.testMacros
   }
   
 #if compiler(>=6.2)
@@ -165,7 +165,7 @@ final class GlobalReasyncTests: XCTestCase {
   func test_macroRemovedOnExpansion() {
     assertMacroExpansion(
       """
-      @GlobalReasync
+      @Reasync
       func foo(_ operation: () -> Void) {
       }
       """,

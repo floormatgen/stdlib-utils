@@ -5,8 +5,8 @@ import SwiftDiagnostics
 
 public struct AddConcurrent: PeerMacro {
   
-  static let name = "AddConcurrent"
-  static let globalName = "GlobalAddConcurrent"
+  static let name = "CustomAddConcurrent"
+  static let globalName = "AddConcurrent"
   static let defaultConcurrentSuffix = "Concurrently"
 
   public static var formatMode: FormatMode {
