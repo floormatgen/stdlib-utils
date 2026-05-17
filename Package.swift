@@ -17,7 +17,8 @@ let package = Package(
     // Products define the executables and libraries a package produces, making them visible to other packages.
     .library(name: "TypeUtils", targets: ["TypeUtils"]),
     .library(name: "ConcurrencyUtils", targets: ["ConcurrencyUtils"]),
-    .library(name: "StdlibUtils", targets: ["TypeUtils", "ConcurrencyUtils"]),
+    .library(name: "ObservationUtils", targets: ["ObservationUtils"]),
+    .library(name: "StdlibUtils", targets: ["TypeUtils", "ConcurrencyUtils", "ObservationUtils"]),
   ],
   dependencies: [
     .package(url: "https://github.com/swiftlang/swift-syntax.git", from: "603.0.0"),
@@ -60,7 +61,21 @@ let package = Package(
         .product(name: "SwiftSyntaxMacrosTestSupport", package: "swift-syntax"),
       ]
     ),
-    
+
+    // MARK: Observation
+    .target(
+      name: "ObservationUtils",
+      dependencies: [
+        .target(name: "Compatability"),
+      ]
+    ),
+    .testTarget(
+      name: "ObservationUtilsTests",
+      dependencies: [
+        .target(name: "ObservationUtils"),
+      ]
+    ),
+
     // MARK: Internal
     .target(
       name: "Compatability"
