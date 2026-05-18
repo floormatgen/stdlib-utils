@@ -1,0 +1,113 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/_Concurrency"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:m:s:e:s:ScA16ConcurrencyUtilsE3run9operationqd__qd__xYiYaYbqd_0_YKYTXE_tYaqd_0_YKs5ErrorRd_0_Ri_d__r0_lF",
+    "modules" : [
+      {
+        "name" : "ConcurrencyUtils"
+      }
+    ],
+    "role" : "collection",
+    "roleHeading" : "Extended Module",
+    "symbolKind" : "extension",
+    "title" : "_Concurrency"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Extended-Protocols",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/_Concurrency\/Actor"
+      ],
+      "title" : "Extended Protocols"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/concurrencyutils\/_concurrency"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://ConcurrencyUtils/documentation/ConcurrencyUtils": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "ConcurrencyUtils",
+  "type" : "topic",
+  "url" : "\/documentation\/concurrencyutils"
+},
+"doc://ConcurrencyUtils/documentation/ConcurrencyUtils/_Concurrency": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/_Concurrency",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "_Concurrency",
+  "type" : "topic",
+  "url" : "\/documentation\/concurrencyutils\/_concurrency"
+},
+"doc://ConcurrencyUtils/documentation/ConcurrencyUtils/_Concurrency/Actor": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:ScA",
+      "text" : "Actor"
+    }
+  ],
+  "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/_Concurrency\/Actor",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Actor"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Actor",
+  "type" : "topic",
+  "url" : "\/documentation\/concurrencyutils\/_concurrency\/actor"
+}
+}
+}

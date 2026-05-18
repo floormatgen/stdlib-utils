@@ -42,6 +42,14 @@
         "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/Reasync()"
       ],
       "title" : "Macros"
+    },
+    {
+      "anchor" : "Extended-Modules",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/_Concurrency"
+      ],
+      "title" : "Extended Modules"
     }
   ],
   "variants" : [
@@ -248,6 +256,17 @@
   "title" : "Reasync()",
   "type" : "topic",
   "url" : "\/documentation\/concurrencyutils\/reasync()"
+},
+"doc://ConcurrencyUtils/documentation/ConcurrencyUtils/_Concurrency": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/_Concurrency",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "_Concurrency",
+  "type" : "topic",
+  "url" : "\/documentation\/concurrencyutils\/_concurrency"
 }
 }
 }
