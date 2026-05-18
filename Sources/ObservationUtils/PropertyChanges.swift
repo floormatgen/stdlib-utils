@@ -84,6 +84,7 @@ public final class PropertyChanges<T: Observable, U: Sendable>: Sendable {
     _observeUpdate()
   }
 
+  @inlinable
   deinit {
     // Make sure the task doesn't leak, causing observable to leak as well
     // The task has a strong ref to _observe, which has a strong ref to observable

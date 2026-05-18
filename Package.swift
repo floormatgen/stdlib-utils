@@ -55,6 +55,12 @@ let package = Package(
       ]
     ),
     .testTarget(
+      name: "ConcurrencyUtilsTests",
+      dependencies: [
+        .target(name: "ConcurrencyUtils"),
+      ]
+    ),
+    .testTarget(
       name: "ConcurrencyUtilsMacrosTests",
       dependencies: [
         .target(name: "ConcurrencyUtilsMacros"),
