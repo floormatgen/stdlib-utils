@@ -49,6 +49,13 @@ let package = Package(
         .target(name: "TypeUtils"),
       ]
     ),
+    .testTarget(
+      name: "TypeUtilsMacrosTests",
+      dependencies: [
+        .target(name: "TypeUtilsMacros"),
+        .product(name: "SwiftSyntaxMacrosTestSupport", package: "swift-syntax"),
+      ]
+    ),
     
     // MARK: Concurrency
     .target(
