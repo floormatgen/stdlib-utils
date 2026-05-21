@@ -29,6 +29,19 @@ let package = Package(
     // MARK: Types
     .target(
       name: "TypeUtils",
+      dependencies: [
+        .target(name: "TypeUtilsMacros"),
+      ]
+    ),
+    .macro(
+      name: "TypeUtilsMacros",
+      dependencies: [
+        .target(name: "MacroUtils"),
+        .product(name: "SwiftSyntax", package: "swift-syntax"),
+        .product(name: "SwiftSyntaxMacros", package: "swift-syntax"),
+        .product(name: "SwiftCompilerPlugin", package: "swift-syntax"),
+        .product(name: "SwiftDiagnostics", package: "swift-syntax"),
+      ]
     ),
     .testTarget(
       name: "TypeUtilsTests",
@@ -101,7 +114,9 @@ let package = Package(
     ),
     
   ],
-  swiftLanguageModes: [.v6]
+  swiftLanguageModes: [
+    .v6, .v5,
+  ]
 )
 
 // MARK: - Swift Settings
