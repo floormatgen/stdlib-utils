@@ -48,10 +48,10 @@ let package = Package(
       name: "ConcurrencyUtilsMacros",
       dependencies: [
         .target(name: "MacroUtils"),
-        .product(name: "SwiftSyntax", package: "swift-syntax"),
-        .product(name: "SwiftSyntaxMacros", package: "swift-syntax"),
+        .product(name: "SwiftSyntax",         package: "swift-syntax"),
+        .product(name: "SwiftSyntaxMacros",   package: "swift-syntax"),
         .product(name: "SwiftCompilerPlugin", package: "swift-syntax"),
-        .product(name: "SwiftDiagnostics", package: "swift-syntax"),
+        .product(name: "SwiftDiagnostics",    package: "swift-syntax"),
       ]
     ),
     .testTarget(
@@ -93,10 +93,10 @@ let package = Package(
     .target(
       name: "MacroUtils",
       dependencies: [
-        .product(name: "SwiftSyntax", package: "swift-syntax"),
-        .product(name: "SwiftSyntaxMacros", package: "swift-syntax"),
+        .product(name: "SwiftSyntax",         package: "swift-syntax"),
+        .product(name: "SwiftSyntaxMacros",   package: "swift-syntax"),
         .product(name: "SwiftCompilerPlugin", package: "swift-syntax"),
-        .product(name: "SwiftDiagnostics", package: "swift-syntax"),
+        .product(name: "SwiftDiagnostics",    package: "swift-syntax"),
       ]
     ),
     
