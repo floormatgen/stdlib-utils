@@ -29,6 +29,9 @@ let package = Package(
     // MARK: Types
     .target(
       name: "TypeUtils",
+      dependencies: [
+        .target(name: "TypeUtilsMacros")
+      ]
     ),
     .macro(
       name: "TypeUtilsMacros",
