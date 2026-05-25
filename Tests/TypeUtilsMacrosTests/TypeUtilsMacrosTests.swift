@@ -214,4 +214,115 @@ final class AddCaseKindsTests: XCTestCase {
     )
   }
   
+  func test_modifiersCopiedFromParent() {
+    assertMacroExpansion(
+      """
+      @AddCaseKinds
+      nonisolated package enum Foo {
+          case first, second(Int)
+          case third(Int, String)
+      }
+      """,
+      expandedSource: """
+      nonisolated package enum Foo {
+          case first, second(Int)
+          case third(Int, String)
+      
+          nonisolated package enum Kind: Swift.Sendable, Swift.Equatable, Swift.Hashable {
+              case first
+              case second
+              case third
+          }
+      
+          package var kind: Kind {
+              switch self {
+              case .first:
+                  return .first
+              case .second:
+                  return .second
+              case .third:
+                  return .third
+              }
+          }
+      }
+      """,
+      macros: testMacros
+    )
+  }
+  
+  func test_attributesCopiedFromParent() {
+    assertMacroExpansion(
+      """
+      @nonexhaustive
+      @AddCaseKinds
+      internal enum Foo {
+          case first, second(Int)
+          case third(Int, String)
+      }
+      """,
+      expandedSource: """
+      @nonexhaustive
+      internal enum Foo {
+          case first, second(Int)
+          case third(Int, String)
+      
+          @nonexhaustive
+          internal enum Kind: Swift.Sendable, Swift.Equatable, Swift.Hashable {
+              case first
+              case second
+              case third
+          }
+      
+          internal var kind: Kind {
+              switch self {
+              case .first:
+                  return .first
+              case .second:
+                  return .second
+              case .third:
+                  return .third
+              }
+          }
+      }
+      """,
+      macros: testMacros
+    )
+  }
+  
+  func test_indirectRemovedFromKind() {
+    assertMacroExpansion(
+      """
+      @AddCaseKinds
+      fileprivate indirect enum Foo {
+          case first, second(Int)
+          case third(Int, String)
+      }
+      """,
+      expandedSource: """
+      fileprivate indirect enum Foo {
+          case first, second(Int)
+          case third(Int, String)
+      
+          fileprivate enum Kind: Swift.Sendable, Swift.Equatable, Swift.Hashable {
+              case first
+              case second
+              case third
+          }
+      
+          fileprivate var kind: Kind {
+              switch self {
+              case .first:
+                  return .first
+              case .second:
+                  return .second
+              case .third:
+                  return .third
+              }
+          }
+      }
+      """,
+      macros: testMacros
+    )
+  }
+  
 }

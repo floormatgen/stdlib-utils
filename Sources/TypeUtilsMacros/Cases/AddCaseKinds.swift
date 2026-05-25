@@ -44,7 +44,12 @@ public struct AddCaseKinds: MemberMacro {
     let kindEnumName = "Kind"
     
     // Create nested kind enum
-    var kindEnumDecl = EnumDeclSyntax(name: kindEnumName, cases: cases)
+    var kindEnumDecl = EnumDeclSyntax(
+      attributes: enumDecl.attributes,
+      modifiers: enumDecl.modifiers,
+      name: kindEnumName,
+      cases: cases
+    )
     // Add conformances to Sendable, Equatable, Hashable
     kindEnumDecl.inheritanceClause = InheritanceClauseSyntax(
       inheritedTypes: [
@@ -100,11 +105,23 @@ public struct AddCaseKinds: MemberMacro {
       ]
     )
     
-    // Add access modifiers if needed
+    // MARK: Access Control, modifier and attribute handling
+    
+    // Add access modifiers if needed to variable
     if let accessModifier, accessModifier.name.tokenKind != .keyword(.private) {
-      kindEnumDecl.modifiers.insert(accessModifier, at: kindEnumDecl.modifiers.startIndex)
       kindProperty.modifiers.insert(accessModifier, at: kindProperty.modifiers.startIndex)
     }
+    
+    // Remove private and indirect modifier from Kind enum if exists
+    kindEnumDecl.modifiers = kindEnumDecl.modifiers.filter { modifier in
+      return !(
+        modifier.name.tokenKind == .keyword(.private) ||
+        modifier.name.tokenKind == .keyword(.indirect)
+      )
+    }
+    
+    // Remove macro from copied attributes
+    kindEnumDecl.attributes.excludeMacro(withName: macroName, moduleName: Plugin.moduleName)
     
     return [
       DeclSyntax(kindEnumDecl),

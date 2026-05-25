@@ -130,6 +130,7 @@ let swiftSettings: [SwiftSetting] = [
   // .enableUpcomingFeature("NonisolatedNonsendingByDefault"),
   .enableUpcomingFeature("ExistentialAny"),
   .enableUpcomingFeature("MemberImportVisibility"),
+  .enableUpcomingFeature("ImmutableWeakCaptures"),
 ]
 
 for target in package.targets {
