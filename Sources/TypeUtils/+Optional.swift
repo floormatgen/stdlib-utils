@@ -14,13 +14,13 @@ extension Optional where Wrapped: ~Copyable {
   ///   The wrapped value. If there is no wrapped value,
   ///   stops program execution.
   @inlinable
-  public consuming func unwrap(
+  public consuming func forceUnwrap(
     _ reason: @autoclosure () -> String,
     file: StaticString = #file,
     line: UInt = #line
   ) -> Wrapped {
     guard let wrapped = self else {
-      Swift.preconditionFailure(reason(), file: file, line: line)
+      Swift.preconditionFailure("Unexpectedly found nil: \(reason())", file: file, line: line)
     }
     return wrapped
   }
