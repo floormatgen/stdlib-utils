@@ -9,12 +9,12 @@
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional"
+    "url" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Result"
   },
   "kind" : "symbol",
   "metadata" : {
     "extendedModule" : "Swift",
-    "externalID" : "s:e:s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF",
+    "externalID" : "s:e:s:s6ResultO9TypeUtilsE5valuexSgvp",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -26,8 +26,8 @@
       },
       {
         "kind" : "identifier",
-        "preciseIdentifier" : "s:Sq",
-        "text" : "Optional"
+        "preciseIdentifier" : "s:s6ResultO",
+        "text" : "Result"
       }
     ],
     "modules" : [
@@ -41,13 +41,13 @@
     "navigatorTitle" : [
       {
         "kind" : "identifier",
-        "text" : "Optional"
+        "text" : "Result"
       }
     ],
     "role" : "symbol",
     "roleHeading" : "Extended Enumeration",
     "symbolKind" : "extension",
-    "title" : "Optional"
+    "title" : "Result"
   },
   "primaryContentSections" : [
     {
@@ -70,8 +70,8 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:Sq",
-              "text" : "Optional"
+              "preciseIdentifier" : "s:s6ResultO",
+              "text" : "Result"
             }
           ]
         }
@@ -89,18 +89,19 @@
   ],
   "topicSections" : [
     {
-      "anchor" : "Instance-Methods",
+      "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional\/forceUnwrap(_:file:line:)"
+        "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Result\/error",
+        "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Result\/value"
       ],
-      "title" : "Instance Methods"
+      "title" : "Instance Properties"
     }
   ],
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/typeutils\/swift\/optional"
+        "\/documentation\/typeutils\/swift\/result"
       ],
       "traits" : [
         {
@@ -133,7 +134,7 @@
   "type" : "topic",
   "url" : "\/documentation\/typeutils\/swift"
 },
-"doc://TypeUtils/documentation/TypeUtils/Swift/Optional": {
+"doc://TypeUtils/documentation/TypeUtils/Swift/Result": {
   "abstract" : [
 
   ],
@@ -148,34 +149,70 @@
     },
     {
       "kind" : "identifier",
-      "preciseIdentifier" : "s:Sq",
-      "text" : "Optional"
+      "preciseIdentifier" : "s:s6ResultO",
+      "text" : "Result"
     }
   ],
-  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional",
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Result",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "Optional"
+      "text" : "Result"
     }
   ],
   "role" : "symbol",
-  "title" : "Optional",
+  "title" : "Result",
   "type" : "topic",
-  "url" : "\/documentation\/typeutils\/swift\/optional"
+  "url" : "\/documentation\/typeutils\/swift\/result"
 },
-"doc://TypeUtils/documentation/TypeUtils/Swift/Optional/forceUnwrap(_:file:line:)": {
+"doc://TypeUtils/documentation/TypeUtils/Swift/Result/error": {
   "abstract" : [
     {
-      "text" : "Force unwraps the wrapped value, with the provided reason",
+      "text" : "Gets the underlying error of the ",
       "type" : "text"
+    },
+    {
+      "code" : "Result",
+      "type" : "codeVoice"
     }
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Failure",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Error",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "func"
+      "text" : "var"
     },
     {
       "kind" : "text",
@@ -183,32 +220,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "forceUnwrap"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "attribute",
-      "text" : "@autoclosure "
-    },
-    {
-      "kind" : "text",
-      "text" : "() -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:SS",
-      "text" : "String"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "file"
+      "text" : "error"
     },
     {
       "kind" : "text",
@@ -216,41 +228,95 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:s12StaticStringV",
-      "text" : "StaticString"
+      "text" : "Failure"
     },
     {
       "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "line"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Su",
-      "text" : "UInt"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Wrapped"
+      "text" : "?"
     }
   ],
-  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional\/forceUnwrap(_:file:line:)",
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Result\/error",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "forceUnwrap(_:file:line:)",
+  "title" : "error",
   "type" : "topic",
-  "url" : "\/documentation\/typeutils\/swift\/optional\/forceunwrap(_:file:line:)"
+  "url" : "\/documentation\/typeutils\/swift\/result\/error"
+},
+"doc://TypeUtils/documentation/TypeUtils/Swift/Result/value": {
+  "abstract" : [
+    {
+      "text" : "Gets the underlying value of the ",
+      "type" : "text"
+    },
+    {
+      "code" : "Result",
+      "type" : "codeVoice"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Failure",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Error",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "value"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Success"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Result\/value",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "value",
+  "type" : "topic",
+  "url" : "\/documentation\/typeutils\/swift\/result\/value"
 }
 }
 }

@@ -12,7 +12,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:m:s:e:s:Sq9TypeUtilsRi_zrlE6unwrap_4file4linexSSyXK_s12StaticStringVSutF",
+    "externalID" : "s:m:s:e:s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF",
     "modules" : [
       {
         "name" : "TypeUtils"
@@ -36,7 +36,8 @@
       "anchor" : "Extended-Enumerations",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional"
+        "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional",
+        "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Result"
       ],
       "title" : "Extended Enumerations"
     }
@@ -108,6 +109,38 @@
   "title" : "Optional",
   "type" : "topic",
   "url" : "\/documentation\/typeutils\/swift\/optional"
+},
+"doc://TypeUtils/documentation/TypeUtils/Swift/Result": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:s6ResultO",
+      "text" : "Result"
+    }
+  ],
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Result",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Result"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Result",
+  "type" : "topic",
+  "url" : "\/documentation\/typeutils\/swift\/result"
 }
 }
 }

@@ -33,6 +33,22 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Protocols",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/TypeUtils\/documentation\/TypeUtils\/CaseKindProvider"
+      ],
+      "title" : "Protocols"
+    },
+    {
+      "anchor" : "Macros",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/TypeUtils\/documentation\/TypeUtils\/AddCaseKind()"
+      ],
+      "title" : "Macros"
+    },
+    {
       "anchor" : "Extended-Modules",
       "generated" : true,
       "identifiers" : [
@@ -65,6 +81,76 @@
   "title" : "TypeUtils",
   "type" : "topic",
   "url" : "\/documentation\/typeutils"
+},
+"doc://TypeUtils/documentation/TypeUtils/AddCaseKind()": {
+  "abstract" : [
+    {
+      "text" : "Adds a kind accessor to the ",
+      "type" : "text"
+    },
+    {
+      "code" : "enum",
+      "type" : "codeVoice"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "macro"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "AddCaseKind"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/AddCaseKind()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "AddCaseKind()",
+  "type" : "topic",
+  "url" : "\/documentation\/typeutils\/addcasekind()"
+},
+"doc://TypeUtils/documentation/TypeUtils/CaseKindProvider": {
+  "abstract" : [
+    {
+      "text" : "A type that provides case kinds",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "CaseKindProvider"
+    }
+  ],
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/CaseKindProvider",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "CaseKindProvider"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "CaseKindProvider",
+  "type" : "topic",
+  "url" : "\/documentation\/typeutils\/casekindprovider"
 },
 "doc://TypeUtils/documentation/TypeUtils/Swift": {
   "abstract" : [

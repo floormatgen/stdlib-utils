@@ -16,12 +16,12 @@
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional\/unwrap(_:file:line:)"
+    "url" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional\/forceUnwrap(_:file:line:)"
   },
   "kind" : "symbol",
   "metadata" : {
     "extendedModule" : "Swift",
-    "externalID" : "s:Sq9TypeUtilsRi_zrlE6unwrap_4file4linexSSyXK_s12StaticStringVSutF",
+    "externalID" : "s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -33,7 +33,7 @@
       },
       {
         "kind" : "identifier",
-        "text" : "unwrap"
+        "text" : "forceUnwrap"
       },
       {
         "kind" : "text",
@@ -106,7 +106,7 @@
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
-    "title" : "unwrap(_:file:line:)"
+    "title" : "forceUnwrap(_:file:line:)"
   },
   "primaryContentSections" : [
     {
@@ -137,7 +137,7 @@
             },
             {
               "kind" : "identifier",
-              "text" : "unwrap"
+              "text" : "forceUnwrap"
             },
             {
               "kind" : "text",
@@ -378,7 +378,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/typeutils\/swift\/optional\/unwrap(_:file:line:)"
+        "\/documentation\/typeutils\/swift\/optional\/forceunwrap(_:file:line:)"
       ],
       "traits" : [
         {
@@ -443,7 +443,7 @@
   "type" : "topic",
   "url" : "\/documentation\/typeutils\/swift\/optional"
 },
-"doc://TypeUtils/documentation/TypeUtils/Swift/Optional/unwrap(_:file:line:)": {
+"doc://TypeUtils/documentation/TypeUtils/Swift/Optional/forceUnwrap(_:file:line:)": {
   "abstract" : [
     {
       "text" : "Force unwraps the wrapped value, with the provided reason",
@@ -461,7 +461,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "unwrap"
+      "text" : "forceUnwrap"
     },
     {
       "kind" : "text",
@@ -523,12 +523,12 @@
       "text" : "Wrapped"
     }
   ],
-  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional\/unwrap(_:file:line:)",
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional\/forceUnwrap(_:file:line:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "unwrap(_:file:line:)",
+  "title" : "forceUnwrap(_:file:line:)",
   "type" : "topic",
-  "url" : "\/documentation\/typeutils\/swift\/optional\/unwrap(_:file:line:)"
+  "url" : "\/documentation\/typeutils\/swift\/optional\/forceunwrap(_:file:line:)"
 }
 }
 }

@@ -1,35 +1,29 @@
 {
   "bundleID" : "TypeUtils",
   "nonSymbolPaths" : {
-    "3" : "\/tutorials",
-    "5" : "\/tutorials\/TypeUtils"
+    "2" : "\/tutorials",
+    "5" : "\/documentation\/TypeUtils\/AddCaseKind()#Modifiers-and-Attributes",
+    "9" : "\/tutorials\/TypeUtils"
   },
   "pathHierarchy" : {
-    "articlesContainer" : 2,
+    "articlesContainer" : 3,
     "modules" : [
-      2
+      3
     ],
     "nodes" : [
       {
-        "children" : [
-          {
-            "hash" : "w5fe",
-            "kind" : "enum.extension",
-            "nodeID" : 1
-          }
-        ],
-        "name" : "Swift",
+        "name" : "kind",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:m:s:e:s:Sq9TypeUtilsRi_zrlE6unwrap_4file4linexSSyXK_s12StaticStringVSutF"
+          "precise" : "s:9TypeUtils16CaseKindProviderP4kind0D0Qzvp"
         }
       },
       {
         "children" : [
           {
-            "hash" : "5i3lb",
+            "hash" : "1ku1r",
             "kind" : "method",
-            "nodeID" : 4,
+            "nodeID" : 7,
             "parameterTypes" : [
               "()->String",
               "StaticString",
@@ -43,15 +37,28 @@
         "name" : "Optional",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:e:s:Sq9TypeUtilsRi_zrlE6unwrap_4file4linexSSyXK_s12StaticStringVSutF"
+          "precise" : "s:e:s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
         }
+      },
+      {
+        "name" : "tutorials"
       },
       {
         "children" : [
           {
-            "hash" : "17jmc",
+            "hash" : "4rmpj",
             "kind" : "module.extension",
-            "nodeID" : 0
+            "nodeID" : 4
+          },
+          {
+            "hash" : "60wih",
+            "kind" : "macro",
+            "nodeID" : 12
+          },
+          {
+            "hash" : "7xo5h",
+            "kind" : "protocol",
+            "nodeID" : 10
           }
         ],
         "name" : "TypeUtils",
@@ -61,21 +68,112 @@
         }
       },
       {
-        "name" : "tutorials"
-      },
-      {
-        "name" : "unwrap(_:file:line:)",
+        "children" : [
+          {
+            "hash" : "96nib",
+            "kind" : "enum.extension",
+            "nodeID" : 1
+          },
+          {
+            "hash" : "9tyti",
+            "kind" : "enum.extension",
+            "nodeID" : 6
+          }
+        ],
+        "name" : "Swift",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:Sq9TypeUtilsRi_zrlE6unwrap_4file4linexSSyXK_s12StaticStringVSutF"
+          "precise" : "s:m:s:e:s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
+        }
+      },
+      {
+        "name" : "Modifiers-and-Attributes"
+      },
+      {
+        "children" : [
+          {
+            "hash" : "2lpmc",
+            "kind" : "property",
+            "nodeID" : 8
+          },
+          {
+            "hash" : "5uvul",
+            "kind" : "property",
+            "nodeID" : 11
+          }
+        ],
+        "name" : "Result",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:e:s:s6ResultO9TypeUtilsE5valuexSgvp"
+        }
+      },
+      {
+        "name" : "forceUnwrap(_:file:line:)",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
+        }
+      },
+      {
+        "name" : "error",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:s6ResultO9TypeUtilsRi_zRi0_zrlE5errorq_Sgvp"
         }
       },
       {
         "name" : "TypeUtils"
+      },
+      {
+        "children" : [
+          {
+            "hash" : "6075c",
+            "kind" : "associatedtype",
+            "nodeID" : 13
+          },
+          {
+            "hash" : "a3ht",
+            "kind" : "property",
+            "nodeID" : 0
+          }
+        ],
+        "name" : "CaseKindProvider",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:9TypeUtils16CaseKindProviderP"
+        }
+      },
+      {
+        "name" : "value",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:s6ResultO9TypeUtilsE5valuexSgvp"
+        }
+      },
+      {
+        "children" : [
+          {
+            "kind" : "anchor",
+            "nodeID" : 5
+          }
+        ],
+        "name" : "AddCaseKind()",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:9TypeUtils11AddCaseKindyycfm"
+        }
+      },
+      {
+        "name" : "Kind",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:9TypeUtils16CaseKindProviderP0D0Qa"
+        }
       }
     ],
-    "tutorialContainer" : 5,
-    "tutorialOverviewContainer" : 3
+    "tutorialContainer" : 9,
+    "tutorialOverviewContainer" : 2
   },
   "version" : {
     "major" : 0,

@@ -11,6 +11,224 @@
     "usr" : "TypeUtils"
   },
   {
+    "abstract" : [
+      {
+        "text" : "A type that provides case kinds",
+        "type" : "text"
+      }
+    ],
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "protocol"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "CaseKindProvider"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.protocol",
+    "language" : "swift",
+    "navigatorFragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "CaseKindProvider"
+      }
+    ],
+    "path" : "\/documentation\/typeutils\/casekindprovider",
+    "plainTextDeclaration" : "protocol CaseKindProvider",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/CaseKindProvider",
+    "title" : "CaseKindProvider",
+    "usr" : "s:9TypeUtils16CaseKindProviderP"
+  },
+  {
+    "abstract" : [
+      {
+        "text" : "The kind of the current ",
+        "type" : "text"
+      },
+      {
+        "code" : "enum",
+        "type" : "codeVoice"
+      }
+    ],
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "var"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "kind"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9TypeUtils16CaseKindProviderP0D0Qa",
+        "text" : "Kind"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceProperty",
+    "language" : "swift",
+    "path" : "\/documentation\/typeutils\/casekindprovider\/kind-swift.property",
+    "plainTextDeclaration" : "var kind: Self.Kind { get }",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/CaseKindProvider\/kind-swift.property",
+    "title" : "kind",
+    "usr" : "s:9TypeUtils16CaseKindProviderP4kind0D0Qzvp"
+  },
+  {
+    "abstract" : [
+      {
+        "text" : "The nested type describing the cases of the ",
+        "type" : "text"
+      },
+      {
+        "code" : "enum",
+        "type" : "codeVoice"
+      }
+    ],
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "associatedtype"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "Kind"
+      },
+      {
+        "kind" : "text",
+        "text" : " : "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:SH",
+        "text" : "Hashable"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s8SendableP",
+        "text" : "Sendable"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.associatedType",
+    "language" : "swift",
+    "path" : "\/documentation\/typeutils\/casekindprovider\/kind-swift.associatedtype",
+    "plainTextDeclaration" : "associatedtype Kind : Hashable, Sendable",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/CaseKindProvider\/Kind-swift.associatedtype",
+    "title" : "Kind",
+    "usr" : "s:9TypeUtils16CaseKindProviderP0D0Qa"
+  },
+  {
+    "abstract" : [
+      {
+        "text" : "Adds a kind accessor to the ",
+        "type" : "text"
+      },
+      {
+        "code" : "enum",
+        "type" : "codeVoice"
+      }
+    ],
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "macro"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "AddCaseKind"
+      },
+      {
+        "kind" : "text",
+        "text" : "()"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.macro",
+    "language" : "swift",
+    "path" : "\/documentation\/typeutils\/addcasekind()",
+    "plainTextDeclaration" : "@attached(member, names: named(Kind), named(kind)) @attached(extension, conformances: CaseKindProvider) macro AddCaseKind()",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/AddCaseKind()",
+    "title" : "AddCaseKind()",
+    "usr" : "s:9TypeUtils11AddCaseKindyycfm"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "extension"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "preciseIdentifier" : "s:s6ResultO",
+        "text" : "Result"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.extendedEnumeration",
+    "language" : "swift",
+    "navigatorFragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "Result"
+      }
+    ],
+    "path" : "\/documentation\/typeutils\/swift\/result",
+    "plainTextDeclaration" : "extension Result",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Result",
+    "title" : "Result",
+    "usr" : "s:e:s:s6ResultO9TypeUtilsE5valuexSgvp"
+  },
+  {
     "availableLanguages" : [
       "swift"
     ],
@@ -19,7 +237,7 @@
     "path" : "\/documentation\/typeutils\/swift",
     "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift",
     "title" : "Swift",
-    "usr" : "s:m:s:e:s:Sq9TypeUtilsRi_zrlE6unwrap_4file4linexSSyXK_s12StaticStringVSutF"
+    "usr" : "s:m:s:e:s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
   },
   {
     "availableLanguages" : [
@@ -52,7 +270,103 @@
     "plainTextDeclaration" : "extension Optional",
     "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional",
     "title" : "Optional",
-    "usr" : "s:e:s:Sq9TypeUtilsRi_zrlE6unwrap_4file4linexSSyXK_s12StaticStringVSutF"
+    "usr" : "s:e:s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
+  },
+  {
+    "abstract" : [
+      {
+        "text" : "Gets the underlying error of the ",
+        "type" : "text"
+      },
+      {
+        "code" : "Result",
+        "type" : "codeVoice"
+      }
+    ],
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "var"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "error"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Failure"
+      },
+      {
+        "kind" : "text",
+        "text" : "?"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceProperty",
+    "language" : "swift",
+    "path" : "\/documentation\/typeutils\/swift\/result\/error",
+    "plainTextDeclaration" : "var error: Failure? { get }",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Result\/error",
+    "title" : "error",
+    "usr" : "s:s6ResultO9TypeUtilsRi_zRi0_zrlE5errorq_Sgvp"
+  },
+  {
+    "abstract" : [
+      {
+        "text" : "Gets the underlying value of the ",
+        "type" : "text"
+      },
+      {
+        "code" : "Result",
+        "type" : "codeVoice"
+      }
+    ],
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "var"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "value"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Success"
+      },
+      {
+        "kind" : "text",
+        "text" : "?"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceProperty",
+    "language" : "swift",
+    "path" : "\/documentation\/typeutils\/swift\/result\/value",
+    "plainTextDeclaration" : "var value: Success? { get }",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Result\/value",
+    "title" : "value",
+    "usr" : "s:s6ResultO9TypeUtilsE5valuexSgvp"
   },
   {
     "abstract" : [
@@ -75,7 +389,7 @@
       },
       {
         "kind" : "identifier",
-        "text" : "unwrap"
+        "text" : "forceUnwrap"
       },
       {
         "kind" : "text",
@@ -139,10 +453,10 @@
     ],
     "kind" : "org.swift.docc.kind.instanceMethod",
     "language" : "swift",
-    "path" : "\/documentation\/typeutils\/swift\/optional\/unwrap(_:file:line:)",
-    "plainTextDeclaration" : "consuming func unwrap(_ reason: @autoclosure () -> String, file: StaticString = #file, line: UInt = #line) -> Wrapped",
-    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional\/unwrap(_:file:line:)",
-    "title" : "unwrap(_:file:line:)",
-    "usr" : "s:Sq9TypeUtilsRi_zrlE6unwrap_4file4linexSSyXK_s12StaticStringVSutF"
+    "path" : "\/documentation\/typeutils\/swift\/optional\/forceunwrap(_:file:line:)",
+    "plainTextDeclaration" : "consuming func forceUnwrap(_ reason: @autoclosure () -> String, file: StaticString = #file, line: UInt = #line) -> Wrapped",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional\/forceUnwrap(_:file:line:)",
+    "title" : "forceUnwrap(_:file:line:)",
+    "usr" : "s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
   }
 ]

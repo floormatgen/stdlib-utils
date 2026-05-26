@@ -1,0 +1,341 @@
+{
+  "abstract" : [
+    {
+      "text" : "A type that provides case kinds",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/TypeUtils\/documentation\/TypeUtils"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/CaseKindProvider"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:9TypeUtils16CaseKindProviderP",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "protocol"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "CaseKindProvider"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "TypeUtils"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "CaseKindProvider"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Protocol",
+    "symbolKind" : "protocol",
+    "title" : "CaseKindProvider"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "protocol"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "CaseKindProvider"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Don’t conform to this protocol by yourself,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "use the ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/AddCaseKind()",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " macro instead.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Associated-Types",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/TypeUtils\/documentation\/TypeUtils\/CaseKindProvider\/Kind-swift.associatedtype"
+      ],
+      "title" : "Associated Types"
+    },
+    {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/TypeUtils\/documentation\/TypeUtils\/CaseKindProvider\/kind-swift.property"
+      ],
+      "title" : "Instance Properties"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/typeutils\/casekindprovider"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://TypeUtils/documentation/TypeUtils": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "TypeUtils",
+  "type" : "topic",
+  "url" : "\/documentation\/typeutils"
+},
+"doc://TypeUtils/documentation/TypeUtils/AddCaseKind()": {
+  "abstract" : [
+    {
+      "text" : "Adds a kind accessor to the ",
+      "type" : "text"
+    },
+    {
+      "code" : "enum",
+      "type" : "codeVoice"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "macro"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "AddCaseKind"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/AddCaseKind()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "AddCaseKind()",
+  "type" : "topic",
+  "url" : "\/documentation\/typeutils\/addcasekind()"
+},
+"doc://TypeUtils/documentation/TypeUtils/CaseKindProvider": {
+  "abstract" : [
+    {
+      "text" : "A type that provides case kinds",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "CaseKindProvider"
+    }
+  ],
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/CaseKindProvider",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "CaseKindProvider"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "CaseKindProvider",
+  "type" : "topic",
+  "url" : "\/documentation\/typeutils\/casekindprovider"
+},
+"doc://TypeUtils/documentation/TypeUtils/CaseKindProvider/Kind-swift.associatedtype": {
+  "abstract" : [
+    {
+      "text" : "The nested type describing the cases of the ",
+      "type" : "text"
+    },
+    {
+      "code" : "enum",
+      "type" : "codeVoice"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "associatedtype"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Kind"
+    },
+    {
+      "kind" : "text",
+      "text" : " : "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SH",
+      "text" : "Hashable"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s8SendableP",
+      "text" : "Sendable"
+    }
+  ],
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/CaseKindProvider\/Kind-swift.associatedtype",
+  "kind" : "symbol",
+  "required" : true,
+  "role" : "symbol",
+  "title" : "Kind",
+  "type" : "topic",
+  "url" : "\/documentation\/typeutils\/casekindprovider\/kind-swift.associatedtype"
+},
+"doc://TypeUtils/documentation/TypeUtils/CaseKindProvider/kind-swift.property": {
+  "abstract" : [
+    {
+      "text" : "The kind of the current ",
+      "type" : "text"
+    },
+    {
+      "code" : "enum",
+      "type" : "codeVoice"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "kind"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9TypeUtils16CaseKindProviderP0D0Qa",
+      "text" : "Kind"
+    }
+  ],
+  "identifier" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/CaseKindProvider\/kind-swift.property",
+  "kind" : "symbol",
+  "required" : true,
+  "role" : "symbol",
+  "title" : "kind",
+  "type" : "topic",
+  "url" : "\/documentation\/typeutils\/casekindprovider\/kind-swift.property"
+}
+}
+}
