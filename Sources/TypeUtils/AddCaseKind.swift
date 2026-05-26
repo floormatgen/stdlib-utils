@@ -10,9 +10,9 @@
 /// ```swift
 /// @AddCaseKind
 /// enum Bar {
-///   case .foo
-///   case .bar(Int)
-///   case .baz(Int, Int)
+///   case foo
+///   case bar(Int)
+///   case baz(Int, Int)
 /// }
 ///
 /// let bar = Bar.bar
@@ -24,9 +24,9 @@
 /// ```swift
 /// @AddCaseKind
 /// enum Foo {
-///   case .first
-///   case .second(Int)
-///   case .third(Int, String)
+///   case first
+///   case second(Int)
+///   case third(Int, String)
 /// }
 ///
 /// let foo1 = Foo.second(42)
