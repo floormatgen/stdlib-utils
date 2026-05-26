@@ -3,6 +3,7 @@
 
 import CompilerPluginSupport
 import PackageDescription
+import Foundation
 
 let package = Package(
   name: "swift-stdlib-utils",
@@ -144,8 +145,12 @@ for target in package.targets {
 
 // Check if we are not on macOS
 // macOS has access to xcodebuild, which causes linker failures
-#if !os(macOS)
-for target in package.targets where target.type == .macro {
-  target.exclude = ["./MacroUtils"]
+
+// https://forums.swift.org/t/detecting-xpm-from-package-swift/55297/3
+let runningFromXcode = ProcessInfo.processInfo.environment["__CFBundleIdentifier"] == "com.apple.dt.Xcode"
+
+if !runningFromXcode {
+  for target in package.targets where target.type == .macro {
+    target.exclude = ["./MacroUtils"]
+  }
 }
-#endif // !os(macOS)
