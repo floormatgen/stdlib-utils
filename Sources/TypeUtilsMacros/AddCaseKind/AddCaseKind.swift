@@ -3,6 +3,7 @@ import SwiftSyntaxMacros
 import SwiftDiagnostics
 import SwiftSyntaxBuilder
 import SwiftBasicFormat
+import MacroUtils
 
 public struct AddCaseKind: MemberMacro {
   

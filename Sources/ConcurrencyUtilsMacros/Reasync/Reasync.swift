@@ -1,7 +1,7 @@
 import SwiftSyntax
 import SwiftSyntaxMacros
 import SwiftDiagnostics
-//import MacroUtils
+import MacroUtils
 
 public struct Reasync: PeerMacro {
   static let name = "CustomReasync"

@@ -136,3 +136,16 @@ let swiftSettings: [SwiftSetting] = [
 for target in package.targets {
   target.swiftSettings = (target.swiftSettings ?? []) + swiftSettings
 }
+
+// FIXME: Known issue with macro dependencies, see
+// https://forums.swift.org/t/swift-macro-linker-failures-on-linux-and-when-building-with-xcodebuild/84306
+//
+// Currently using symlinks to prevent code duplication
+
+// Check if we are not on macOS
+// macOS has access to xcodebuild, which causes linker failures
+#if !os(macOS)
+for target in package.targets where target.type == .macro {
+  target.exclude = ["./MacroUtils"]
+}
+#endif // !os(macOS)
