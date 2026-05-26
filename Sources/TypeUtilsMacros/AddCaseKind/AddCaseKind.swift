@@ -90,7 +90,7 @@ public struct AddCaseKind: MemberMacro {
       bindings: [
         PatternBindingSyntax(
           pattern: IdentifierPatternSyntax(
-            identifier: .identifier(kindPropertyName),
+            identifier: .identifier(kindPropertyName)
           ),
           typeAnnotation: TypeAnnotationSyntax(
             type: IdentifierTypeSyntax(
