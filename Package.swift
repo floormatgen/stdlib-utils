@@ -28,7 +28,7 @@ let package = Package(
     
     // MARK: Types
     .target(
-      name: "TypeUtils",
+      name: "TypeUtils"
     ),
     .testTarget(
       name: "TypeUtilsTests",

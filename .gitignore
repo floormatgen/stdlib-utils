@@ -8,5 +8,11 @@ DerivedData/
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 .netrc
 
+# Code Coverage
+default.profraw
+
 # Swiftly
 .swift-version
+
+# VSCode
+.vscode/
