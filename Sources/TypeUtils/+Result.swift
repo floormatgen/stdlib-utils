@@ -1,3 +1,5 @@
+import Compatability
+
 extension Result {
 
   /// Gets the underlying value of the `Result`
@@ -26,7 +28,7 @@ extension Result {
 
 }
 
-extension Result where Success: ~Copyable & ~Escapable {
+extension Result where Success: ~Copyable & _NonEscapable {
 
   /// Gets the underlying error of the `Result`
   ///
