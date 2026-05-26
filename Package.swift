@@ -28,12 +28,32 @@ let package = Package(
     
     // MARK: Types
     .target(
-      name: "TypeUtils"
+      name: "TypeUtils",
+      dependencies: [
+        .target(name: "TypeUtilsMacros")
+      ]
+    ),
+    .macro(
+      name: "TypeUtilsMacros",
+      dependencies: [
+        .target(name: "MacroUtils"),
+        .product(name: "SwiftSyntax",         package: "swift-syntax"),
+        .product(name: "SwiftSyntaxMacros",   package: "swift-syntax"),
+        .product(name: "SwiftCompilerPlugin", package: "swift-syntax"),
+        .product(name: "SwiftDiagnostics",    package: "swift-syntax"),
+      ]
     ),
     .testTarget(
       name: "TypeUtilsTests",
       dependencies: [
         .target(name: "TypeUtils"),
+      ]
+    ),
+    .testTarget(
+      name: "TypeUtilsMacrosTests",
+      dependencies: [
+        .target(name: "TypeUtilsMacros"),
+        .product(name: "SwiftSyntaxMacrosTestSupport", package: "swift-syntax"),
       ]
     ),
     
@@ -110,6 +130,7 @@ let swiftSettings: [SwiftSetting] = [
   // .enableUpcomingFeature("NonisolatedNonsendingByDefault"),
   .enableUpcomingFeature("ExistentialAny"),
   .enableUpcomingFeature("MemberImportVisibility"),
+  .enableUpcomingFeature("ImmutableWeakCaptures"),
 ]
 
 for target in package.targets {

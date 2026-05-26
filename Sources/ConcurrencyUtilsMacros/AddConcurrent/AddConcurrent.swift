@@ -95,7 +95,7 @@ public struct AddConcurrent: PeerMacro {
     
     // Add @concurrent if it is supported
     if CompilerSupport.concurrentAttribute {
-      let concurrent = Common.concurrentAttribute
+      let concurrent = Common.Attributes.concurrent
       newDecl.attributes.append(.attribute(concurrent))
     }
     
