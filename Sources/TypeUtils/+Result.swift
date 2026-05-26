@@ -12,7 +12,7 @@ extension Result {
   /// }
   /// ```
   ///
-  /// - Returns
+  /// - Returns:
   ///   The value of the `Result` represents a success, otherwise `nil`
   @inlinable
   public var value: Success? {

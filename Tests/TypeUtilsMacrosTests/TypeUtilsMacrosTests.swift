@@ -6,13 +6,13 @@ import TypeUtilsMacros
 final class AddCaseKindsTests: XCTestCase {
   
   let testMacros: [String : any Macro.Type] = [
-    "AddCaseKinds": AddCaseKinds.self
+    "AddCaseKind": AddCaseKind.self
   ]
   
   func test_basicEnum() {
     assertMacroExpansion(
       """
-      @AddCaseKinds
+      @AddCaseKind
       enum Foo {
           case first
           case second
@@ -42,6 +42,9 @@ final class AddCaseKindsTests: XCTestCase {
               }
           }
       }
+      
+      extension Foo: TypeUtils.CaseKindProvider {
+      }
       """,
       macros: testMacros
     )
@@ -50,7 +53,7 @@ final class AddCaseKindsTests: XCTestCase {
   func test_emptyEnum() {
     assertMacroExpansion(
       """
-      @AddCaseKinds
+      @AddCaseKind
       enum Foo {
       }
       """,
@@ -65,6 +68,9 @@ final class AddCaseKindsTests: XCTestCase {
               }
           }
       }
+
+      extension Foo: TypeUtils.CaseKindProvider {
+      }
       """,
       macros: testMacros
     )
@@ -73,7 +79,7 @@ final class AddCaseKindsTests: XCTestCase {
   func test_associatedValues() {
     assertMacroExpansion(
       """
-      @AddCaseKinds
+      @AddCaseKind
       enum Foo {
           case first
           case second(Int)
@@ -102,6 +108,9 @@ final class AddCaseKindsTests: XCTestCase {
                   return .third
               }
           }
+      }
+      
+      extension Foo: TypeUtils.CaseKindProvider {
       }
       """,
       macros: testMacros
@@ -111,7 +120,7 @@ final class AddCaseKindsTests: XCTestCase {
   func test_enumShorthand() {
     assertMacroExpansion(
       """
-      @AddCaseKinds
+      @AddCaseKind
       enum Foo {
           case first, second(Int)
           case third(Int, String)
@@ -139,6 +148,9 @@ final class AddCaseKindsTests: XCTestCase {
               }
           }
       }
+
+      extension Foo: TypeUtils.CaseKindProvider {
+      }
       """,
       macros: testMacros
     )
@@ -147,7 +159,7 @@ final class AddCaseKindsTests: XCTestCase {
   func test_publicEnum() {
     assertMacroExpansion(
       """
-      @AddCaseKinds
+      @AddCaseKind
       public enum Foo {
           case first, second(Int)
           case third(Int, String)
@@ -175,6 +187,9 @@ final class AddCaseKindsTests: XCTestCase {
               }
           }
       }
+      
+      extension Foo: TypeUtils.CaseKindProvider {
+      }
       """,
       macros: testMacros
     )
@@ -183,7 +198,7 @@ final class AddCaseKindsTests: XCTestCase {
   func test_privateNotAppliedToKind() {
     assertMacroExpansion(
       """
-      @AddCaseKinds
+      @AddCaseKind
       private enum Foo {
           case foo, bar, baz
       }
@@ -209,6 +224,9 @@ final class AddCaseKindsTests: XCTestCase {
               }
           }
       }
+      
+      extension Foo: TypeUtils.CaseKindProvider {
+      }
       """,
       macros: testMacros
     )
@@ -217,7 +235,7 @@ final class AddCaseKindsTests: XCTestCase {
   func test_modifiersCopiedFromParent() {
     assertMacroExpansion(
       """
-      @AddCaseKinds
+      @AddCaseKind
       nonisolated package enum Foo {
           case first, second(Int)
           case third(Int, String)
@@ -245,6 +263,9 @@ final class AddCaseKindsTests: XCTestCase {
               }
           }
       }
+      
+      extension Foo: TypeUtils.CaseKindProvider {
+      }
       """,
       macros: testMacros
     )
@@ -254,7 +275,7 @@ final class AddCaseKindsTests: XCTestCase {
     assertMacroExpansion(
       """
       @nonexhaustive
-      @AddCaseKinds
+      @AddCaseKind
       internal enum Foo {
           case first, second(Int)
           case third(Int, String)
@@ -284,6 +305,9 @@ final class AddCaseKindsTests: XCTestCase {
               }
           }
       }
+      
+      extension Foo: TypeUtils.CaseKindProvider {
+      }
       """,
       macros: testMacros
     )
@@ -292,7 +316,7 @@ final class AddCaseKindsTests: XCTestCase {
   func test_indirectRemovedFromKind() {
     assertMacroExpansion(
       """
-      @AddCaseKinds
+      @AddCaseKind
       fileprivate indirect enum Foo {
           case first, second(Int)
           case third(Int, String)
@@ -319,6 +343,9 @@ final class AddCaseKindsTests: XCTestCase {
                   return .third
               }
           }
+      }
+      
+      extension Foo: TypeUtils.CaseKindProvider {
       }
       """,
       macros: testMacros

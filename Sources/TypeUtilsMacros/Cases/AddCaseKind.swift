@@ -4,9 +4,10 @@ import SwiftDiagnostics
 import SwiftSyntaxBuilder
 import SwiftBasicFormat
 
-public struct AddCaseKinds: MemberMacro {
+public struct AddCaseKind: MemberMacro {
   
-  static let macroName = "AddCaseKinds"
+  static let macroName    = "AddCaseKind"
+  static let protocolName = "CaseKindProvider"
   
   public static var formatMode: FormatMode {
     .auto
@@ -126,6 +127,44 @@ public struct AddCaseKinds: MemberMacro {
     return [
       DeclSyntax(kindEnumDecl),
       DeclSyntax(kindProperty),
+    ]
+  }
+  
+}
+
+// MARK: - Extension
+
+extension AddCaseKind: ExtensionMacro {
+  
+  public static func expansion(
+    of node: AttributeSyntax,
+    attachedTo declaration: some DeclGroupSyntax,
+    providingExtensionsOf type: some TypeSyntaxProtocol,
+    conformingTo protocols: [TypeSyntax],
+    in context: some MacroExpansionContext
+  ) throws -> [ExtensionDeclSyntax] {
+    
+    let caseKindProviderType = MemberTypeSyntax(
+      baseType: IdentifierTypeSyntax(
+        name: .identifier(Plugin.moduleName)
+      ),
+      name: .identifier(protocolName)
+    )
+    
+    let caseKindProviderExtension = ExtensionDeclSyntax(
+      extendedType: TypeSyntax(type),
+      inheritanceClause: InheritanceClauseSyntax(
+        inheritedTypes: [
+          InheritedTypeSyntax(type: caseKindProviderType)
+        ]
+      ),
+      memberBlock: MemberBlockSyntax(
+        members: []
+      )
+    )
+    
+    return [
+      caseKindProviderExtension
     ]
   }
   
