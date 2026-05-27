@@ -71,9 +71,11 @@ extension ProtocolDeclSyntax {
     }
     
     let swiftModuleName = "Swift"
+    #if canImport(SwiftSyntax630)
     func isSwiftModuleSelector(_ moduleSelector: ModuleSelectorSyntax) -> Bool {
       moduleSelector.moduleName.text == swiftModuleName
     }
+    #endif // canImport(SwiftSyntax630) 
     
     // Check each constraint
     for constraint in constraints {
@@ -88,9 +90,11 @@ extension ProtocolDeclSyntax {
         }
         
         // Make sure the module selector refers to Swift, if present
+        #if canImport(SwiftSyntax630)
         if let moduleSelector = memberType.moduleSelector {
           guard isSwiftModuleSelector(moduleSelector) else { continue }
         }
+        #endif // canImport(SwiftSyntax630)
         
         // Update the constraint if required
         if let typeConstraint = TypeConstraint(from: memberType.name) {
@@ -100,9 +104,11 @@ extension ProtocolDeclSyntax {
       } else if let identifierType = constraint.type.as(IdentifierTypeSyntax.self) {
         
         // Make sure the module selector refers to Swift
+        #if canImport(SwiftSyntax630)
         if let moduleSelector = identifierType.moduleSelector {
           guard isSwiftModuleSelector(moduleSelector) else { continue }
         }
+        #endif // canImport(SwiftSyntax630)
         
         if let typeConstraint = TypeConstraint(from: identifierType.name) {
           strictest.formIntersection(typeConstraint)

@@ -45,9 +45,11 @@ internal final class MacroExcludingVisitor: SyntaxVisitor {
     guard node.name.text == macroToken.text else { return .skipChildren }
     
     // If a module selector is used, make sure it is the same module
+    #if canImport(SwiftSyntax630)
     if let module = node.moduleSelector {
       guard module.moduleName.text == moduleToken.text else { return .skipChildren }
     }
+    #endif // canImport(SwiftSyntax630)
     
     // Mark for removal
     shouldRemove = true
