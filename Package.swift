@@ -5,6 +5,38 @@ import CompilerPluginSupport
 import PackageDescription
 import Foundation
 
+// Get access to the environment
+let environment = ProcessInfo.processInfo.environment
+
+// MARK: - SwiftSyntax dependency
+
+let swiftSyntaxCustomVersionEnvKey = "SWIFT_STDLIB_UTILS_SWIFTSYNTAX_VERSION"
+let swiftSyntaxPath = "https://github.com/swiftlang/swift-syntax.git"
+let swiftSyntaxDependency: Package.Dependency
+if let customVersionString = environment[swiftSyntaxCustomVersionEnvKey] {
+
+  // Make sure the version specified is valid
+  let customVersion: Version
+  if let majorVersion = Int(customVersionString) {
+    customVersion = Version(majorVersion, 0, 0)
+  } else if let version = Version(customVersionString) {
+    customVersion = version
+  } else {
+    fatalError("\(swiftSyntaxCustomVersionEnvKey) contains invalid version")
+  }
+    
+  // Make sure the version is supported
+  guard (600...603).contains(customVersion.major) else {
+    fatalError("\(swiftSyntaxCustomVersionEnvKey) has unsupported version \(customVersion)")
+  }
+
+  swiftSyntaxDependency = .package(url: swiftSyntaxPath, from: customVersion)
+} else {
+  swiftSyntaxDependency = .package(url: swiftSyntaxPath, "600.0.0"..<"604.0.0")
+}
+
+// MARK: - Package
+
 let package = Package(
   name: "swift-stdlib-utils",
   platforms: [
@@ -22,7 +54,7 @@ let package = Package(
     .library(name: "StdlibUtils",       targets: ["TypeUtils", "ConcurrencyUtils", "ObservationUtils"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/swiftlang/swift-syntax.git",  from: "600.0.0"),
+    swiftSyntaxDependency,
     .package(url: "https://github.com/swiftlang/swift-docc-plugin", from: "1.1.0"),
   ],
   targets: [
@@ -147,7 +179,7 @@ for target in package.targets {
 // macOS has access to xcodebuild, which causes linker failures
 
 // https://forums.swift.org/t/detecting-xpm-from-package-swift/55297/3
-let runningFromXcode = ProcessInfo.processInfo.environment["__CFBundleIdentifier"] == "com.apple.dt.Xcode"
+let runningFromXcode = environment["__CFBundleIdentifier"] == "com.apple.dt.Xcode"
 
 if !runningFromXcode {
   for target in package.targets where target.type == .macro {

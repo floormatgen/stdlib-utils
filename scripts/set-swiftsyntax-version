@@ -1,0 +1,18 @@
+#! /bin/bash
+
+key_name="SWIFT_STDLIB_UTILS_SWIFTSYNTAX_VERSION"
+
+cd "$(dirname "$0")"
+
+# Check if a version is provided
+if [ -n "$1" ]; then
+    export ${key_name}="$1"
+    echo "SwiftSyntax version set to '$1'"
+else
+    # Otherwise, default to latest supported
+    unset ${key_name}
+    echo "SwiftSyntax version reset"
+fi
+
+# Resolve package dependencies
+swift package resolve
