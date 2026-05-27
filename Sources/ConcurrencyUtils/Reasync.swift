@@ -38,7 +38,7 @@ public macro CustomReasync(named name: StaticString? = nil) = #externalMacro(
 ///
 /// nonisolated(nonsending)
 /// func withFoo<E: Error, R: ~Copyable>(
-///   operation: (Foo) async throws(E) -> R
+///   operation: nonisolated(nonsending) (Foo) async throws(E) -> R
 /// ) async throws(E) -> R {
 ///   return try await operation(foo)
 /// }
