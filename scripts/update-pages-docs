@@ -10,7 +10,7 @@ absolute-path() {
 
 PACKAGE_ROOT="$(dirname $(dirname $(absolute-path $0)))"
 PACKAGE_TARGETS=("ConcurrencyUtils" "ObservationUtils" "TypeUtils")
-HOSTING_BASE_PATH="stdlib-utils"
+HOSTING_BASE_PATH="swift-stdlib-utils"
 OUTPUT_PATH="${PACKAGE_ROOT}/gh-pages/docs"
 
 # Move to the package root
