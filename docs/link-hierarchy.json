@@ -1,609 +1,127 @@
 {
-  "bundleID" : "ObservationUtils",
+  "bundleID" : "ConcurrencyUtils",
   "nonSymbolPaths" : {
-    "2" : "\/tutorials\/ObservationUtils",
-    "23" : "\/tutorials",
-    "3" : "\/documentation\/ObservationUtils\/PropertyChanges\/AsyncSequence-Implementations",
-    "9" : "\/documentation\/ObservationUtils\/PropertyChanges\/AsyncIterator\/AsyncIteratorProtocol-Implementations"
+    "1" : "\/tutorials\/ConcurrencyUtils",
+    "9" : "\/tutorials"
   },
   "pathHierarchy" : {
-    "articlesContainer" : 14,
+    "articlesContainer" : 3,
     "modules" : [
-      14
+      3
     ],
     "nodes" : [
       {
-        "name" : "next()",
+        "name" : "AddConcurrent()",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:16ObservationUtils15PropertyChangesC13AsyncIteratorV4nextq_SgyYaF"
+          "precise" : "s:16ConcurrencyUtils13AddConcurrentyycfm"
         }
       },
       {
-        "disfavored" : 3,
-        "name" : "min()",
+        "name" : "ConcurrencyUtils"
+      },
+      {
+        "name" : "run(operation:)",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencySL7ElementRpzrlE3minACSgyYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "name" : "ObservationUtils"
-      },
-      {
-        "name" : "AsyncSequence-Implementations"
-      },
-      {
-        "disfavored" : 3,
-        "name" : "contains(_:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencySQ7ElementRpzrlE8containsySbACYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "disfavored" : 3,
-        "name" : "prefix(while:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencyE6prefix5whileAA24AsyncPrefixWhileSequenceVyxGSb7ElementQzYac_tKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+          "precise" : "s:ScA16ConcurrencyUtilsE3run9operationqd__qd__xYiYaYbqd_0_YKYTXE_tYaqd_0_YKs5ErrorRd_0_Ri_d__r0_lF"
         }
       },
       {
         "children" : [
           {
-            "hash" : "10dvo",
+            "hash" : "2pwpr",
+            "kind" : "macro",
+            "nodeID" : 0
+          },
+          {
+            "hash" : "4e39d",
+            "kind" : "macro",
+            "nodeID" : 4
+          },
+          {
+            "hash" : "8v731",
+            "kind" : "macro",
+            "nodeID" : 8
+          },
+          {
+            "hash" : "380wh",
+            "kind" : "macro",
+            "nodeID" : 5
+          },
+          {
+            "hash" : "4oyy7",
+            "kind" : "module.extension",
+            "nodeID" : 7
+          }
+        ],
+        "name" : "ConcurrencyUtils",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "ConcurrencyUtils"
+        }
+      },
+      {
+        "name" : "Reasync()",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:16ConcurrencyUtils7Reasyncyycfm"
+        }
+      },
+      {
+        "name" : "CustomReasync(named:)",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:16ConcurrencyUtils13CustomReasync5namedys12StaticStringVSg_tcfm"
+        }
+      },
+      {
+        "children" : [
+          {
+            "hash" : "44kwq",
             "kind" : "method",
-            "nodeID" : 15,
+            "nodeID" : 2,
             "parameterTypes" : [
-              "(Self.Element,Self.Element)->Bool"
+              "(Self)(E)->R"
             ],
             "returnTypes" : [
-              "Self.Element?"
-            ]
-          },
-          {
-            "kind" : "taskGroup",
-            "nodeID" : 3
-          },
-          {
-            "hash" : "p2jn",
-            "kind" : "method",
-            "nodeID" : 24,
-            "parameterTypes" : [
-              "(Self.Element)->SegmentOfResult"
-            ],
-            "returnTypes" : [
-              "AsyncFlatMapSequence<Self,SegmentOfResult>"
-            ]
-          },
-          {
-            "hash" : "9c0em",
-            "kind" : "method",
-            "nodeID" : 19,
-            "parameterTypes" : [
-              "(Self.Element)->SegmentOfResult"
-            ],
-            "returnTypes" : [
-              "AsyncFlatMapSequence<Self,SegmentOfResult>"
-            ]
-          },
-          {
-            "hash" : "2cswo",
-            "kind" : "method",
-            "nodeID" : 25,
-            "parameterTypes" : [
-              "(Self.Element)->SegmentOfResult"
-            ],
-            "returnTypes" : [
-              "AsyncFlatMapSequence<Self,SegmentOfResult>"
-            ]
-          },
-          {
-            "hash" : "7g7sn",
-            "kind" : "method",
-            "nodeID" : 12,
-            "parameterTypes" : [
-              "(Self.Element)->SegmentOfResult"
-            ],
-            "returnTypes" : [
-              "AsyncThrowingFlatMapSequence<Self,SegmentOfResult>"
-            ]
-          },
-          {
-            "hash" : "394yr",
-            "kind" : "method",
-            "nodeID" : 13,
-            "parameterTypes" : [
-              "(Self.Element)->Bool"
-            ],
-            "returnTypes" : [
-              "AsyncFilterSequence<Self>"
-            ]
-          },
-          {
-            "hash" : "4i9kz",
-            "kind" : "method",
-            "nodeID" : 7,
-            "parameterTypes" : [
-              "Result",
-              "(Result,Self.Element)->Result"
-            ],
-            "returnTypes" : [
-              "Result"
-            ]
-          },
-          {
-            "hash" : "38b90",
-            "kind" : "method",
-            "nodeID" : 5,
-            "parameterTypes" : [
-              "(Self.Element)->Bool"
-            ],
-            "returnTypes" : [
-              "AsyncPrefixWhileSequence<Self>"
-            ]
-          },
-          {
-            "hash" : "8aqb",
-            "kind" : "method",
-            "nodeID" : 31,
-            "parameterTypes" : [
-              "Int"
-            ],
-            "returnTypes" : [
-              "AsyncPrefixSequence<Self>"
-            ]
-          },
-          {
-            "hash" : "1kebh",
-            "kind" : "struct",
-            "nodeID" : 28
-          },
-          {
-            "hash" : "6p5zg",
-            "kind" : "method",
-            "nodeID" : 11,
-            "parameterTypes" : [
-              "(Self.Element)->Bool"
-            ],
-            "returnTypes" : [
-              "Self.Element?"
-            ]
-          },
-          {
-            "hash" : "5v2gb",
-            "kind" : "method",
-            "nodeID" : 10,
-            "parameterTypes" : [
-              "(Self.Element)->Bool"
-            ],
-            "returnTypes" : [
-              "Bool"
-            ]
-          },
-          {
-            "hash" : "w8fv",
-            "kind" : "method",
-            "nodeID" : 20,
-            "parameterTypes" : [
-              "(Self.Element)->ElementOfResult?"
-            ],
-            "returnTypes" : [
-              "AsyncCompactMapSequence<Self,ElementOfResult>"
-            ]
-          },
-          {
-            "hash" : "9vzg2",
-            "kind" : "method",
-            "nodeID" : 16,
-            "parameterTypes" : [
-              "(Self.Element)->ElementOfResult?"
-            ],
-            "returnTypes" : [
-              "AsyncThrowingCompactMapSequence<Self,ElementOfResult>"
-            ]
-          },
-          {
-            "hash" : "7qov6",
-            "kind" : "method",
-            "nodeID" : 33,
-            "parameterTypes" : [
-              "(Self.Element,Self.Element)->Bool"
-            ],
-            "returnTypes" : [
-              "Self.Element?"
-            ]
-          },
-          {
-            "hash" : "6f0s1",
-            "kind" : "method",
-            "nodeID" : 4,
-            "parameterTypes" : [
-              "Self.Element"
-            ],
-            "returnTypes" : [
-              "Bool"
-            ]
-          },
-          {
-            "hash" : "21qss",
-            "kind" : "method",
-            "nodeID" : 1,
-            "parameterTypes" : [
-
-            ],
-            "returnTypes" : [
-              "Self.Element?"
-            ]
-          },
-          {
-            "hash" : "2gczb",
-            "kind" : "method",
-            "nodeID" : 29,
-            "parameterTypes" : [
-              "(Self.Element)->Bool"
-            ],
-            "returnTypes" : [
-              "Bool"
-            ]
-          },
-          {
-            "hash" : "6mixn",
-            "kind" : "method",
-            "nodeID" : 30,
-            "parameterTypes" : [
-
-            ],
-            "returnTypes" : [
-              "Self.Element?"
-            ]
-          },
-          {
-            "hash" : "76h7c",
-            "kind" : "method",
-            "nodeID" : 26,
-            "parameterTypes" : [
-              "Int"
-            ],
-            "returnTypes" : [
-              "AsyncDropFirstSequence<Self>"
-            ]
-          },
-          {
-            "hash" : "4ghyr",
-            "kind" : "method",
-            "nodeID" : 32,
-            "parameterTypes" : [
-              "(Self.Element)->Transformed"
-            ],
-            "returnTypes" : [
-              "AsyncMapSequence<Self,Transformed>"
-            ]
-          },
-          {
-            "hash" : "9liij",
-            "kind" : "method",
-            "nodeID" : 17,
-            "parameterTypes" : [
-              "(Self.Element)->Transformed"
-            ],
-            "returnTypes" : [
-              "AsyncThrowingMapSequence<Self,Transformed>"
-            ]
-          },
-          {
-            "hash" : "7b6j8",
-            "kind" : "method",
-            "nodeID" : 21,
-            "parameterTypes" : [
-              "Result",
-              "(Result,Self.Element)->Void"
-            ],
-            "returnTypes" : [
-              "Result"
-            ]
-          },
-          {
-            "hash" : "56w3u",
-            "kind" : "init",
-            "nodeID" : 34,
-            "parameterTypes" : [
-              "T",
-              "KeyPath<T,U>"
-            ],
-            "returnTypes" : [
-              ""
-            ]
-          },
-          {
-            "hash" : "82pg",
-            "kind" : "method",
-            "nodeID" : 22,
-            "parameterTypes" : [
-
-            ],
-            "returnTypes" : [
-              "PropertyChanges<T,U>.AsyncIterator"
-            ]
-          },
-          {
-            "hash" : "84amm",
-            "kind" : "method",
-            "nodeID" : 18,
-            "parameterTypes" : [
-              "(Self.Element)->Bool"
-            ],
-            "returnTypes" : [
-              "AsyncDropWhileSequence<Self>"
+              "R"
             ]
           }
         ],
-        "name" : "PropertyChanges",
+        "name" : "Actor",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "disfavored" : 3,
-        "name" : "reduce(_:_:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencyE6reduceyqd__qd___qd__qd___7ElementQztYaKXEtYaKlF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "disfavored" : 3,
-        "name" : "next()",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:ScI12_ConcurrencyE4next7ElementQzSgyYa7FailureQzYKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC13AsyncIteratorV"
-        }
-      },
-      {
-        "name" : "AsyncIteratorProtocol-Implementations"
-      },
-      {
-        "disfavored" : 3,
-        "name" : "contains(where:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencyE8contains5whereS2b7ElementQzYaKXE_tYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "disfavored" : 3,
-        "name" : "first(where:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencyE5first5where7ElementQzSgSbAEYaKXE_tYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "disfavored" : 3,
-        "name" : "flatMap(_:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencyE7flatMapyAA017AsyncThrowingFlatC8SequenceVyxqd__Gqd__7ElementQzYaKcSciRd__lF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "disfavored" : 3,
-        "name" : "filter(_:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencyE6filteryAA19AsyncFilterSequenceVyxGSb7ElementQzYacF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+          "precise" : "s:e:s:ScA16ConcurrencyUtilsE3run9operationqd__qd__xYiYaYbqd_0_YKYTXE_tYaqd_0_YKs5ErrorRd_0_Ri_d__r0_lF"
         }
       },
       {
         "children" : [
           {
-            "hash" : "54t8v",
-            "kind" : "class",
+            "hash" : "7mq3m",
+            "kind" : "protocol.extension",
             "nodeID" : 6
           }
         ],
-        "name" : "ObservationUtils",
+        "name" : "_Concurrency",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "ObservationUtils"
+          "precise" : "s:m:s:e:s:ScA16ConcurrencyUtilsE3run9operationqd__qd__xYiYaYbqd_0_YKYTXE_tYaqd_0_YKs5ErrorRd_0_Ri_d__r0_lF"
         }
       },
       {
-        "disfavored" : 3,
-        "name" : "max(by:)",
+        "name" : "CustomAddConcurrent(named:)",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencyE3max2by7ElementQzSgSbAE_AEtYaKXE_tYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "disfavored" : 3,
-        "name" : "compactMap(_:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencyE10compactMapyAA020AsyncThrowingCompactC8SequenceVyxqd__Gqd__Sg7ElementQzYaKclF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "disfavored" : 3,
-        "name" : "map(_:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencyE3mapyAA24AsyncThrowingMapSequenceVyxqd__Gqd__7ElementQzYaKclF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "disfavored" : 3,
-        "name" : "drop(while:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencyE4drop5whileAA22AsyncDropWhileSequenceVyxGSb7ElementQzYac_tF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "disfavored" : 3,
-        "name" : "flatMap(_:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencyE7flatMapyAA09AsyncFlatC8SequenceVyxqd__Gqd__7ElementQzYacSciRd__s5NeverO7FailureRtd__lF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "disfavored" : 3,
-        "name" : "compactMap(_:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencyE10compactMapyAA012AsyncCompactC8SequenceVyxqd__Gqd__Sg7ElementQzYaclF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "disfavored" : 3,
-        "name" : "reduce(into:_:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencyE6reduce4into_qd__qd__n_yqd__z_7ElementQztYaKXEtYaKlF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "name" : "makeAsyncIterator()",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:16ObservationUtils15PropertyChangesC17makeAsyncIteratorAC0fG0Vyxq__GyF"
+          "precise" : "s:16ConcurrencyUtils19CustomAddConcurrent5namedys12StaticStringVSg_tcfm"
         }
       },
       {
         "name" : "tutorials"
-      },
-      {
-        "disfavored" : 3,
-        "name" : "flatMap(_:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencyE7flatMapyAA09AsyncFlatC8SequenceVyxqd__Gqd__7ElementQzYacSciRd__7FailureQyd__AHRtzlF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "disfavored" : 3,
-        "name" : "flatMap(_:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencyE7flatMapyAA09AsyncFlatC8SequenceVyxqd__Gqd__7ElementQzYacSciRd__s5NeverO7FailureRtzAiJRtd__lF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "disfavored" : 3,
-        "name" : "dropFirst(_:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencyE9dropFirstyAA09AsyncDropC8SequenceVyxGSiF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "disfavored" : 3,
-        "name" : "next(isolation:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:ScI12_ConcurrencyE4next9isolation7ElementQzSgScA_pSgYi_tYa7FailureQzYKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC13AsyncIteratorV"
-        }
-      },
-      {
-        "children" : [
-          {
-            "hash" : "8c1yh",
-            "kind" : "method",
-            "nodeID" : 8,
-            "parameterTypes" : [
-
-            ],
-            "returnTypes" : [
-              "Self.Element?"
-            ]
-          },
-          {
-            "hash" : "9dgbe",
-            "kind" : "method",
-            "nodeID" : 0,
-            "parameterTypes" : [
-
-            ],
-            "returnTypes" : [
-              "U?"
-            ]
-          },
-          {
-            "kind" : "taskGroup",
-            "nodeID" : 9
-          },
-          {
-            "hash" : "7jn5u",
-            "kind" : "method",
-            "nodeID" : 27,
-            "parameterTypes" : [
-              "(Actor)?"
-            ],
-            "returnTypes" : [
-              "Self.Element?"
-            ]
-          }
-        ],
-        "name" : "AsyncIterator",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:16ObservationUtils15PropertyChangesC13AsyncIteratorV"
-        }
-      },
-      {
-        "disfavored" : 3,
-        "name" : "allSatisfy(_:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencyE10allSatisfyyS2b7ElementQzYaKXEYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "disfavored" : 3,
-        "name" : "max()",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencySL7ElementRpzrlE3maxACSgyYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "disfavored" : 3,
-        "name" : "prefix(_:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencyE6prefixyAA19AsyncPrefixSequenceVyxGSiF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "disfavored" : 3,
-        "name" : "map(_:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencyE3mapyAA16AsyncMapSequenceVyxqd__Gqd__7ElementQzYaclF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "disfavored" : 3,
-        "name" : "min(by:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:Sci12_ConcurrencyE3min2by7ElementQzSgSbAE_AEtYaKXE_tYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
-        }
-      },
-      {
-        "name" : "init(observing:on:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:16ObservationUtils15PropertyChangesC9observing2onACyxq_Gx_s7KeyPathCyxq_Gtcfc"
-        }
       }
     ],
-    "tutorialContainer" : 2,
-    "tutorialOverviewContainer" : 23
+    "tutorialContainer" : 1,
+    "tutorialOverviewContainer" : 9
   },
   "version" : {
     "major" : 0,
