@@ -1,4 +1,4 @@
-# stdlib-utils
+# swift-stdlib-utils
 
 A collection of utility functions, types and macros for the [**Swift Standard Library**](https://developer.apple.com/documentation/swift).
 
