@@ -1,179 +1,609 @@
 {
-  "bundleID" : "TypeUtils",
+  "bundleID" : "ObservationUtils",
   "nonSymbolPaths" : {
-    "0" : "\/documentation\/TypeUtils\/AddCaseKind()#Modifiers-and-Attributes",
-    "12" : "\/tutorials\/TypeUtils",
-    "9" : "\/tutorials"
+    "2" : "\/tutorials\/ObservationUtils",
+    "23" : "\/tutorials",
+    "3" : "\/documentation\/ObservationUtils\/PropertyChanges\/AsyncSequence-Implementations",
+    "9" : "\/documentation\/ObservationUtils\/PropertyChanges\/AsyncIterator\/AsyncIteratorProtocol-Implementations"
   },
   "pathHierarchy" : {
-    "articlesContainer" : 13,
+    "articlesContainer" : 14,
     "modules" : [
-      13
+      14
     ],
     "nodes" : [
       {
-        "name" : "Modifiers-and-Attributes"
+        "name" : "next()",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:16ObservationUtils15PropertyChangesC13AsyncIteratorV4nextq_SgyYaF"
+        }
+      },
+      {
+        "disfavored" : 3,
+        "name" : "min()",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:Sci12_ConcurrencySL7ElementRpzrlE3minACSgyYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+        }
+      },
+      {
+        "name" : "ObservationUtils"
+      },
+      {
+        "name" : "AsyncSequence-Implementations"
+      },
+      {
+        "disfavored" : 3,
+        "name" : "contains(_:)",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:Sci12_ConcurrencySQ7ElementRpzrlE8containsySbACYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+        }
+      },
+      {
+        "disfavored" : 3,
+        "name" : "prefix(while:)",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:Sci12_ConcurrencyE6prefix5whileAA24AsyncPrefixWhileSequenceVyxGSb7ElementQzYac_tKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+        }
       },
       {
         "children" : [
           {
-            "hash" : "1ku1r",
+            "hash" : "10dvo",
             "kind" : "method",
-            "nodeID" : 8,
+            "nodeID" : 15,
             "parameterTypes" : [
-              "()->String",
-              "StaticString",
-              "UInt"
+              "(Self.Element,Self.Element)->Bool"
             ],
             "returnTypes" : [
-              "Wrapped"
+              "Self.Element?"
+            ]
+          },
+          {
+            "kind" : "taskGroup",
+            "nodeID" : 3
+          },
+          {
+            "hash" : "p2jn",
+            "kind" : "method",
+            "nodeID" : 24,
+            "parameterTypes" : [
+              "(Self.Element)->SegmentOfResult"
+            ],
+            "returnTypes" : [
+              "AsyncFlatMapSequence<Self,SegmentOfResult>"
+            ]
+          },
+          {
+            "hash" : "9c0em",
+            "kind" : "method",
+            "nodeID" : 19,
+            "parameterTypes" : [
+              "(Self.Element)->SegmentOfResult"
+            ],
+            "returnTypes" : [
+              "AsyncFlatMapSequence<Self,SegmentOfResult>"
+            ]
+          },
+          {
+            "hash" : "2cswo",
+            "kind" : "method",
+            "nodeID" : 25,
+            "parameterTypes" : [
+              "(Self.Element)->SegmentOfResult"
+            ],
+            "returnTypes" : [
+              "AsyncFlatMapSequence<Self,SegmentOfResult>"
+            ]
+          },
+          {
+            "hash" : "7g7sn",
+            "kind" : "method",
+            "nodeID" : 12,
+            "parameterTypes" : [
+              "(Self.Element)->SegmentOfResult"
+            ],
+            "returnTypes" : [
+              "AsyncThrowingFlatMapSequence<Self,SegmentOfResult>"
+            ]
+          },
+          {
+            "hash" : "394yr",
+            "kind" : "method",
+            "nodeID" : 13,
+            "parameterTypes" : [
+              "(Self.Element)->Bool"
+            ],
+            "returnTypes" : [
+              "AsyncFilterSequence<Self>"
+            ]
+          },
+          {
+            "hash" : "4i9kz",
+            "kind" : "method",
+            "nodeID" : 7,
+            "parameterTypes" : [
+              "Result",
+              "(Result,Self.Element)->Result"
+            ],
+            "returnTypes" : [
+              "Result"
+            ]
+          },
+          {
+            "hash" : "38b90",
+            "kind" : "method",
+            "nodeID" : 5,
+            "parameterTypes" : [
+              "(Self.Element)->Bool"
+            ],
+            "returnTypes" : [
+              "AsyncPrefixWhileSequence<Self>"
+            ]
+          },
+          {
+            "hash" : "8aqb",
+            "kind" : "method",
+            "nodeID" : 31,
+            "parameterTypes" : [
+              "Int"
+            ],
+            "returnTypes" : [
+              "AsyncPrefixSequence<Self>"
+            ]
+          },
+          {
+            "hash" : "1kebh",
+            "kind" : "struct",
+            "nodeID" : 28
+          },
+          {
+            "hash" : "6p5zg",
+            "kind" : "method",
+            "nodeID" : 11,
+            "parameterTypes" : [
+              "(Self.Element)->Bool"
+            ],
+            "returnTypes" : [
+              "Self.Element?"
+            ]
+          },
+          {
+            "hash" : "5v2gb",
+            "kind" : "method",
+            "nodeID" : 10,
+            "parameterTypes" : [
+              "(Self.Element)->Bool"
+            ],
+            "returnTypes" : [
+              "Bool"
+            ]
+          },
+          {
+            "hash" : "w8fv",
+            "kind" : "method",
+            "nodeID" : 20,
+            "parameterTypes" : [
+              "(Self.Element)->ElementOfResult?"
+            ],
+            "returnTypes" : [
+              "AsyncCompactMapSequence<Self,ElementOfResult>"
+            ]
+          },
+          {
+            "hash" : "9vzg2",
+            "kind" : "method",
+            "nodeID" : 16,
+            "parameterTypes" : [
+              "(Self.Element)->ElementOfResult?"
+            ],
+            "returnTypes" : [
+              "AsyncThrowingCompactMapSequence<Self,ElementOfResult>"
+            ]
+          },
+          {
+            "hash" : "7qov6",
+            "kind" : "method",
+            "nodeID" : 33,
+            "parameterTypes" : [
+              "(Self.Element,Self.Element)->Bool"
+            ],
+            "returnTypes" : [
+              "Self.Element?"
+            ]
+          },
+          {
+            "hash" : "6f0s1",
+            "kind" : "method",
+            "nodeID" : 4,
+            "parameterTypes" : [
+              "Self.Element"
+            ],
+            "returnTypes" : [
+              "Bool"
+            ]
+          },
+          {
+            "hash" : "21qss",
+            "kind" : "method",
+            "nodeID" : 1,
+            "parameterTypes" : [
+
+            ],
+            "returnTypes" : [
+              "Self.Element?"
+            ]
+          },
+          {
+            "hash" : "2gczb",
+            "kind" : "method",
+            "nodeID" : 29,
+            "parameterTypes" : [
+              "(Self.Element)->Bool"
+            ],
+            "returnTypes" : [
+              "Bool"
+            ]
+          },
+          {
+            "hash" : "6mixn",
+            "kind" : "method",
+            "nodeID" : 30,
+            "parameterTypes" : [
+
+            ],
+            "returnTypes" : [
+              "Self.Element?"
+            ]
+          },
+          {
+            "hash" : "76h7c",
+            "kind" : "method",
+            "nodeID" : 26,
+            "parameterTypes" : [
+              "Int"
+            ],
+            "returnTypes" : [
+              "AsyncDropFirstSequence<Self>"
+            ]
+          },
+          {
+            "hash" : "4ghyr",
+            "kind" : "method",
+            "nodeID" : 32,
+            "parameterTypes" : [
+              "(Self.Element)->Transformed"
+            ],
+            "returnTypes" : [
+              "AsyncMapSequence<Self,Transformed>"
+            ]
+          },
+          {
+            "hash" : "9liij",
+            "kind" : "method",
+            "nodeID" : 17,
+            "parameterTypes" : [
+              "(Self.Element)->Transformed"
+            ],
+            "returnTypes" : [
+              "AsyncThrowingMapSequence<Self,Transformed>"
+            ]
+          },
+          {
+            "hash" : "7b6j8",
+            "kind" : "method",
+            "nodeID" : 21,
+            "parameterTypes" : [
+              "Result",
+              "(Result,Self.Element)->Void"
+            ],
+            "returnTypes" : [
+              "Result"
+            ]
+          },
+          {
+            "hash" : "56w3u",
+            "kind" : "init",
+            "nodeID" : 34,
+            "parameterTypes" : [
+              "T",
+              "KeyPath<T,U>"
+            ],
+            "returnTypes" : [
+              ""
+            ]
+          },
+          {
+            "hash" : "82pg",
+            "kind" : "method",
+            "nodeID" : 22,
+            "parameterTypes" : [
+
+            ],
+            "returnTypes" : [
+              "PropertyChanges<T,U>.AsyncIterator"
+            ]
+          },
+          {
+            "hash" : "84amm",
+            "kind" : "method",
+            "nodeID" : 18,
+            "parameterTypes" : [
+              "(Self.Element)->Bool"
+            ],
+            "returnTypes" : [
+              "AsyncDropWhileSequence<Self>"
             ]
           }
         ],
-        "name" : "Optional",
+        "name" : "PropertyChanges",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:e:s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
+          "precise" : "s:16ObservationUtils15PropertyChangesC"
         }
       },
       {
-        "name" : "Kind",
+        "disfavored" : 3,
+        "name" : "reduce(_:_:)",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:9TypeUtils16CaseKindProviderP0D0Qa"
+          "precise" : "s:Sci12_ConcurrencyE6reduceyqd__qd___qd__qd___7ElementQztYaKXEtYaKlF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+        }
+      },
+      {
+        "disfavored" : 3,
+        "name" : "next()",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:ScI12_ConcurrencyE4next7ElementQzSgyYa7FailureQzYKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC13AsyncIteratorV"
+        }
+      },
+      {
+        "name" : "AsyncIteratorProtocol-Implementations"
+      },
+      {
+        "disfavored" : 3,
+        "name" : "contains(where:)",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:Sci12_ConcurrencyE8contains5whereS2b7ElementQzYaKXE_tYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+        }
+      },
+      {
+        "disfavored" : 3,
+        "name" : "first(where:)",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:Sci12_ConcurrencyE5first5where7ElementQzSgSbAEYaKXE_tYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+        }
+      },
+      {
+        "disfavored" : 3,
+        "name" : "flatMap(_:)",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:Sci12_ConcurrencyE7flatMapyAA017AsyncThrowingFlatC8SequenceVyxqd__Gqd__7ElementQzYaKcSciRd__lF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+        }
+      },
+      {
+        "disfavored" : 3,
+        "name" : "filter(_:)",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:Sci12_ConcurrencyE6filteryAA19AsyncFilterSequenceVyxGSb7ElementQzYacF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
         }
       },
       {
         "children" : [
           {
-            "hash" : "96nib",
-            "kind" : "enum.extension",
-            "nodeID" : 1
-          },
-          {
-            "hash" : "9tyti",
-            "kind" : "enum.extension",
-            "nodeID" : 7
-          }
-        ],
-        "name" : "Swift",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:m:s:e:s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
-        }
-      },
-      {
-        "name" : "error",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:s6ResultO9TypeUtilsRi_zRi0_zrlE5errorq_Sgvp"
-        }
-      },
-      {
-        "children" : [
-          {
-            "hash" : "6075c",
-            "kind" : "associatedtype",
-            "nodeID" : 2
-          },
-          {
-            "hash" : "a3ht",
-            "kind" : "property",
+            "hash" : "54t8v",
+            "kind" : "class",
             "nodeID" : 6
           }
         ],
-        "name" : "CaseKindProvider",
+        "name" : "ObservationUtils",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:9TypeUtils16CaseKindProviderP"
+          "precise" : "ObservationUtils"
         }
       },
       {
-        "name" : "kind",
+        "disfavored" : 3,
+        "name" : "max(by:)",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:9TypeUtils16CaseKindProviderP4kind0D0Qzvp"
+          "precise" : "s:Sci12_ConcurrencyE3max2by7ElementQzSgSbAE_AEtYaKXE_tYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
         }
       },
       {
-        "children" : [
-          {
-            "hash" : "5uvul",
-            "kind" : "property",
-            "nodeID" : 11
-          },
-          {
-            "hash" : "2lpmc",
-            "kind" : "property",
-            "nodeID" : 4
-          }
-        ],
-        "name" : "Result",
+        "disfavored" : 3,
+        "name" : "compactMap(_:)",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:e:s:s6ResultO9TypeUtilsE5valuexSgvp"
+          "precise" : "s:Sci12_ConcurrencyE10compactMapyAA020AsyncThrowingCompactC8SequenceVyxqd__Gqd__Sg7ElementQzYaKclF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
         }
       },
       {
-        "name" : "forceUnwrap(_:file:line:)",
+        "disfavored" : 3,
+        "name" : "map(_:)",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
+          "precise" : "s:Sci12_ConcurrencyE3mapyAA24AsyncThrowingMapSequenceVyxqd__Gqd__7ElementQzYaKclF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+        }
+      },
+      {
+        "disfavored" : 3,
+        "name" : "drop(while:)",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:Sci12_ConcurrencyE4drop5whileAA22AsyncDropWhileSequenceVyxGSb7ElementQzYac_tF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+        }
+      },
+      {
+        "disfavored" : 3,
+        "name" : "flatMap(_:)",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:Sci12_ConcurrencyE7flatMapyAA09AsyncFlatC8SequenceVyxqd__Gqd__7ElementQzYacSciRd__s5NeverO7FailureRtd__lF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+        }
+      },
+      {
+        "disfavored" : 3,
+        "name" : "compactMap(_:)",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:Sci12_ConcurrencyE10compactMapyAA012AsyncCompactC8SequenceVyxqd__Gqd__Sg7ElementQzYaclF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+        }
+      },
+      {
+        "disfavored" : 3,
+        "name" : "reduce(into:_:)",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:Sci12_ConcurrencyE6reduce4into_qd__qd__n_yqd__z_7ElementQztYaKXEtYaKlF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+        }
+      },
+      {
+        "name" : "makeAsyncIterator()",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:16ObservationUtils15PropertyChangesC17makeAsyncIteratorAC0fG0Vyxq__GyF"
         }
       },
       {
         "name" : "tutorials"
       },
       {
-        "children" : [
-          {
-            "kind" : "anchor",
-            "nodeID" : 0
-          }
-        ],
-        "name" : "AddCaseKind()",
+        "disfavored" : 3,
+        "name" : "flatMap(_:)",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:9TypeUtils11AddCaseKindyycfm"
+          "precise" : "s:Sci12_ConcurrencyE7flatMapyAA09AsyncFlatC8SequenceVyxqd__Gqd__7ElementQzYacSciRd__7FailureQyd__AHRtzlF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
         }
       },
       {
-        "name" : "value",
+        "disfavored" : 3,
+        "name" : "flatMap(_:)",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:s6ResultO9TypeUtilsE5valuexSgvp"
+          "precise" : "s:Sci12_ConcurrencyE7flatMapyAA09AsyncFlatC8SequenceVyxqd__Gqd__7ElementQzYacSciRd__s5NeverO7FailureRtzAiJRtd__lF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
         }
       },
       {
-        "name" : "TypeUtils"
+        "disfavored" : 3,
+        "name" : "dropFirst(_:)",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:Sci12_ConcurrencyE9dropFirstyAA09AsyncDropC8SequenceVyxGSiF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+        }
+      },
+      {
+        "disfavored" : 3,
+        "name" : "next(isolation:)",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:ScI12_ConcurrencyE4next9isolation7ElementQzSgScA_pSgYi_tYa7FailureQzYKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC13AsyncIteratorV"
+        }
       },
       {
         "children" : [
           {
-            "hash" : "60wih",
-            "kind" : "macro",
-            "nodeID" : 10
+            "hash" : "8c1yh",
+            "kind" : "method",
+            "nodeID" : 8,
+            "parameterTypes" : [
+
+            ],
+            "returnTypes" : [
+              "Self.Element?"
+            ]
           },
           {
-            "hash" : "4rmpj",
-            "kind" : "module.extension",
-            "nodeID" : 3
+            "hash" : "9dgbe",
+            "kind" : "method",
+            "nodeID" : 0,
+            "parameterTypes" : [
+
+            ],
+            "returnTypes" : [
+              "U?"
+            ]
           },
           {
-            "hash" : "7xo5h",
-            "kind" : "protocol",
-            "nodeID" : 5
+            "kind" : "taskGroup",
+            "nodeID" : 9
+          },
+          {
+            "hash" : "7jn5u",
+            "kind" : "method",
+            "nodeID" : 27,
+            "parameterTypes" : [
+              "(Actor)?"
+            ],
+            "returnTypes" : [
+              "Self.Element?"
+            ]
           }
         ],
-        "name" : "TypeUtils",
+        "name" : "AsyncIterator",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "TypeUtils"
+          "precise" : "s:16ObservationUtils15PropertyChangesC13AsyncIteratorV"
+        }
+      },
+      {
+        "disfavored" : 3,
+        "name" : "allSatisfy(_:)",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:Sci12_ConcurrencyE10allSatisfyyS2b7ElementQzYaKXEYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+        }
+      },
+      {
+        "disfavored" : 3,
+        "name" : "max()",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:Sci12_ConcurrencySL7ElementRpzrlE3maxACSgyYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+        }
+      },
+      {
+        "disfavored" : 3,
+        "name" : "prefix(_:)",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:Sci12_ConcurrencyE6prefixyAA19AsyncPrefixSequenceVyxGSiF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+        }
+      },
+      {
+        "disfavored" : 3,
+        "name" : "map(_:)",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:Sci12_ConcurrencyE3mapyAA16AsyncMapSequenceVyxqd__Gqd__7ElementQzYaclF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+        }
+      },
+      {
+        "disfavored" : 3,
+        "name" : "min(by:)",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:Sci12_ConcurrencyE3min2by7ElementQzSgSbAE_AEtYaKXE_tYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+        }
+      },
+      {
+        "name" : "init(observing:on:)",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:16ObservationUtils15PropertyChangesC9observing2onACyxq_Gx_s7KeyPathCyxq_Gtcfc"
         }
       }
     ],
-    "tutorialContainer" : 12,
-    "tutorialOverviewContainer" : 9
+    "tutorialContainer" : 2,
+    "tutorialOverviewContainer" : 23
   },
   "version" : {
     "major" : 0,

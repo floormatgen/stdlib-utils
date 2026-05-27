@@ -1,6 +1,6 @@
 {
-  "bundleDisplayName" : "TypeUtils",
-  "bundleID" : "TypeUtils",
+  "bundleDisplayName" : "ObservationUtils",
+  "bundleID" : "ObservationUtils",
   "schemaVersion" : {
     "major" : 0,
     "minor" : 1,

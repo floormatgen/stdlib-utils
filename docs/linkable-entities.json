@@ -5,156 +5,12 @@
     ],
     "kind" : "org.swift.docc.kind.module",
     "language" : "swift",
-    "path" : "\/documentation\/typeutils",
-    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils",
-    "title" : "TypeUtils",
-    "usr" : "TypeUtils"
+    "path" : "\/documentation\/observationutils",
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils",
+    "title" : "ObservationUtils",
+    "usr" : "ObservationUtils"
   },
   {
-    "availableLanguages" : [
-      "swift"
-    ],
-    "kind" : "org.swift.docc.kind.extendedModule",
-    "language" : "swift",
-    "path" : "\/documentation\/typeutils\/swift",
-    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift",
-    "title" : "Swift",
-    "usr" : "s:m:s:e:s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
-  },
-  {
-    "abstract" : [
-      {
-        "text" : "Adds a kind accessor to the ",
-        "type" : "text"
-      },
-      {
-        "code" : "enum",
-        "type" : "codeVoice"
-      }
-    ],
-    "availableLanguages" : [
-      "swift"
-    ],
-    "fragments" : [
-      {
-        "kind" : "keyword",
-        "text" : "macro"
-      },
-      {
-        "kind" : "text",
-        "text" : " "
-      },
-      {
-        "kind" : "identifier",
-        "text" : "AddCaseKind"
-      },
-      {
-        "kind" : "text",
-        "text" : "()"
-      }
-    ],
-    "kind" : "org.swift.docc.kind.macro",
-    "language" : "swift",
-    "path" : "\/documentation\/typeutils\/addcasekind()",
-    "plainTextDeclaration" : "@attached(member, names: named(Kind), named(kind)) @attached(extension, conformances: CaseKindProvider) macro AddCaseKind()",
-    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/AddCaseKind()",
-    "title" : "AddCaseKind()",
-    "usr" : "s:9TypeUtils11AddCaseKindyycfm"
-  },
-  {
-    "availableLanguages" : [
-      "swift"
-    ],
-    "fragments" : [
-      {
-        "kind" : "keyword",
-        "text" : "extension"
-      },
-      {
-        "kind" : "text",
-        "text" : " "
-      },
-      {
-        "kind" : "identifier",
-        "preciseIdentifier" : "s:Sq",
-        "text" : "Optional"
-      }
-    ],
-    "kind" : "org.swift.docc.kind.extendedEnumeration",
-    "language" : "swift",
-    "navigatorFragments" : [
-      {
-        "kind" : "identifier",
-        "text" : "Optional"
-      }
-    ],
-    "path" : "\/documentation\/typeutils\/swift\/optional",
-    "plainTextDeclaration" : "extension Optional",
-    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional",
-    "title" : "Optional",
-    "usr" : "s:e:s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
-  },
-  {
-    "abstract" : [
-      {
-        "text" : "The nested type describing the cases of the ",
-        "type" : "text"
-      },
-      {
-        "code" : "enum",
-        "type" : "codeVoice"
-      }
-    ],
-    "availableLanguages" : [
-      "swift"
-    ],
-    "fragments" : [
-      {
-        "kind" : "keyword",
-        "text" : "associatedtype"
-      },
-      {
-        "kind" : "text",
-        "text" : " "
-      },
-      {
-        "kind" : "identifier",
-        "text" : "Kind"
-      },
-      {
-        "kind" : "text",
-        "text" : " : "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:SH",
-        "text" : "Hashable"
-      },
-      {
-        "kind" : "text",
-        "text" : ", "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:s8SendableP",
-        "text" : "Sendable"
-      }
-    ],
-    "kind" : "org.swift.docc.kind.associatedType",
-    "language" : "swift",
-    "path" : "\/documentation\/typeutils\/casekindprovider\/kind-swift.associatedtype",
-    "plainTextDeclaration" : "associatedtype Kind : Hashable, Sendable",
-    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/CaseKindProvider\/Kind-swift.associatedtype",
-    "title" : "Kind",
-    "usr" : "s:9TypeUtils16CaseKindProviderP0D0Qa"
-  },
-  {
-    "abstract" : [
-      {
-        "text" : "Force unwraps the wrapped value, with the provided reason",
-        "type" : "text"
-      }
-    ],
     "availableLanguages" : [
       "swift"
     ],
@@ -169,144 +25,19 @@
       },
       {
         "kind" : "identifier",
-        "text" : "forceUnwrap"
+        "text" : "compactMap"
       },
       {
         "kind" : "text",
-        "text" : "("
+        "text" : "<"
       },
       {
-        "kind" : "attribute",
-        "text" : "@autoclosure "
-      },
-      {
-        "kind" : "text",
-        "text" : "() -> "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:SS",
-        "text" : "String"
+        "kind" : "genericParameter",
+        "text" : "ElementOfResult"
       },
       {
         "kind" : "text",
-        "text" : ", "
-      },
-      {
-        "kind" : "externalParam",
-        "text" : "file"
-      },
-      {
-        "kind" : "text",
-        "text" : ": "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:s12StaticStringV",
-        "text" : "StaticString"
-      },
-      {
-        "kind" : "text",
-        "text" : ", "
-      },
-      {
-        "kind" : "externalParam",
-        "text" : "line"
-      },
-      {
-        "kind" : "text",
-        "text" : ": "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:Su",
-        "text" : "UInt"
-      },
-      {
-        "kind" : "text",
-        "text" : ") -> "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Wrapped"
-      }
-    ],
-    "kind" : "org.swift.docc.kind.instanceMethod",
-    "language" : "swift",
-    "path" : "\/documentation\/typeutils\/swift\/optional\/forceunwrap(_:file:line:)",
-    "plainTextDeclaration" : "consuming func forceUnwrap(_ reason: @autoclosure () -> String, file: StaticString = #file, line: UInt = #line) -> Wrapped",
-    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional\/forceUnwrap(_:file:line:)",
-    "title" : "forceUnwrap(_:file:line:)",
-    "usr" : "s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
-  },
-  {
-    "abstract" : [
-      {
-        "text" : "A type that provides case kinds",
-        "type" : "text"
-      }
-    ],
-    "availableLanguages" : [
-      "swift"
-    ],
-    "fragments" : [
-      {
-        "kind" : "keyword",
-        "text" : "protocol"
-      },
-      {
-        "kind" : "text",
-        "text" : " "
-      },
-      {
-        "kind" : "identifier",
-        "text" : "CaseKindProvider"
-      }
-    ],
-    "kind" : "org.swift.docc.kind.protocol",
-    "language" : "swift",
-    "navigatorFragments" : [
-      {
-        "kind" : "identifier",
-        "text" : "CaseKindProvider"
-      }
-    ],
-    "path" : "\/documentation\/typeutils\/casekindprovider",
-    "plainTextDeclaration" : "protocol CaseKindProvider",
-    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/CaseKindProvider",
-    "title" : "CaseKindProvider",
-    "usr" : "s:9TypeUtils16CaseKindProviderP"
-  },
-  {
-    "abstract" : [
-      {
-        "text" : "The kind of the current ",
-        "type" : "text"
-      },
-      {
-        "code" : "enum",
-        "type" : "codeVoice"
-      }
-    ],
-    "availableLanguages" : [
-      "swift"
-    ],
-    "fragments" : [
-      {
-        "kind" : "keyword",
-        "text" : "var"
-      },
-      {
-        "kind" : "text",
-        "text" : " "
-      },
-      {
-        "kind" : "identifier",
-        "text" : "kind"
-      },
-      {
-        "kind" : "text",
-        "text" : ": "
+        "text" : ">(("
       },
       {
         "kind" : "typeIdentifier",
@@ -318,17 +49,92 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:9TypeUtils16CaseKindProviderP0D0Qa",
-        "text" : "Kind"
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "ElementOfResult"
+      },
+      {
+        "kind" : "text",
+        "text" : "?) -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12_Concurrency23AsyncCompactMapSequenceV",
+        "text" : "AsyncCompactMapSequence"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "ElementOfResult"
+      },
+      {
+        "kind" : "text",
+        "text" : ">"
       }
     ],
-    "kind" : "org.swift.docc.kind.instanceProperty",
+    "kind" : "org.swift.docc.kind.instanceMethod",
     "language" : "swift",
-    "path" : "\/documentation\/typeutils\/casekindprovider\/kind-swift.property",
-    "plainTextDeclaration" : "var kind: Self.Kind { get }",
-    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/CaseKindProvider\/kind-swift.property",
-    "title" : "kind",
-    "usr" : "s:9TypeUtils16CaseKindProviderP4kind0D0Qzvp"
+    "path" : "\/documentation\/observationutils\/propertychanges\/compactmap(_:)-w8fv",
+    "plainTextDeclaration" : "@preconcurrency func compactMap<ElementOfResult>(_ transform: @escaping @Sendable (Self.Element) async -> ElementOfResult?) -> AsyncCompactMapSequence<Self, ElementOfResult>",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/compactMap(_:)-w8fv",
+    "title" : "compactMap(_:)",
+    "usr" : "s:Sci12_ConcurrencyE10compactMapyAA012AsyncCompactC8SequenceVyxqd__Gqd__Sg7ElementQzYaclF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
   },
   {
     "availableLanguages" : [
@@ -337,7 +143,7 @@
     "fragments" : [
       {
         "kind" : "keyword",
-        "text" : "extension"
+        "text" : "func"
       },
       {
         "kind" : "text",
@@ -345,33 +151,1486 @@
       },
       {
         "kind" : "identifier",
-        "preciseIdentifier" : "s:s6ResultO",
+        "text" : "map"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "genericParameter",
+        "text" : "Transformed"
+      },
+      {
+        "kind" : "text",
+        "text" : ">(("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "throws"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Transformed"
+      },
+      {
+        "kind" : "text",
+        "text" : ") -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12_Concurrency24AsyncThrowingMapSequenceV",
+        "text" : "AsyncThrowingMapSequence"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Transformed"
+      },
+      {
+        "kind" : "text",
+        "text" : ">"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/map(_:)-9liij",
+    "plainTextDeclaration" : "@preconcurrency func map<Transformed>(_ transform: @escaping @Sendable (Self.Element) async throws -> Transformed) -> AsyncThrowingMapSequence<Self, Transformed>",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/map(_:)-9liij",
+    "title" : "map(_:)",
+    "usr" : "s:Sci12_ConcurrencyE3mapyAA24AsyncThrowingMapSequenceVyxqd__Gqd__7ElementQzYaKclF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "first"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "where"
+      },
+      {
+        "kind" : "text",
+        "text" : ": ("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "throws"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sb",
+        "text" : "Bool"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "rethrows"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : "?"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/first(where:)",
+    "plainTextDeclaration" : "func first(where predicate: (Self.Element) async throws -> Bool) async rethrows -> Self.Element?",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/first(where:)",
+    "title" : "first(where:)",
+    "usr" : "s:Sci12_ConcurrencyE5first5where7ElementQzSgSbAEYaKXE_tYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "reduce"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "genericParameter",
+        "text" : "Result"
+      },
+      {
+        "kind" : "text",
+        "text" : ">("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "into"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Result"
+      },
+      {
+        "kind" : "text",
+        "text" : ", ("
+      },
+      {
+        "kind" : "keyword",
+        "text" : "inout"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Result"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "throws"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s4Voida",
+        "text" : "Void"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "rethrows"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
         "text" : "Result"
       }
     ],
-    "kind" : "org.swift.docc.kind.extendedEnumeration",
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/reduce(into:_:)",
+    "plainTextDeclaration" : "func reduce<Result>(into initialResult: Result, _ updateAccumulatingResult: (inout Result, Self.Element) async throws -> Void) async rethrows -> Result",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/reduce(into:_:)",
+    "title" : "reduce(into:_:)",
+    "usr" : "s:Sci12_ConcurrencyE6reduce4into_qd__qd__n_yqd__z_7ElementQztYaKXEtYaKlF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "contains"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "where"
+      },
+      {
+        "kind" : "text",
+        "text" : ": ("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "throws"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sb",
+        "text" : "Bool"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "rethrows"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sb",
+        "text" : "Bool"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/contains(where:)",
+    "plainTextDeclaration" : "func contains(where predicate: (Self.Element) async throws -> Bool) async rethrows -> Bool",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/contains(where:)",
+    "title" : "contains(where:)",
+    "usr" : "s:Sci12_ConcurrencyE8contains5whereS2b7ElementQzYaKXE_tYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "map"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "genericParameter",
+        "text" : "Transformed"
+      },
+      {
+        "kind" : "text",
+        "text" : ">(("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Transformed"
+      },
+      {
+        "kind" : "text",
+        "text" : ") -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12_Concurrency16AsyncMapSequenceV",
+        "text" : "AsyncMapSequence"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Transformed"
+      },
+      {
+        "kind" : "text",
+        "text" : ">"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/map(_:)-4ghyr",
+    "plainTextDeclaration" : "@preconcurrency func map<Transformed>(_ transform: @escaping @Sendable (Self.Element) async -> Transformed) -> AsyncMapSequence<Self, Transformed>",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/map(_:)-4ghyr",
+    "title" : "map(_:)",
+    "usr" : "s:Sci12_ConcurrencyE3mapyAA16AsyncMapSequenceVyxqd__Gqd__7ElementQzYaclF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "compactMap"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "genericParameter",
+        "text" : "ElementOfResult"
+      },
+      {
+        "kind" : "text",
+        "text" : ">(("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "throws"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "ElementOfResult"
+      },
+      {
+        "kind" : "text",
+        "text" : "?) -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12_Concurrency31AsyncThrowingCompactMapSequenceV",
+        "text" : "AsyncThrowingCompactMapSequence"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "ElementOfResult"
+      },
+      {
+        "kind" : "text",
+        "text" : ">"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/compactmap(_:)-9vzg2",
+    "plainTextDeclaration" : "@preconcurrency func compactMap<ElementOfResult>(_ transform: @escaping @Sendable (Self.Element) async throws -> ElementOfResult?) -> AsyncThrowingCompactMapSequence<Self, ElementOfResult>",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/compactMap(_:)-9vzg2",
+    "title" : "compactMap(_:)",
+    "usr" : "s:Sci12_ConcurrencyE10compactMapyAA020AsyncThrowingCompactC8SequenceVyxqd__Gqd__Sg7ElementQzYaKclF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "min"
+      },
+      {
+        "kind" : "text",
+        "text" : "() "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "rethrows"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : "?"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/min()",
+    "plainTextDeclaration" : "@warn_unqualified_access func min() async rethrows -> Self.Element?",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/min()",
+    "title" : "min()",
+    "usr" : "s:Sci12_ConcurrencySL7ElementRpzrlE3minACSgyYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "contains"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "rethrows"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sb",
+        "text" : "Bool"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/contains(_:)",
+    "plainTextDeclaration" : "func contains(_ search: Self.Element) async rethrows -> Bool",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/contains(_:)",
+    "title" : "contains(_:)",
+    "usr" : "s:Sci12_ConcurrencySQ7ElementRpzrlE8containsySbACYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "kind" : "org.swift.docc.kind.collectionGroup",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/asyncsequence-implementations",
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/AsyncSequence-Implementations",
+    "title" : "AsyncSequence Implementations"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "next"
+      },
+      {
+        "kind" : "text",
+        "text" : "() "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "U"
+      },
+      {
+        "kind" : "text",
+        "text" : "?"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/asynciterator\/next()",
+    "plainTextDeclaration" : "mutating func next() async -> U?",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "17.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "14.0",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "17.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "1.0",
+        "name" : "visionOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/AsyncIterator\/next()",
+    "title" : "next()",
+    "usr" : "s:16ObservationUtils15PropertyChangesC13AsyncIteratorV4nextq_SgyYaF"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "dropFirst"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Si",
+        "text" : "Int"
+      },
+      {
+        "kind" : "text",
+        "text" : ") -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12_Concurrency22AsyncDropFirstSequenceV",
+        "text" : "AsyncDropFirstSequence"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : ">"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/dropfirst(_:)",
+    "plainTextDeclaration" : "func dropFirst(_ count: Int = 1) -> AsyncDropFirstSequence<Self>",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/dropFirst(_:)",
+    "title" : "dropFirst(_:)",
+    "usr" : "s:Sci12_ConcurrencyE9dropFirstyAA09AsyncDropC8SequenceVyxGSiF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "flatMap"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "genericParameter",
+        "text" : "SegmentOfResult"
+      },
+      {
+        "kind" : "text",
+        "text" : ">(("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "SegmentOfResult"
+      },
+      {
+        "kind" : "text",
+        "text" : ") -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12_Concurrency20AsyncFlatMapSequenceV",
+        "text" : "AsyncFlatMapSequence"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "SegmentOfResult"
+      },
+      {
+        "kind" : "text",
+        "text" : ">"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/flatmap(_:)-p2jn",
+    "plainTextDeclaration" : "@preconcurrency func flatMap<SegmentOfResult>(_ transform: @escaping @Sendable (Self.Element) async -> SegmentOfResult) -> AsyncFlatMapSequence<Self, SegmentOfResult> where SegmentOfResult : AsyncSequence, Self.Failure == SegmentOfResult.Failure",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/flatMap(_:)-p2jn",
+    "title" : "flatMap(_:)",
+    "usr" : "s:Sci12_ConcurrencyE7flatMapyAA09AsyncFlatC8SequenceVyxqd__Gqd__7ElementQzYacSciRd__7FailureQyd__AHRtzlF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "struct"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "AsyncIterator"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.structure",
     "language" : "swift",
     "navigatorFragments" : [
       {
         "kind" : "identifier",
-        "text" : "Result"
+        "text" : "AsyncIterator"
       }
     ],
-    "path" : "\/documentation\/typeutils\/swift\/result",
-    "plainTextDeclaration" : "extension Result",
-    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Result",
-    "title" : "Result",
-    "usr" : "s:e:s:s6ResultO9TypeUtilsE5valuexSgvp"
+    "path" : "\/documentation\/observationutils\/propertychanges\/asynciterator",
+    "plainTextDeclaration" : "struct AsyncIterator",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "17.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "14.0",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "17.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "1.0",
+        "name" : "visionOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/AsyncIterator",
+    "title" : "PropertyChanges.AsyncIterator",
+    "usr" : "s:16ObservationUtils15PropertyChangesC13AsyncIteratorV"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "prefix"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Si",
+        "text" : "Int"
+      },
+      {
+        "kind" : "text",
+        "text" : ") -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12_Concurrency19AsyncPrefixSequenceV",
+        "text" : "AsyncPrefixSequence"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : ">"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/prefix(_:)",
+    "plainTextDeclaration" : "func prefix(_ count: Int) -> AsyncPrefixSequence<Self>",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/prefix(_:)",
+    "title" : "prefix(_:)",
+    "usr" : "s:Sci12_ConcurrencyE6prefixyAA19AsyncPrefixSequenceVyxGSiF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
   },
   {
     "abstract" : [
       {
-        "text" : "Gets the underlying error of the ",
+        "text" : "Creates a new ",
         "type" : "text"
       },
       {
-        "code" : "Result",
-        "type" : "codeVoice"
+        "identifier" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges",
+        "isActive" : true,
+        "type" : "reference"
+      },
+      {
+        "text" : " sequence",
+        "type" : "text"
       }
     ],
     "availableLanguages" : [
@@ -380,7 +1639,7 @@
     "fragments" : [
       {
         "kind" : "keyword",
-        "text" : "var"
+        "text" : "convenience"
       },
       {
         "kind" : "text",
@@ -388,7 +1647,15 @@
       },
       {
         "kind" : "identifier",
-        "text" : "error"
+        "text" : "init"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "observing"
       },
       {
         "kind" : "text",
@@ -396,39 +1663,1233 @@
       },
       {
         "kind" : "typeIdentifier",
+        "text" : "T"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "on"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s7KeyPathC",
+        "text" : "KeyPath"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "T"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "U"
+      },
+      {
+        "kind" : "text",
+        "text" : ">)"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.initializer",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/init(observing:on:)",
+    "plainTextDeclaration" : "@MainActor convenience init(observing observable: T, on keyPath: KeyPath<T, U>)",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "26.0",
+        "introducedAt" : "17.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "26.0",
+        "introducedAt" : "14.0",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "26.0",
+        "introducedAt" : "17.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "26.0",
+        "introducedAt" : "1.0",
+        "name" : "visionOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "26.0",
+        "introducedAt" : "10.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/init(observing:on:)",
+    "title" : "init(observing:on:)",
+    "usr" : "s:16ObservationUtils15PropertyChangesC9observing2onACyxq_Gx_s7KeyPathCyxq_Gtcfc"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "kind" : "org.swift.docc.kind.collectionGroup",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/asynciterator\/asynciteratorprotocol-implementations",
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/AsyncIterator\/AsyncIteratorProtocol-Implementations",
+    "title" : "AsyncIteratorProtocol Implementations"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "min"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "by"
+      },
+      {
+        "kind" : "text",
+        "text" : ": ("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "throws"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sb",
+        "text" : "Bool"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "rethrows"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : "?"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/min(by:)",
+    "plainTextDeclaration" : "@warn_unqualified_access func min(by areInIncreasingOrder: (Self.Element, Self.Element) async throws -> Bool) async rethrows -> Self.Element?",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/min(by:)",
+    "title" : "min(by:)",
+    "usr" : "s:Sci12_ConcurrencyE3min2by7ElementQzSgSbAE_AEtYaKXE_tYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "makeAsyncIterator"
+      },
+      {
+        "kind" : "text",
+        "text" : "() -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:16ObservationUtils15PropertyChangesC",
+        "text" : "PropertyChanges"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "T"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "U"
+      },
+      {
+        "kind" : "text",
+        "text" : ">."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:16ObservationUtils15PropertyChangesC13AsyncIteratorV",
+        "text" : "AsyncIterator"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/makeasynciterator()",
+    "plainTextDeclaration" : "func makeAsyncIterator() -> PropertyChanges<T, U>.AsyncIterator",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "17.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "14.0",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "17.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "1.0",
+        "name" : "visionOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/makeAsyncIterator()",
+    "title" : "makeAsyncIterator()",
+    "usr" : "s:16ObservationUtils15PropertyChangesC17makeAsyncIteratorAC0fG0Vyxq__GyF"
+  },
+  {
+    "abstract" : [
+      {
+        "text" : "Provided new values of an ",
+        "type" : "text"
+      },
+      {
+        "code" : "Observable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " property",
+        "type" : "text"
+      }
+    ],
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "class"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "PropertyChanges"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.class",
+    "language" : "swift",
+    "navigatorFragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "PropertyChanges"
+      }
+    ],
+    "path" : "\/documentation\/observationutils\/propertychanges",
+    "plainTextDeclaration" : "final class PropertyChanges<T, U> where T : Observable, U : Sendable",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "26.0",
+        "introducedAt" : "17.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "26.0",
+        "introducedAt" : "14.0",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "26.0",
+        "introducedAt" : "17.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "26.0",
+        "introducedAt" : "1.0",
+        "name" : "visionOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "26.0",
+        "introducedAt" : "10.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges",
+    "title" : "PropertyChanges",
+    "usr" : "s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "max"
+      },
+      {
+        "kind" : "text",
+        "text" : "() "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "rethrows"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : "?"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/max()",
+    "plainTextDeclaration" : "@warn_unqualified_access func max() async rethrows -> Self.Element?",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/max()",
+    "title" : "max()",
+    "usr" : "s:Sci12_ConcurrencySL7ElementRpzrlE3maxACSgyYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "max"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "by"
+      },
+      {
+        "kind" : "text",
+        "text" : ": ("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "throws"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sb",
+        "text" : "Bool"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "rethrows"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : "?"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/max(by:)",
+    "plainTextDeclaration" : "@warn_unqualified_access func max(by areInIncreasingOrder: (Self.Element, Self.Element) async throws -> Bool) async rethrows -> Self.Element?",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/max(by:)",
+    "title" : "max(by:)",
+    "usr" : "s:Sci12_ConcurrencyE3max2by7ElementQzSgSbAE_AEtYaKXE_tYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "flatMap"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "genericParameter",
+        "text" : "SegmentOfResult"
+      },
+      {
+        "kind" : "text",
+        "text" : ">(("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "throws"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "SegmentOfResult"
+      },
+      {
+        "kind" : "text",
+        "text" : ") -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12_Concurrency28AsyncThrowingFlatMapSequenceV",
+        "text" : "AsyncThrowingFlatMapSequence"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "SegmentOfResult"
+      },
+      {
+        "kind" : "text",
+        "text" : ">"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/flatmap(_:)-7g7sn",
+    "plainTextDeclaration" : "@preconcurrency func flatMap<SegmentOfResult>(_ transform: @escaping @Sendable (Self.Element) async throws -> SegmentOfResult) -> AsyncThrowingFlatMapSequence<Self, SegmentOfResult> where SegmentOfResult : AsyncSequence",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/flatMap(_:)-7g7sn",
+    "title" : "flatMap(_:)",
+    "usr" : "s:Sci12_ConcurrencyE7flatMapyAA017AsyncThrowingFlatC8SequenceVyxqd__Gqd__7ElementQzYaKcSciRd__lF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "flatMap"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "genericParameter",
+        "text" : "SegmentOfResult"
+      },
+      {
+        "kind" : "text",
+        "text" : ">(("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "SegmentOfResult"
+      },
+      {
+        "kind" : "text",
+        "text" : ") -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12_Concurrency20AsyncFlatMapSequenceV",
+        "text" : "AsyncFlatMapSequence"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "SegmentOfResult"
+      },
+      {
+        "kind" : "text",
+        "text" : ">"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/flatmap(_:)-2cswo",
+    "plainTextDeclaration" : "@preconcurrency func flatMap<SegmentOfResult>(_ transform: @escaping @Sendable (Self.Element) async -> SegmentOfResult) -> AsyncFlatMapSequence<Self, SegmentOfResult> where SegmentOfResult : AsyncSequence, Self.Failure == Never, SegmentOfResult.Failure == Never",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/flatMap(_:)-2cswo",
+    "title" : "flatMap(_:)",
+    "usr" : "s:Sci12_ConcurrencyE7flatMapyAA09AsyncFlatC8SequenceVyxqd__Gqd__7ElementQzYacSciRd__s5NeverO7FailureRtzAiJRtd__lF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "drop"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "while"
+      },
+      {
+        "kind" : "text",
+        "text" : ": ("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sb",
+        "text" : "Bool"
+      },
+      {
+        "kind" : "text",
+        "text" : ") -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12_Concurrency22AsyncDropWhileSequenceV",
+        "text" : "AsyncDropWhileSequence"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : ">"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/drop(while:)",
+    "plainTextDeclaration" : "@preconcurrency func drop(while predicate: @escaping @Sendable (Self.Element) async -> Bool) -> AsyncDropWhileSequence<Self>",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/drop(while:)",
+    "title" : "drop(while:)",
+    "usr" : "s:Sci12_ConcurrencyE4drop5whileAA22AsyncDropWhileSequenceVyxGSb7ElementQzYac_tF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "next"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "isolation"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "isolated"
+      },
+      {
+        "kind" : "text",
+        "text" : " (any "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:ScA",
+        "text" : "Actor"
+      },
+      {
+        "kind" : "text",
+        "text" : ")?) "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "throws"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:ScI7FailureQa",
         "text" : "Failure"
       },
       {
         "kind" : "text",
+        "text" : ") -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:ScI7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
         "text" : "?"
       }
     ],
-    "kind" : "org.swift.docc.kind.instanceProperty",
+    "kind" : "org.swift.docc.kind.instanceMethod",
     "language" : "swift",
-    "path" : "\/documentation\/typeutils\/swift\/result\/error",
-    "plainTextDeclaration" : "var error: Failure? { get }",
-    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Result\/error",
-    "title" : "error",
-    "usr" : "s:s6ResultO9TypeUtilsRi_zRi0_zrlE5errorq_Sgvp"
-  },
-  {
-    "abstract" : [
+    "path" : "\/documentation\/observationutils\/propertychanges\/asynciterator\/next(isolation:)",
+    "plainTextDeclaration" : "mutating func next(isolation actor: isolated (any Actor)?) async throws(Self.Failure) -> Self.Element?",
+    "platforms" : [
       {
-        "text" : "Gets the underlying value of the ",
-        "type" : "text"
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "18.0",
+        "name" : "iOS",
+        "unavailable" : false
       },
       {
-        "code" : "Result",
-        "type" : "codeVoice"
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "15.0",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "18.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "2.0",
+        "name" : "visionOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "11.0",
+        "name" : "watchOS",
+        "unavailable" : false
       }
     ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/AsyncIterator\/next(isolation:)",
+    "title" : "next(isolation:)",
+    "usr" : "s:ScI12_ConcurrencyE4next9isolation7ElementQzSgScA_pSgYi_tYa7FailureQzYKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC13AsyncIteratorV"
+  },
+  {
     "availableLanguages" : [
       "swift"
     ],
     "fragments" : [
       {
         "kind" : "keyword",
-        "text" : "var"
+        "text" : "func"
       },
       {
         "kind" : "text",
@@ -436,27 +2897,738 @@
       },
       {
         "kind" : "identifier",
-        "text" : "value"
+        "text" : "flatMap"
       },
       {
         "kind" : "text",
-        "text" : ": "
+        "text" : "<"
+      },
+      {
+        "kind" : "genericParameter",
+        "text" : "SegmentOfResult"
+      },
+      {
+        "kind" : "text",
+        "text" : ">(("
       },
       {
         "kind" : "typeIdentifier",
-        "text" : "Success"
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "SegmentOfResult"
+      },
+      {
+        "kind" : "text",
+        "text" : ") -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12_Concurrency20AsyncFlatMapSequenceV",
+        "text" : "AsyncFlatMapSequence"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "SegmentOfResult"
+      },
+      {
+        "kind" : "text",
+        "text" : ">"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/flatmap(_:)-9c0em",
+    "plainTextDeclaration" : "@preconcurrency func flatMap<SegmentOfResult>(_ transform: @escaping @Sendable (Self.Element) async -> SegmentOfResult) -> AsyncFlatMapSequence<Self, SegmentOfResult> where SegmentOfResult : AsyncSequence, SegmentOfResult.Failure == Never",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/flatMap(_:)-9c0em",
+    "title" : "flatMap(_:)",
+    "usr" : "s:Sci12_ConcurrencyE7flatMapyAA09AsyncFlatC8SequenceVyxqd__Gqd__7ElementQzYacSciRd__s5NeverO7FailureRtd__lF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "reduce"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "genericParameter",
+        "text" : "Result"
+      },
+      {
+        "kind" : "text",
+        "text" : ">("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Result"
+      },
+      {
+        "kind" : "text",
+        "text" : ", ("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Result"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "throws"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Result"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "rethrows"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Result"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/reduce(_:_:)",
+    "plainTextDeclaration" : "func reduce<Result>(_ initialResult: Result, _ nextPartialResult: (Result, Self.Element) async throws -> Result) async rethrows -> Result",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/reduce(_:_:)",
+    "title" : "reduce(_:_:)",
+    "usr" : "s:Sci12_ConcurrencyE6reduceyqd__qd___qd__qd___7ElementQztYaKXEtYaKlF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "allSatisfy"
+      },
+      {
+        "kind" : "text",
+        "text" : "(("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "throws"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sb",
+        "text" : "Bool"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "rethrows"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sb",
+        "text" : "Bool"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/allsatisfy(_:)",
+    "plainTextDeclaration" : "func allSatisfy(_ predicate: (Self.Element) async throws -> Bool) async rethrows -> Bool",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/allSatisfy(_:)",
+    "title" : "allSatisfy(_:)",
+    "usr" : "s:Sci12_ConcurrencyE10allSatisfyyS2b7ElementQzYaKXEYaKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "filter"
+      },
+      {
+        "kind" : "text",
+        "text" : "(("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sb",
+        "text" : "Bool"
+      },
+      {
+        "kind" : "text",
+        "text" : ") -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12_Concurrency19AsyncFilterSequenceV",
+        "text" : "AsyncFilterSequence"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : ">"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/filter(_:)",
+    "plainTextDeclaration" : "@preconcurrency func filter(_ isIncluded: @escaping @Sendable (Self.Element) async -> Bool) -> AsyncFilterSequence<Self>",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/filter(_:)",
+    "title" : "filter(_:)",
+    "usr" : "s:Sci12_ConcurrencyE6filteryAA19AsyncFilterSequenceVyxGSb7ElementQzYacF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "next"
+      },
+      {
+        "kind" : "text",
+        "text" : "() "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "throws"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:ScI7FailureQa",
+        "text" : "Failure"
+      },
+      {
+        "kind" : "text",
+        "text" : ") -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:ScI7ElementQa",
+        "text" : "Element"
       },
       {
         "kind" : "text",
         "text" : "?"
       }
     ],
-    "kind" : "org.swift.docc.kind.instanceProperty",
+    "kind" : "org.swift.docc.kind.instanceMethod",
     "language" : "swift",
-    "path" : "\/documentation\/typeutils\/swift\/result\/value",
-    "plainTextDeclaration" : "var value: Success? { get }",
-    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Result\/value",
-    "title" : "value",
-    "usr" : "s:s6ResultO9TypeUtilsE5valuexSgvp"
+    "path" : "\/documentation\/observationutils\/propertychanges\/asynciterator\/next()-8c1yh",
+    "plainTextDeclaration" : "mutating func next() async throws(Self.Failure) -> Self.Element?",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "18.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "15.0",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "18.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "2.0",
+        "name" : "visionOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "11.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/AsyncIterator\/next()-8c1yh",
+    "title" : "next()",
+    "usr" : "s:ScI12_ConcurrencyE4next7ElementQzSgyYa7FailureQzYKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC13AsyncIteratorV"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "prefix"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "while"
+      },
+      {
+        "kind" : "text",
+        "text" : ": ("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sci7ElementQa",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "async"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sb",
+        "text" : "Bool"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "rethrows"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12_Concurrency24AsyncPrefixWhileSequenceV",
+        "text" : "AsyncPrefixWhileSequence"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : ">"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/observationutils\/propertychanges\/prefix(while:)",
+    "plainTextDeclaration" : "@preconcurrency func prefix(while predicate: @escaping @Sendable (Self.Element) async -> Bool) rethrows -> AsyncPrefixWhileSequence<Self>",
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "10.15",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "referenceURL" : "doc:\/\/ObservationUtils\/documentation\/ObservationUtils\/PropertyChanges\/prefix(while:)",
+    "title" : "prefix(while:)",
+    "usr" : "s:Sci12_ConcurrencyE6prefix5whileAA24AsyncPrefixWhileSequenceVyxGSb7ElementQzYac_tKF::SYNTHESIZED::s:16ObservationUtils15PropertyChangesC"
   }
 ]
