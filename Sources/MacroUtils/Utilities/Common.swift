@@ -1,4 +1,8 @@
+#if canImport(SwiftSyntax600)
 import SwiftSyntax
+#else
+@preconcurrency import SwiftSyntax
+#endif
 
 public enum Common {
   
