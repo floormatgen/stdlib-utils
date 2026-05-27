@@ -5,12 +5,12 @@ import ConcurrencyUtilsMacros
 
 final class CustomReasyncTests: XCTestCase {
   
-  static let testMacros: [String: any Macro.Type] = [
+  let testMacros: [String: any Macro.Type] = [
     "Reasync":        Reasync.self,
     "CustomReasync":  Reasync.self,
   ]
   
-#if compiler(>=6.2)
+#if canImport(SwiftSyntax602)
   
   func test_macroRemovedOnExpansion() {
     assertMacroExpansion(
@@ -27,7 +27,7 @@ final class CustomReasyncTests: XCTestCase {
       func foo(operation: nonisolated(nonsending) () async -> Void) async -> Void {
       }
       """,
-      macros: Self.testMacros
+      macros: testMacros
     )
   }
   
@@ -49,7 +49,7 @@ final class CustomReasyncTests: XCTestCase {
         return await operation()
       }
       """,
-      macros: Self.testMacros
+      macros: testMacros
     )
   }
   
@@ -83,7 +83,7 @@ final class CustomReasyncTests: XCTestCase {
         return await operation()
       }
       """,
-      macros: Self.testMacros
+      macros: testMacros
     )
   }
   
@@ -127,7 +127,7 @@ final class CustomReasyncTests: XCTestCase {
       
       }
       """,
-      macros: Self.testMacros
+      macros: testMacros
     )
   }
   
@@ -146,21 +146,22 @@ final class CustomReasyncTests: XCTestCase {
       func fooAsync(_ operation: nonisolated(nonsending) () async -> Void) async {
       }
       """,
-      macros: Self.testMacros
+      macros: testMacros
     )
   }
   
-#endif // compiler(>=6.2)
+#endif // canImport(SwiftSyntax602)
 
 }
 
 final class ReasyncTests: XCTestCase {
   
-  static var testMacros: [String : any Macro.Type] {
-    CustomReasyncTests.testMacros
-  }
+  let testMacros: [String: any Macro.Type] = [
+    "Reasync":        Reasync.self,
+    "CustomReasync":  Reasync.self,
+  ]
   
-#if compiler(>=6.2)
+#if canImport(SwiftSyntax602)
   
   func test_macroRemovedOnExpansion() {
     assertMacroExpansion(
@@ -177,10 +178,10 @@ final class ReasyncTests: XCTestCase {
       func foo(_ operation: nonisolated(nonsending) () async -> Void) async {
       }
       """,
-      macros: Self.testMacros
+      macros: testMacros
     )
   }
   
-#endif // compiler(>=6.2)
+#endif // canImport(SwiftSyntax602)
   
 }

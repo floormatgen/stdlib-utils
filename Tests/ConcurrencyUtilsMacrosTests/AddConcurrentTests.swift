@@ -5,12 +5,12 @@ import ConcurrencyUtilsMacros
 
 final class CustomAddConcurrentTests: XCTestCase {
   
-  static let testMacros: [String : any Macro.Type] = [
+  let testMacros: [String : any Macro.Type] = [
     "AddConcurrent":        AddConcurrent.self,
     "CustomAddConcurrent":  AddConcurrent.self
   ]
   
-#if compiler(>=6.2)
+#if canImport(SwiftSyntax602)
   
   func test_addsConcurrent() {
     assertMacroExpansion(
@@ -28,7 +28,7 @@ final class CustomAddConcurrentTests: XCTestCase {
           foo()
       }
       """,
-      macros: Self.testMacros
+      macros: testMacros
     )
   }
   
@@ -48,7 +48,7 @@ final class CustomAddConcurrentTests: XCTestCase {
           foo(bar: bar, baz: baz)
       }
       """,
-      macros: Self.testMacros
+      macros: testMacros
     )
   }
   
@@ -68,7 +68,7 @@ final class CustomAddConcurrentTests: XCTestCase {
           try foo(bar, baz)
       }
       """,
-      macros: Self.testMacros
+      macros: testMacros
     )
   }
   
@@ -88,7 +88,7 @@ final class CustomAddConcurrentTests: XCTestCase {
           foo(__macro_local_1_fMu_, __macro_local_1_fMu0_, __macro_local_1_fMu1_)
       }
       """,
-      macros: Self.testMacros
+      macros: testMacros
     )
   }
   
@@ -108,7 +108,7 @@ final class CustomAddConcurrentTests: XCTestCase {
           await foo()
       }
       """,
-      macros: Self.testMacros
+      macros: testMacros
     )
   }
   
@@ -128,7 +128,7 @@ final class CustomAddConcurrentTests: XCTestCase {
           `default`()
       }
       """,
-      macros: Self.testMacros
+      macros: testMacros
     )
   }
   
@@ -147,7 +147,7 @@ final class CustomAddConcurrentTests: XCTestCase {
           await foo()
       }
       """,
-      macros: Self.testMacros
+      macros: testMacros
     )
   }
   
@@ -167,21 +167,22 @@ final class CustomAddConcurrentTests: XCTestCase {
           foo()
       }
       """,
-      macros: Self.testMacros
+      macros: testMacros
     )
   }
   
-#endif // compiler(>=6.2)
+#endif // canImport(SwiftSyntax602)
   
 }
 
 final class AddConcurrentTests: XCTestCase {
   
-  static var testMacros: [String : any Macro.Type] {
-    CustomAddConcurrentTests.testMacros
-  }
+  let testMacros: [String : any Macro.Type] = [
+    "AddConcurrent":        AddConcurrent.self,
+    "CustomAddConcurrent":  AddConcurrent.self
+  ]
   
-#if compiler(>=6.2)
+#if canImport(SwiftSyntax602)
   
   func test_macroRemovedOnExpansion() {
     assertMacroExpansion(
@@ -199,10 +200,10 @@ final class AddConcurrentTests: XCTestCase {
           foo()
       }
       """,
-      macros: Self.testMacros
+      macros: testMacros
     )
   }
   
-#endif // compiler(>=6.2)
+#endif // canImport(SwiftSyntax602)
   
 }

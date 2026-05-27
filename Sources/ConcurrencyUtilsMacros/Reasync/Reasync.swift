@@ -102,6 +102,7 @@ public struct Reasync: PeerMacro {
 
 // MARK: - Helpers
 
+#if canImport(SwiftSyntax602)
 private func addNonisolatedNonsending(to modifierList: inout DeclModifierListSyntax) {
 
   // Check if nonisolated is already a modifier
@@ -119,6 +120,10 @@ private func addNonisolatedNonsending(to modifierList: inout DeclModifierListSyn
   modifierList.append(nonisolatedNonsending)
 
 }
+#else
+// We don't do anything if we can't add nonisolated(nonsending)
+private func addNonisolatedNonsending(to modifierList: inout DeclModifierListSyntax) {}
+#endif // canImport(SwiftSyntax602) 
 
 private func addAsyncSpecifiers(
   to parameters: inout FunctionParameterListSyntax, 
@@ -179,6 +184,7 @@ private final class FunctionParameterSyntaxRewriter: SyntaxRewriter {
     return TypeSyntax(attributedType)
   }
   
+  #if canImport(SwiftSynta602)
   private func addNonisolatedNonsending(to typeSpecifierList: inout TypeSpecifierListSyntax) {
     
     let nonsending = NonisolatedSpecifierArgumentSyntax()
@@ -196,6 +202,9 @@ private final class FunctionParameterSyntaxRewriter: SyntaxRewriter {
     typeSpecifierList.append(.nonisolatedTypeSpecifier(nonsendingSpecifier))
     
   }
+  #else
+  private func addNonisolatedNonsending(to typeSpecifierList: inout TypeSpecifierListSyntax) {}
+  #endif
 
 }
 

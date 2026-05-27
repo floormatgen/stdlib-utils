@@ -79,8 +79,10 @@ public struct AddConcurrent: PeerMacro {
     // Add `async` if needed
     newDecl.signature.effectSpecifiers.addAsync()
     // Remove `nonisolated(nonsending)` as it conflicts with `@concurrent`
+    #if canImport(SwiftSyntax602)
     newDecl.modifiers.removeNonisolatedNonsending()
-    
+    #endif // canImport(SwiftSyntax602)
+
     // Replace the name
     if let customName = options.name {
       newDecl.name = .identifier(customName)

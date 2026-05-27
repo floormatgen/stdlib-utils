@@ -2,6 +2,7 @@ import SwiftSyntax
 
 package extension DeclModifierListSyntax {
   
+  #if canImport(SwiftSyntax602)
   mutating func removeNonisolatedNonsending() {
     self = filter { modifier in
       guard
@@ -14,5 +15,6 @@ package extension DeclModifierListSyntax {
       return false
     }
   }
+  #endif // canImport(SwiftSyntax602)
   
 }
