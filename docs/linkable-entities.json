@@ -11,6 +11,235 @@
     "usr" : "TypeUtils"
   },
   {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "kind" : "org.swift.docc.kind.extendedModule",
+    "language" : "swift",
+    "path" : "\/documentation\/typeutils\/swift",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift",
+    "title" : "Swift",
+    "usr" : "s:m:s:e:s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
+  },
+  {
+    "abstract" : [
+      {
+        "text" : "Adds a kind accessor to the ",
+        "type" : "text"
+      },
+      {
+        "code" : "enum",
+        "type" : "codeVoice"
+      }
+    ],
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "macro"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "AddCaseKind"
+      },
+      {
+        "kind" : "text",
+        "text" : "()"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.macro",
+    "language" : "swift",
+    "path" : "\/documentation\/typeutils\/addcasekind()",
+    "plainTextDeclaration" : "@attached(member, names: named(Kind), named(kind)) @attached(extension, conformances: CaseKindProvider) macro AddCaseKind()",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/AddCaseKind()",
+    "title" : "AddCaseKind()",
+    "usr" : "s:9TypeUtils11AddCaseKindyycfm"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "extension"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "preciseIdentifier" : "s:Sq",
+        "text" : "Optional"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.extendedEnumeration",
+    "language" : "swift",
+    "navigatorFragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "Optional"
+      }
+    ],
+    "path" : "\/documentation\/typeutils\/swift\/optional",
+    "plainTextDeclaration" : "extension Optional",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional",
+    "title" : "Optional",
+    "usr" : "s:e:s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
+  },
+  {
+    "abstract" : [
+      {
+        "text" : "The nested type describing the cases of the ",
+        "type" : "text"
+      },
+      {
+        "code" : "enum",
+        "type" : "codeVoice"
+      }
+    ],
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "associatedtype"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "Kind"
+      },
+      {
+        "kind" : "text",
+        "text" : " : "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:SH",
+        "text" : "Hashable"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s8SendableP",
+        "text" : "Sendable"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.associatedType",
+    "language" : "swift",
+    "path" : "\/documentation\/typeutils\/casekindprovider\/kind-swift.associatedtype",
+    "plainTextDeclaration" : "associatedtype Kind : Hashable, Sendable",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/CaseKindProvider\/Kind-swift.associatedtype",
+    "title" : "Kind",
+    "usr" : "s:9TypeUtils16CaseKindProviderP0D0Qa"
+  },
+  {
+    "abstract" : [
+      {
+        "text" : "Force unwraps the wrapped value, with the provided reason",
+        "type" : "text"
+      }
+    ],
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "forceUnwrap"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "attribute",
+        "text" : "@autoclosure "
+      },
+      {
+        "kind" : "text",
+        "text" : "() -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:SS",
+        "text" : "String"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "file"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s12StaticStringV",
+        "text" : "StaticString"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "line"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Su",
+        "text" : "UInt"
+      },
+      {
+        "kind" : "text",
+        "text" : ") -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Wrapped"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/typeutils\/swift\/optional\/forceunwrap(_:file:line:)",
+    "plainTextDeclaration" : "consuming func forceUnwrap(_ reason: @autoclosure () -> String, file: StaticString = #file, line: UInt = #line) -> Wrapped",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional\/forceUnwrap(_:file:line:)",
+    "title" : "forceUnwrap(_:file:line:)",
+    "usr" : "s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
+  },
+  {
     "abstract" : [
       {
         "text" : "A type that provides case kinds",
@@ -102,100 +331,6 @@
     "usr" : "s:9TypeUtils16CaseKindProviderP4kind0D0Qzvp"
   },
   {
-    "abstract" : [
-      {
-        "text" : "The nested type describing the cases of the ",
-        "type" : "text"
-      },
-      {
-        "code" : "enum",
-        "type" : "codeVoice"
-      }
-    ],
-    "availableLanguages" : [
-      "swift"
-    ],
-    "fragments" : [
-      {
-        "kind" : "keyword",
-        "text" : "associatedtype"
-      },
-      {
-        "kind" : "text",
-        "text" : " "
-      },
-      {
-        "kind" : "identifier",
-        "text" : "Kind"
-      },
-      {
-        "kind" : "text",
-        "text" : " : "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:SH",
-        "text" : "Hashable"
-      },
-      {
-        "kind" : "text",
-        "text" : ", "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:s8SendableP",
-        "text" : "Sendable"
-      }
-    ],
-    "kind" : "org.swift.docc.kind.associatedType",
-    "language" : "swift",
-    "path" : "\/documentation\/typeutils\/casekindprovider\/kind-swift.associatedtype",
-    "plainTextDeclaration" : "associatedtype Kind : Hashable, Sendable",
-    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/CaseKindProvider\/Kind-swift.associatedtype",
-    "title" : "Kind",
-    "usr" : "s:9TypeUtils16CaseKindProviderP0D0Qa"
-  },
-  {
-    "abstract" : [
-      {
-        "text" : "Adds a kind accessor to the ",
-        "type" : "text"
-      },
-      {
-        "code" : "enum",
-        "type" : "codeVoice"
-      }
-    ],
-    "availableLanguages" : [
-      "swift"
-    ],
-    "fragments" : [
-      {
-        "kind" : "keyword",
-        "text" : "macro"
-      },
-      {
-        "kind" : "text",
-        "text" : " "
-      },
-      {
-        "kind" : "identifier",
-        "text" : "AddCaseKind"
-      },
-      {
-        "kind" : "text",
-        "text" : "()"
-      }
-    ],
-    "kind" : "org.swift.docc.kind.macro",
-    "language" : "swift",
-    "path" : "\/documentation\/typeutils\/addcasekind()",
-    "plainTextDeclaration" : "@attached(member, names: named(Kind), named(kind)) @attached(extension, conformances: CaseKindProvider) macro AddCaseKind()",
-    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/AddCaseKind()",
-    "title" : "AddCaseKind()",
-    "usr" : "s:9TypeUtils11AddCaseKindyycfm"
-  },
-  {
     "availableLanguages" : [
       "swift"
     ],
@@ -227,50 +362,6 @@
     "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Result",
     "title" : "Result",
     "usr" : "s:e:s:s6ResultO9TypeUtilsE5valuexSgvp"
-  },
-  {
-    "availableLanguages" : [
-      "swift"
-    ],
-    "kind" : "org.swift.docc.kind.extendedModule",
-    "language" : "swift",
-    "path" : "\/documentation\/typeutils\/swift",
-    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift",
-    "title" : "Swift",
-    "usr" : "s:m:s:e:s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
-  },
-  {
-    "availableLanguages" : [
-      "swift"
-    ],
-    "fragments" : [
-      {
-        "kind" : "keyword",
-        "text" : "extension"
-      },
-      {
-        "kind" : "text",
-        "text" : " "
-      },
-      {
-        "kind" : "identifier",
-        "preciseIdentifier" : "s:Sq",
-        "text" : "Optional"
-      }
-    ],
-    "kind" : "org.swift.docc.kind.extendedEnumeration",
-    "language" : "swift",
-    "navigatorFragments" : [
-      {
-        "kind" : "identifier",
-        "text" : "Optional"
-      }
-    ],
-    "path" : "\/documentation\/typeutils\/swift\/optional",
-    "plainTextDeclaration" : "extension Optional",
-    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional",
-    "title" : "Optional",
-    "usr" : "s:e:s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
   },
   {
     "abstract" : [
@@ -367,96 +458,5 @@
     "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Result\/value",
     "title" : "value",
     "usr" : "s:s6ResultO9TypeUtilsE5valuexSgvp"
-  },
-  {
-    "abstract" : [
-      {
-        "text" : "Force unwraps the wrapped value, with the provided reason",
-        "type" : "text"
-      }
-    ],
-    "availableLanguages" : [
-      "swift"
-    ],
-    "fragments" : [
-      {
-        "kind" : "keyword",
-        "text" : "func"
-      },
-      {
-        "kind" : "text",
-        "text" : " "
-      },
-      {
-        "kind" : "identifier",
-        "text" : "forceUnwrap"
-      },
-      {
-        "kind" : "text",
-        "text" : "("
-      },
-      {
-        "kind" : "attribute",
-        "text" : "@autoclosure "
-      },
-      {
-        "kind" : "text",
-        "text" : "() -> "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:SS",
-        "text" : "String"
-      },
-      {
-        "kind" : "text",
-        "text" : ", "
-      },
-      {
-        "kind" : "externalParam",
-        "text" : "file"
-      },
-      {
-        "kind" : "text",
-        "text" : ": "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:s12StaticStringV",
-        "text" : "StaticString"
-      },
-      {
-        "kind" : "text",
-        "text" : ", "
-      },
-      {
-        "kind" : "externalParam",
-        "text" : "line"
-      },
-      {
-        "kind" : "text",
-        "text" : ": "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:Su",
-        "text" : "UInt"
-      },
-      {
-        "kind" : "text",
-        "text" : ") -> "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Wrapped"
-      }
-    ],
-    "kind" : "org.swift.docc.kind.instanceMethod",
-    "language" : "swift",
-    "path" : "\/documentation\/typeutils\/swift\/optional\/forceunwrap(_:file:line:)",
-    "plainTextDeclaration" : "consuming func forceUnwrap(_ reason: @autoclosure () -> String, file: StaticString = #file, line: UInt = #line) -> Wrapped",
-    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional\/forceUnwrap(_:file:line:)",
-    "title" : "forceUnwrap(_:file:line:)",
-    "usr" : "s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
   }
 ]

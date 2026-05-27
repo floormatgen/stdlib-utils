@@ -1,29 +1,25 @@
 {
   "bundleID" : "TypeUtils",
   "nonSymbolPaths" : {
-    "2" : "\/tutorials",
-    "5" : "\/documentation\/TypeUtils\/AddCaseKind()#Modifiers-and-Attributes",
-    "9" : "\/tutorials\/TypeUtils"
+    "0" : "\/documentation\/TypeUtils\/AddCaseKind()#Modifiers-and-Attributes",
+    "12" : "\/tutorials\/TypeUtils",
+    "9" : "\/tutorials"
   },
   "pathHierarchy" : {
-    "articlesContainer" : 3,
+    "articlesContainer" : 13,
     "modules" : [
-      3
+      13
     ],
     "nodes" : [
       {
-        "name" : "kind",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:9TypeUtils16CaseKindProviderP4kind0D0Qzvp"
-        }
+        "name" : "Modifiers-and-Attributes"
       },
       {
         "children" : [
           {
             "hash" : "1ku1r",
             "kind" : "method",
-            "nodeID" : 7,
+            "nodeID" : 8,
             "parameterTypes" : [
               "()->String",
               "StaticString",
@@ -41,30 +37,10 @@
         }
       },
       {
-        "name" : "tutorials"
-      },
-      {
-        "children" : [
-          {
-            "hash" : "4rmpj",
-            "kind" : "module.extension",
-            "nodeID" : 4
-          },
-          {
-            "hash" : "60wih",
-            "kind" : "macro",
-            "nodeID" : 12
-          },
-          {
-            "hash" : "7xo5h",
-            "kind" : "protocol",
-            "nodeID" : 10
-          }
-        ],
-        "name" : "TypeUtils",
+        "name" : "Kind",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "TypeUtils"
+          "precise" : "s:9TypeUtils16CaseKindProviderP0D0Qa"
         }
       },
       {
@@ -77,7 +53,7 @@
           {
             "hash" : "9tyti",
             "kind" : "enum.extension",
-            "nodeID" : 6
+            "nodeID" : 7
           }
         ],
         "name" : "Swift",
@@ -87,19 +63,49 @@
         }
       },
       {
-        "name" : "Modifiers-and-Attributes"
+        "name" : "error",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:s6ResultO9TypeUtilsRi_zRi0_zrlE5errorq_Sgvp"
+        }
       },
       {
         "children" : [
           {
-            "hash" : "2lpmc",
-            "kind" : "property",
-            "nodeID" : 8
+            "hash" : "6075c",
+            "kind" : "associatedtype",
+            "nodeID" : 2
           },
+          {
+            "hash" : "a3ht",
+            "kind" : "property",
+            "nodeID" : 6
+          }
+        ],
+        "name" : "CaseKindProvider",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:9TypeUtils16CaseKindProviderP"
+        }
+      },
+      {
+        "name" : "kind",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:9TypeUtils16CaseKindProviderP4kind0D0Qzvp"
+        }
+      },
+      {
+        "children" : [
           {
             "hash" : "5uvul",
             "kind" : "property",
             "nodeID" : 11
+          },
+          {
+            "hash" : "2lpmc",
+            "kind" : "property",
+            "nodeID" : 4
           }
         ],
         "name" : "Result",
@@ -116,32 +122,19 @@
         }
       },
       {
-        "name" : "error",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:s6ResultO9TypeUtilsRi_zRi0_zrlE5errorq_Sgvp"
-        }
-      },
-      {
-        "name" : "TypeUtils"
+        "name" : "tutorials"
       },
       {
         "children" : [
           {
-            "hash" : "6075c",
-            "kind" : "associatedtype",
-            "nodeID" : 13
-          },
-          {
-            "hash" : "a3ht",
-            "kind" : "property",
+            "kind" : "anchor",
             "nodeID" : 0
           }
         ],
-        "name" : "CaseKindProvider",
+        "name" : "AddCaseKind()",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:9TypeUtils16CaseKindProviderP"
+          "precise" : "s:9TypeUtils11AddCaseKindyycfm"
         }
       },
       {
@@ -152,28 +145,35 @@
         }
       },
       {
+        "name" : "TypeUtils"
+      },
+      {
         "children" : [
           {
-            "kind" : "anchor",
+            "hash" : "60wih",
+            "kind" : "macro",
+            "nodeID" : 10
+          },
+          {
+            "hash" : "4rmpj",
+            "kind" : "module.extension",
+            "nodeID" : 3
+          },
+          {
+            "hash" : "7xo5h",
+            "kind" : "protocol",
             "nodeID" : 5
           }
         ],
-        "name" : "AddCaseKind()",
+        "name" : "TypeUtils",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:9TypeUtils11AddCaseKindyycfm"
-        }
-      },
-      {
-        "name" : "Kind",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:9TypeUtils16CaseKindProviderP0D0Qa"
+          "precise" : "TypeUtils"
         }
       }
     ],
-    "tutorialContainer" : 9,
-    "tutorialOverviewContainer" : 2
+    "tutorialContainer" : 12,
+    "tutorialOverviewContainer" : 9
   },
   "version" : {
     "major" : 0,

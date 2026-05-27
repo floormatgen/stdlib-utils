@@ -208,7 +208,7 @@
             "  case baz(Int, Int)",
             "}",
             "",
-            "let bar = Bar.bar",
+            "let bar = Bar.bar(42)",
             "_ = bar.kind \/\/ Bar.Kind.bar"
           ],
           "syntax" : "swift",

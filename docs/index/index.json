@@ -1,8 +1,8 @@
 {
   "includedArchiveIdentifiers" : [
     "TypeUtils",
-    "ConcurrencyUtils",
-    "ObservationUtils"
+    "ObservationUtils",
+    "ConcurrencyUtils"
   ],
   "interfaceLanguages" : {
     "swift" : [
@@ -103,68 +103,6 @@
             ],
             "path" : "\/documentation\/typeutils",
             "title" : "TypeUtils",
-            "type" : "module"
-          },
-          {
-            "children" : [
-              {
-                "title" : "Macros",
-                "type" : "groupMarker"
-              },
-              {
-                "path" : "\/documentation\/concurrencyutils\/addconcurrent()",
-                "title" : "macro AddConcurrent()",
-                "type" : "macro"
-              },
-              {
-                "path" : "\/documentation\/concurrencyutils\/customaddconcurrent(named:)",
-                "title" : "macro CustomAddConcurrent(named: StaticString?)",
-                "type" : "macro"
-              },
-              {
-                "path" : "\/documentation\/concurrencyutils\/customreasync(named:)",
-                "title" : "macro CustomReasync(named: StaticString?)",
-                "type" : "macro"
-              },
-              {
-                "path" : "\/documentation\/concurrencyutils\/reasync()",
-                "title" : "macro Reasync()",
-                "type" : "macro"
-              },
-              {
-                "title" : "Extended Modules",
-                "type" : "groupMarker"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Extended Protocols",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "children" : [
-                      {
-                        "title" : "Instance Methods",
-                        "type" : "groupMarker"
-                      },
-                      {
-                        "path" : "\/documentation\/concurrencyutils\/_concurrency\/actor\/run(operation:)",
-                        "title" : "func run<R, E>(operation: (isolated Self) async throws(E) -> sending R) async throws(E) -> sending R",
-                        "type" : "method"
-                      }
-                    ],
-                    "path" : "\/documentation\/concurrencyutils\/_concurrency\/actor",
-                    "title" : "Actor",
-                    "type" : "extension"
-                  }
-                ],
-                "path" : "\/documentation\/concurrencyutils\/_concurrency",
-                "title" : "_Concurrency",
-                "type" : "extension"
-              }
-            ],
-            "path" : "\/documentation\/concurrencyutils",
-            "title" : "ConcurrencyUtils",
             "type" : "module"
           },
           {
@@ -374,6 +312,68 @@
             ],
             "path" : "\/documentation\/observationutils",
             "title" : "ObservationUtils",
+            "type" : "module"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Macros",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/concurrencyutils\/addconcurrent()",
+                "title" : "macro AddConcurrent()",
+                "type" : "macro"
+              },
+              {
+                "path" : "\/documentation\/concurrencyutils\/customaddconcurrent(named:)",
+                "title" : "macro CustomAddConcurrent(named: StaticString?)",
+                "type" : "macro"
+              },
+              {
+                "path" : "\/documentation\/concurrencyutils\/customreasync(named:)",
+                "title" : "macro CustomReasync(named: StaticString?)",
+                "type" : "macro"
+              },
+              {
+                "path" : "\/documentation\/concurrencyutils\/reasync()",
+                "title" : "macro Reasync()",
+                "type" : "macro"
+              },
+              {
+                "title" : "Extended Modules",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Extended Protocols",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/concurrencyutils\/_concurrency\/actor\/run(operation:)",
+                        "title" : "func run<R, E>(operation: (isolated Self) async throws(E) -> sending R) async throws(E) -> sending R",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/concurrencyutils\/_concurrency\/actor",
+                    "title" : "Actor",
+                    "type" : "extension"
+                  }
+                ],
+                "path" : "\/documentation\/concurrencyutils\/_concurrency",
+                "title" : "_Concurrency",
+                "type" : "extension"
+              }
+            ],
+            "path" : "\/documentation\/concurrencyutils",
+            "title" : "ConcurrencyUtils",
             "type" : "module"
           }
         ],
