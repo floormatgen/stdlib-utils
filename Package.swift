@@ -10,6 +10,13 @@ let environment = ProcessInfo.processInfo.environment
 
 // MARK: - SwiftSyntax dependency
 
+// This can be considered a workaround for the lack of multiple major versions of a package,
+// with swift-syntax being one of the most common examples of major version conflicts.
+// 
+// https://www.pointfree.co/blog/posts/116-being-a-good-citizen-in-the-land-of-swiftsyntax
+// https://forums.swift.org/t/multiple-major-versions-of-a-package-in-swiftpm-opening-the-discussion/86317
+// https://github.com/orgs/swiftlang/projects/32/views/1
+
 let swiftSyntaxCustomVersionEnvKey = "SWIFT_STDLIB_UTILS_SWIFTSYNTAX_VERSION"
 let swiftSyntaxPath = "https://github.com/swiftlang/swift-syntax.git"
 let swiftSyntaxDependency: Package.Dependency
