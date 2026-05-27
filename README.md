@@ -18,6 +18,9 @@ Due to [SwiftPM dependency resolution rules](https://www.pointfree.co/blog/posts
 ### Versions older than [`602`](https://github.com/swiftlang/swift-syntax/releases/tag/602.0.0)
 - `nonisolated(nonsending)` is no longer added by ``Reasync()``
 
+### Versions older than [`601`](https://github.com/swiftlang/swift-syntax/releases/tag/601.0.0)
+- None
+
 ---
 
 It is recommended to use the newest SwiftSyntax version possible.
