@@ -1,127 +1,179 @@
 {
-  "bundleID" : "ConcurrencyUtils",
+  "bundleID" : "TypeUtils",
   "nonSymbolPaths" : {
-    "1" : "\/tutorials\/ConcurrencyUtils",
-    "9" : "\/tutorials"
+    "12" : "\/tutorials",
+    "8" : "\/documentation\/TypeUtils\/AddCaseKind()#Modifiers-and-Attributes",
+    "9" : "\/tutorials\/TypeUtils"
   },
   "pathHierarchy" : {
-    "articlesContainer" : 3,
+    "articlesContainer" : 7,
     "modules" : [
-      3
+      7
     ],
     "nodes" : [
       {
-        "name" : "AddConcurrent()",
+        "children" : [
+          {
+            "hash" : "1ku1r",
+            "kind" : "method",
+            "nodeID" : 3,
+            "parameterTypes" : [
+              "()->String",
+              "StaticString",
+              "UInt"
+            ],
+            "returnTypes" : [
+              "Wrapped"
+            ]
+          }
+        ],
+        "name" : "Optional",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:16ConcurrencyUtils13AddConcurrentyycfm"
+          "precise" : "s:e:s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
         }
       },
       {
-        "name" : "ConcurrencyUtils"
-      },
-      {
-        "name" : "run(operation:)",
+        "name" : "value",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:ScA16ConcurrencyUtilsE3run9operationqd__qd__xYiYaYbqd_0_YKYTXE_tYaqd_0_YKs5ErrorRd_0_Ri_d__r0_lF"
+          "precise" : "s:s6ResultO9TypeUtilsE5valuexSgvp"
+        }
+      },
+      {
+        "name" : "error",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:s6ResultO9TypeUtilsRi_zRi0_zrlE5errorq_Sgvp"
+        }
+      },
+      {
+        "name" : "forceUnwrap(_:file:line:)",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
         }
       },
       {
         "children" : [
           {
-            "hash" : "2pwpr",
-            "kind" : "macro",
-            "nodeID" : 0
+            "kind" : "anchor",
+            "nodeID" : 8
+          }
+        ],
+        "name" : "AddCaseKind()",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:9TypeUtils11AddCaseKindyycfm"
+        }
+      },
+      {
+        "name" : "kind",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:9TypeUtils16CaseKindProviderP4kind0D0Qzvp"
+        }
+      },
+      {
+        "name" : "Kind",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:9TypeUtils16CaseKindProviderP0D0Qa"
+        }
+      },
+      {
+        "children" : [
+          {
+            "hash" : "4rmpj",
+            "kind" : "module.extension",
+            "nodeID" : 10
           },
           {
-            "hash" : "4e39d",
+            "hash" : "60wih",
             "kind" : "macro",
             "nodeID" : 4
           },
           {
-            "hash" : "8v731",
-            "kind" : "macro",
-            "nodeID" : 8
-          },
-          {
-            "hash" : "380wh",
-            "kind" : "macro",
-            "nodeID" : 5
-          },
-          {
-            "hash" : "4oyy7",
-            "kind" : "module.extension",
-            "nodeID" : 7
+            "hash" : "7xo5h",
+            "kind" : "protocol",
+            "nodeID" : 13
           }
         ],
-        "name" : "ConcurrencyUtils",
+        "name" : "TypeUtils",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "ConcurrencyUtils"
+          "precise" : "TypeUtils"
         }
       },
       {
-        "name" : "Reasync()",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:16ConcurrencyUtils7Reasyncyycfm"
-        }
+        "name" : "Modifiers-and-Attributes"
       },
       {
-        "name" : "CustomReasync(named:)",
+        "name" : "TypeUtils"
+      },
+      {
+        "children" : [
+          {
+            "hash" : "9tyti",
+            "kind" : "enum.extension",
+            "nodeID" : 11
+          },
+          {
+            "hash" : "96nib",
+            "kind" : "enum.extension",
+            "nodeID" : 0
+          }
+        ],
+        "name" : "Swift",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:16ConcurrencyUtils13CustomReasync5namedys12StaticStringVSg_tcfm"
+          "precise" : "s:m:s:e:s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
         }
       },
       {
         "children" : [
           {
-            "hash" : "44kwq",
-            "kind" : "method",
-            "nodeID" : 2,
-            "parameterTypes" : [
-              "(Self)(E)->R"
-            ],
-            "returnTypes" : [
-              "R"
-            ]
-          }
-        ],
-        "name" : "Actor",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:e:s:ScA16ConcurrencyUtilsE3run9operationqd__qd__xYiYaYbqd_0_YKYTXE_tYaqd_0_YKs5ErrorRd_0_Ri_d__r0_lF"
-        }
-      },
-      {
-        "children" : [
+            "hash" : "2lpmc",
+            "kind" : "property",
+            "nodeID" : 2
+          },
           {
-            "hash" : "7mq3m",
-            "kind" : "protocol.extension",
-            "nodeID" : 6
+            "hash" : "5uvul",
+            "kind" : "property",
+            "nodeID" : 1
           }
         ],
-        "name" : "_Concurrency",
+        "name" : "Result",
         "symbolID" : {
           "interfaceLanguage" : "swift",
-          "precise" : "s:m:s:e:s:ScA16ConcurrencyUtilsE3run9operationqd__qd__xYiYaYbqd_0_YKYTXE_tYaqd_0_YKs5ErrorRd_0_Ri_d__r0_lF"
-        }
-      },
-      {
-        "name" : "CustomAddConcurrent(named:)",
-        "symbolID" : {
-          "interfaceLanguage" : "swift",
-          "precise" : "s:16ConcurrencyUtils19CustomAddConcurrent5namedys12StaticStringVSg_tcfm"
+          "precise" : "s:e:s:s6ResultO9TypeUtilsE5valuexSgvp"
         }
       },
       {
         "name" : "tutorials"
+      },
+      {
+        "children" : [
+          {
+            "hash" : "a3ht",
+            "kind" : "property",
+            "nodeID" : 5
+          },
+          {
+            "hash" : "6075c",
+            "kind" : "associatedtype",
+            "nodeID" : 6
+          }
+        ],
+        "name" : "CaseKindProvider",
+        "symbolID" : {
+          "interfaceLanguage" : "swift",
+          "precise" : "s:9TypeUtils16CaseKindProviderP"
+        }
       }
     ],
-    "tutorialContainer" : 1,
-    "tutorialOverviewContainer" : 9
+    "tutorialContainer" : 9,
+    "tutorialOverviewContainer" : 12
   },
   "version" : {
     "major" : 0,

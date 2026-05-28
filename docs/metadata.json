@@ -1,6 +1,6 @@
 {
-  "bundleDisplayName" : "ConcurrencyUtils",
-  "bundleID" : "ConcurrencyUtils",
+  "bundleDisplayName" : "TypeUtils",
+  "bundleID" : "TypeUtils",
   "schemaVersion" : {
     "major" : 0,
     "minor" : 1,

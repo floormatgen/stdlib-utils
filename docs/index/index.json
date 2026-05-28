@@ -1,13 +1,110 @@
 {
   "includedArchiveIdentifiers" : [
+    "TypeUtils",
     "ConcurrencyUtils",
-    "ObservationUtils",
-    "TypeUtils"
+    "ObservationUtils"
   ],
   "interfaceLanguages" : {
     "swift" : [
       {
         "children" : [
+          {
+            "children" : [
+              {
+                "title" : "Protocols",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Associated Types",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/typeutils\/casekindprovider\/kind-swift.associatedtype",
+                    "title" : "Kind",
+                    "type" : "associatedtype"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/typeutils\/casekindprovider\/kind-swift.property",
+                    "title" : "var kind: Self.Kind",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/typeutils\/casekindprovider",
+                "title" : "CaseKindProvider",
+                "type" : "protocol"
+              },
+              {
+                "title" : "Macros",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/typeutils\/addcasekind()",
+                "title" : "macro AddCaseKind()",
+                "type" : "macro"
+              },
+              {
+                "title" : "Extended Modules",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Extended Enumerations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/typeutils\/swift\/optional\/forceunwrap(_:file:line:)",
+                        "title" : "func forceUnwrap(@autoclosure () -> String, file: StaticString, line: UInt) -> Wrapped",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/typeutils\/swift\/optional",
+                    "title" : "Optional",
+                    "type" : "extension"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Properties",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/typeutils\/swift\/result\/error",
+                        "title" : "var error: Failure?",
+                        "type" : "property"
+                      },
+                      {
+                        "path" : "\/documentation\/typeutils\/swift\/result\/value",
+                        "title" : "var value: Success?",
+                        "type" : "property"
+                      }
+                    ],
+                    "path" : "\/documentation\/typeutils\/swift\/result",
+                    "title" : "Result",
+                    "type" : "extension"
+                  }
+                ],
+                "path" : "\/documentation\/typeutils\/swift",
+                "title" : "Swift",
+                "type" : "extension"
+              }
+            ],
+            "path" : "\/documentation\/typeutils",
+            "title" : "TypeUtils",
+            "type" : "module"
+          },
           {
             "children" : [
               {
@@ -277,103 +374,6 @@
             ],
             "path" : "\/documentation\/observationutils",
             "title" : "ObservationUtils",
-            "type" : "module"
-          },
-          {
-            "children" : [
-              {
-                "title" : "Protocols",
-                "type" : "groupMarker"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Associated Types",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/typeutils\/casekindprovider\/kind-swift.associatedtype",
-                    "title" : "Kind",
-                    "type" : "associatedtype"
-                  },
-                  {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/typeutils\/casekindprovider\/kind-swift.property",
-                    "title" : "var kind: Self.Kind",
-                    "type" : "property"
-                  }
-                ],
-                "path" : "\/documentation\/typeutils\/casekindprovider",
-                "title" : "CaseKindProvider",
-                "type" : "protocol"
-              },
-              {
-                "title" : "Macros",
-                "type" : "groupMarker"
-              },
-              {
-                "path" : "\/documentation\/typeutils\/addcasekind()",
-                "title" : "macro AddCaseKind()",
-                "type" : "macro"
-              },
-              {
-                "title" : "Extended Modules",
-                "type" : "groupMarker"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Extended Enumerations",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "children" : [
-                      {
-                        "title" : "Instance Methods",
-                        "type" : "groupMarker"
-                      },
-                      {
-                        "path" : "\/documentation\/typeutils\/swift\/optional\/forceunwrap(_:file:line:)",
-                        "title" : "func forceUnwrap(@autoclosure () -> String, file: StaticString, line: UInt) -> Wrapped",
-                        "type" : "method"
-                      }
-                    ],
-                    "path" : "\/documentation\/typeutils\/swift\/optional",
-                    "title" : "Optional",
-                    "type" : "extension"
-                  },
-                  {
-                    "children" : [
-                      {
-                        "title" : "Instance Properties",
-                        "type" : "groupMarker"
-                      },
-                      {
-                        "path" : "\/documentation\/typeutils\/swift\/result\/error",
-                        "title" : "var error: Failure?",
-                        "type" : "property"
-                      },
-                      {
-                        "path" : "\/documentation\/typeutils\/swift\/result\/value",
-                        "title" : "var value: Success?",
-                        "type" : "property"
-                      }
-                    ],
-                    "path" : "\/documentation\/typeutils\/swift\/result",
-                    "title" : "Result",
-                    "type" : "extension"
-                  }
-                ],
-                "path" : "\/documentation\/typeutils\/swift",
-                "title" : "Swift",
-                "type" : "extension"
-              }
-            ],
-            "path" : "\/documentation\/typeutils",
-            "title" : "TypeUtils",
             "type" : "module"
           }
         ],

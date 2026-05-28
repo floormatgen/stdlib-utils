@@ -2,17 +2,12 @@
   {
     "abstract" : [
       {
-        "text" : "A version of ",
+        "text" : "Gets the underlying error of the ",
         "type" : "text"
       },
       {
-        "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/Reasync()",
-        "isActive" : true,
-        "type" : "reference"
-      },
-      {
-        "text" : " that allows a custom name",
-        "type" : "text"
+        "code" : "Result",
+        "type" : "codeVoice"
       }
     ],
     "availableLanguages" : [
@@ -21,7 +16,7 @@
     "fragments" : [
       {
         "kind" : "keyword",
-        "text" : "macro"
+        "text" : "var"
       },
       {
         "kind" : "text",
@@ -29,15 +24,7 @@
       },
       {
         "kind" : "identifier",
-        "text" : "CustomReasync"
-      },
-      {
-        "kind" : "text",
-        "text" : "("
-      },
-      {
-        "kind" : "externalParam",
-        "text" : "named"
+        "text" : "error"
       },
       {
         "kind" : "text",
@@ -45,64 +32,30 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:s12StaticStringV",
-        "text" : "StaticString"
+        "text" : "Failure"
       },
       {
         "kind" : "text",
-        "text" : "?)"
+        "text" : "?"
       }
     ],
-    "kind" : "org.swift.docc.kind.macro",
+    "kind" : "org.swift.docc.kind.instanceProperty",
     "language" : "swift",
-    "path" : "\/documentation\/concurrencyutils\/customreasync(named:)",
-    "plainTextDeclaration" : "@attached(peer, names: arbitrary) macro CustomReasync(named name: StaticString? = nil)",
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "13.0",
-        "name" : "iOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "10.15",
-        "name" : "macOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "13.0",
-        "name" : "tvOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "1.0",
-        "name" : "visionOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "6.0",
-        "name" : "watchOS",
-        "unavailable" : false
-      }
-    ],
-    "referenceURL" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/CustomReasync(named:)",
-    "title" : "CustomReasync(named:)",
-    "usr" : "s:16ConcurrencyUtils13CustomReasync5namedys12StaticStringVSg_tcfm"
+    "path" : "\/documentation\/typeutils\/swift\/result\/error",
+    "plainTextDeclaration" : "var error: Failure? { get }",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Result\/error",
+    "title" : "error",
+    "usr" : "s:s6ResultO9TypeUtilsRi_zRi0_zrlE5errorq_Sgvp"
   },
   {
     "abstract" : [
       {
-        "text" : "Adds a concurrent alternative for a function",
+        "text" : "The nested type describing the cases of the ",
         "type" : "text"
+      },
+      {
+        "code" : "enum",
+        "type" : "codeVoice"
       }
     ],
     "availableLanguages" : [
@@ -111,7 +64,7 @@
     "fragments" : [
       {
         "kind" : "keyword",
-        "text" : "macro"
+        "text" : "associatedtype"
       },
       {
         "kind" : "text",
@@ -119,72 +72,55 @@
       },
       {
         "kind" : "identifier",
-        "text" : "AddConcurrent"
+        "text" : "Kind"
       },
       {
         "kind" : "text",
-        "text" : "()"
+        "text" : " : "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:SH",
+        "text" : "Hashable"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s8SendableP",
+        "text" : "Sendable"
       }
     ],
-    "kind" : "org.swift.docc.kind.macro",
+    "kind" : "org.swift.docc.kind.associatedType",
     "language" : "swift",
-    "path" : "\/documentation\/concurrencyutils\/addconcurrent()",
-    "plainTextDeclaration" : "@attached(peer, names: suffixed(Concurrently)) macro AddConcurrent()",
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "13.0",
-        "name" : "iOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "10.15",
-        "name" : "macOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "13.0",
-        "name" : "tvOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "1.0",
-        "name" : "visionOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "6.0",
-        "name" : "watchOS",
-        "unavailable" : false
-      }
+    "path" : "\/documentation\/typeutils\/casekindprovider\/kind-swift.associatedtype",
+    "plainTextDeclaration" : "associatedtype Kind : Hashable, Sendable",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/CaseKindProvider\/Kind-swift.associatedtype",
+    "title" : "Kind",
+    "usr" : "s:9TypeUtils16CaseKindProviderP0D0Qa"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
     ],
-    "referenceURL" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/AddConcurrent()",
-    "title" : "AddConcurrent()",
-    "usr" : "s:16ConcurrencyUtils13AddConcurrentyycfm"
+    "kind" : "org.swift.docc.kind.module",
+    "language" : "swift",
+    "path" : "\/documentation\/typeutils",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils",
+    "title" : "TypeUtils",
+    "usr" : "TypeUtils"
   },
   {
     "abstract" : [
       {
-        "text" : "A version of ",
+        "text" : "The kind of the current ",
         "type" : "text"
       },
       {
-        "identifier" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/AddConcurrent()",
-        "isActive" : true,
-        "type" : "reference"
-      },
-      {
-        "text" : " that accepts a custom name",
-        "type" : "text"
+        "code" : "enum",
+        "type" : "codeVoice"
       }
     ],
     "availableLanguages" : [
@@ -193,7 +129,7 @@
     "fragments" : [
       {
         "kind" : "keyword",
-        "text" : "macro"
+        "text" : "var"
       },
       {
         "kind" : "text",
@@ -201,15 +137,7 @@
       },
       {
         "kind" : "identifier",
-        "text" : "CustomAddConcurrent"
-      },
-      {
-        "kind" : "text",
-        "text" : "("
-      },
-      {
-        "kind" : "externalParam",
-        "text" : "named"
+        "text" : "kind"
       },
       {
         "kind" : "text",
@@ -217,136 +145,30 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:s12StaticStringV",
-        "text" : "StaticString"
+        "text" : "Self"
       },
       {
         "kind" : "text",
-        "text" : "?)"
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9TypeUtils16CaseKindProviderP0D0Qa",
+        "text" : "Kind"
       }
     ],
-    "kind" : "org.swift.docc.kind.macro",
+    "kind" : "org.swift.docc.kind.instanceProperty",
     "language" : "swift",
-    "path" : "\/documentation\/concurrencyutils\/customaddconcurrent(named:)",
-    "plainTextDeclaration" : "@attached(peer, names: arbitrary) macro CustomAddConcurrent(named: StaticString? = nil)",
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "13.0",
-        "name" : "iOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "10.15",
-        "name" : "macOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "13.0",
-        "name" : "tvOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "1.0",
-        "name" : "visionOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "6.0",
-        "name" : "watchOS",
-        "unavailable" : false
-      }
-    ],
-    "referenceURL" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/CustomAddConcurrent(named:)",
-    "title" : "CustomAddConcurrent(named:)",
-    "usr" : "s:16ConcurrencyUtils19CustomAddConcurrent5namedys12StaticStringVSg_tcfm"
+    "path" : "\/documentation\/typeutils\/casekindprovider\/kind-swift.property",
+    "plainTextDeclaration" : "var kind: Self.Kind { get }",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/CaseKindProvider\/kind-swift.property",
+    "title" : "kind",
+    "usr" : "s:9TypeUtils16CaseKindProviderP4kind0D0Qzvp"
   },
   {
     "abstract" : [
       {
-        "text" : "Creates an async overload of a provided function",
-        "type" : "text"
-      }
-    ],
-    "availableLanguages" : [
-      "swift"
-    ],
-    "fragments" : [
-      {
-        "kind" : "keyword",
-        "text" : "macro"
-      },
-      {
-        "kind" : "text",
-        "text" : " "
-      },
-      {
-        "kind" : "identifier",
-        "text" : "Reasync"
-      },
-      {
-        "kind" : "text",
-        "text" : "()"
-      }
-    ],
-    "kind" : "org.swift.docc.kind.macro",
-    "language" : "swift",
-    "path" : "\/documentation\/concurrencyutils\/reasync()",
-    "plainTextDeclaration" : "@attached(peer, names: overloaded) macro Reasync()",
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "13.0",
-        "name" : "iOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "10.15",
-        "name" : "macOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "13.0",
-        "name" : "tvOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "1.0",
-        "name" : "visionOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "6.0",
-        "name" : "watchOS",
-        "unavailable" : false
-      }
-    ],
-    "referenceURL" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/Reasync()",
-    "title" : "Reasync()",
-    "usr" : "s:16ConcurrencyUtils7Reasyncyycfm"
-  },
-  {
-    "abstract" : [
-      {
-        "text" : "Runs the provided closure isolated to the actor",
+        "text" : "Force unwraps the wrapped value, with the provided reason",
         "type" : "text"
       }
     ],
@@ -364,161 +186,126 @@
       },
       {
         "kind" : "identifier",
-        "text" : "run"
+        "text" : "forceUnwrap"
       },
       {
         "kind" : "text",
-        "text" : "<"
+        "text" : "("
       },
       {
-        "kind" : "genericParameter",
-        "text" : "R"
+        "kind" : "attribute",
+        "text" : "@autoclosure "
+      },
+      {
+        "kind" : "text",
+        "text" : "() -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:SS",
+        "text" : "String"
       },
       {
         "kind" : "text",
         "text" : ", "
       },
       {
-        "kind" : "genericParameter",
-        "text" : "E"
+        "kind" : "externalParam",
+        "text" : "file"
       },
       {
         "kind" : "text",
-        "text" : ">("
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s12StaticStringV",
+        "text" : "StaticString"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
       },
       {
         "kind" : "externalParam",
-        "text" : "operation"
+        "text" : "line"
       },
       {
         "kind" : "text",
-        "text" : ": ("
-      },
-      {
-        "kind" : "keyword",
-        "text" : "isolated"
-      },
-      {
-        "kind" : "text",
-        "text" : " "
+        "text" : ": "
       },
       {
         "kind" : "typeIdentifier",
-        "text" : "Self"
-      },
-      {
-        "kind" : "text",
-        "text" : ") "
-      },
-      {
-        "kind" : "keyword",
-        "text" : "async"
-      },
-      {
-        "kind" : "text",
-        "text" : " "
-      },
-      {
-        "kind" : "keyword",
-        "text" : "throws"
-      },
-      {
-        "kind" : "text",
-        "text" : "("
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "E"
+        "preciseIdentifier" : "s:Su",
+        "text" : "UInt"
       },
       {
         "kind" : "text",
         "text" : ") -> "
       },
       {
-        "kind" : "keyword",
-        "text" : "sending "
-      },
-      {
         "kind" : "typeIdentifier",
-        "text" : "R"
+        "text" : "Wrapped"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceMethod",
+    "language" : "swift",
+    "path" : "\/documentation\/typeutils\/swift\/optional\/forceunwrap(_:file:line:)",
+    "plainTextDeclaration" : "consuming func forceUnwrap(_ reason: @autoclosure () -> String, file: StaticString = #file, line: UInt = #line) -> Wrapped",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional\/forceUnwrap(_:file:line:)",
+    "title" : "forceUnwrap(_:file:line:)",
+    "usr" : "s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
+  },
+  {
+    "availableLanguages" : [
+      "swift"
+    ],
+    "kind" : "org.swift.docc.kind.extendedModule",
+    "language" : "swift",
+    "path" : "\/documentation\/typeutils\/swift",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift",
+    "title" : "Swift",
+    "usr" : "s:m:s:e:s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
+  },
+  {
+    "abstract" : [
+      {
+        "text" : "Adds a kind accessor to the ",
+        "type" : "text"
       },
       {
-        "kind" : "text",
-        "text" : ") "
-      },
+        "code" : "enum",
+        "type" : "codeVoice"
+      }
+    ],
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
       {
         "kind" : "keyword",
-        "text" : "async"
+        "text" : "macro"
       },
       {
         "kind" : "text",
         "text" : " "
       },
       {
-        "kind" : "keyword",
-        "text" : "throws"
+        "kind" : "identifier",
+        "text" : "AddCaseKind"
       },
       {
         "kind" : "text",
-        "text" : "("
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "E"
-      },
-      {
-        "kind" : "text",
-        "text" : ") -> sending "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "R"
+        "text" : "()"
       }
     ],
-    "kind" : "org.swift.docc.kind.instanceMethod",
+    "kind" : "org.swift.docc.kind.macro",
     "language" : "swift",
-    "path" : "\/documentation\/concurrencyutils\/_concurrency\/actor\/run(operation:)",
-    "plainTextDeclaration" : "func run<R, E>(operation: @Sendable (isolated Self) async throws(E) -> sending R) async throws(E) -> sending R where E : Error, R : ~Copyable",
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "13.0",
-        "name" : "iOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "10.15",
-        "name" : "macOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "13.0",
-        "name" : "tvOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "1.0",
-        "name" : "visionOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "6.0",
-        "name" : "watchOS",
-        "unavailable" : false
-      }
-    ],
-    "referenceURL" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/_Concurrency\/Actor\/run(operation:)",
-    "title" : "run(operation:)",
-    "usr" : "s:ScA16ConcurrencyUtilsE3run9operationqd__qd__xYiYaYbqd_0_YKYTXE_tYaqd_0_YKs5ErrorRd_0_Ri_d__r0_lF"
+    "path" : "\/documentation\/typeutils\/addcasekind()",
+    "plainTextDeclaration" : "@attached(member, names: named(Kind), named(kind)) @attached(extension, conformances: CaseKindProvider) macro AddCaseKind()",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/AddCaseKind()",
+    "title" : "AddCaseKind()",
+    "usr" : "s:9TypeUtils11AddCaseKindyycfm"
   },
   {
     "availableLanguages" : [
@@ -535,44 +322,141 @@
       },
       {
         "kind" : "identifier",
-        "preciseIdentifier" : "s:ScA",
-        "text" : "Actor"
+        "preciseIdentifier" : "s:s6ResultO",
+        "text" : "Result"
       }
     ],
-    "kind" : "org.swift.docc.kind.extendedProtocol",
+    "kind" : "org.swift.docc.kind.extendedEnumeration",
     "language" : "swift",
     "navigatorFragments" : [
       {
         "kind" : "identifier",
-        "text" : "Actor"
+        "text" : "Result"
       }
     ],
-    "path" : "\/documentation\/concurrencyutils\/_concurrency\/actor",
-    "plainTextDeclaration" : "extension Actor",
-    "referenceURL" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/_Concurrency\/Actor",
-    "title" : "Actor",
-    "usr" : "s:e:s:ScA16ConcurrencyUtilsE3run9operationqd__qd__xYiYaYbqd_0_YKYTXE_tYaqd_0_YKs5ErrorRd_0_Ri_d__r0_lF"
+    "path" : "\/documentation\/typeutils\/swift\/result",
+    "plainTextDeclaration" : "extension Result",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Result",
+    "title" : "Result",
+    "usr" : "s:e:s:s6ResultO9TypeUtilsE5valuexSgvp"
+  },
+  {
+    "abstract" : [
+      {
+        "text" : "A type that provides case kinds",
+        "type" : "text"
+      }
+    ],
+    "availableLanguages" : [
+      "swift"
+    ],
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "protocol"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "CaseKindProvider"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.protocol",
+    "language" : "swift",
+    "navigatorFragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "CaseKindProvider"
+      }
+    ],
+    "path" : "\/documentation\/typeutils\/casekindprovider",
+    "plainTextDeclaration" : "protocol CaseKindProvider",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/CaseKindProvider",
+    "title" : "CaseKindProvider",
+    "usr" : "s:9TypeUtils16CaseKindProviderP"
   },
   {
     "availableLanguages" : [
       "swift"
     ],
-    "kind" : "org.swift.docc.kind.module",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "extension"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "preciseIdentifier" : "s:Sq",
+        "text" : "Optional"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.extendedEnumeration",
     "language" : "swift",
-    "path" : "\/documentation\/concurrencyutils",
-    "referenceURL" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils",
-    "title" : "ConcurrencyUtils",
-    "usr" : "ConcurrencyUtils"
+    "navigatorFragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "Optional"
+      }
+    ],
+    "path" : "\/documentation\/typeutils\/swift\/optional",
+    "plainTextDeclaration" : "extension Optional",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Optional",
+    "title" : "Optional",
+    "usr" : "s:e:s:Sq9TypeUtilsRi_zrlE11forceUnwrap_4file4linexSSyXK_s12StaticStringVSutF"
   },
   {
+    "abstract" : [
+      {
+        "text" : "Gets the underlying value of the ",
+        "type" : "text"
+      },
+      {
+        "code" : "Result",
+        "type" : "codeVoice"
+      }
+    ],
     "availableLanguages" : [
       "swift"
     ],
-    "kind" : "org.swift.docc.kind.extendedModule",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "var"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "value"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Success"
+      },
+      {
+        "kind" : "text",
+        "text" : "?"
+      }
+    ],
+    "kind" : "org.swift.docc.kind.instanceProperty",
     "language" : "swift",
-    "path" : "\/documentation\/concurrencyutils\/_concurrency",
-    "referenceURL" : "doc:\/\/ConcurrencyUtils\/documentation\/ConcurrencyUtils\/_Concurrency",
-    "title" : "_Concurrency",
-    "usr" : "s:m:s:e:s:ScA16ConcurrencyUtilsE3run9operationqd__qd__xYiYaYbqd_0_YKYTXE_tYaqd_0_YKs5ErrorRd_0_Ri_d__r0_lF"
+    "path" : "\/documentation\/typeutils\/swift\/result\/value",
+    "plainTextDeclaration" : "var value: Success? { get }",
+    "referenceURL" : "doc:\/\/TypeUtils\/documentation\/TypeUtils\/Swift\/Result\/value",
+    "title" : "value",
+    "usr" : "s:s6ResultO9TypeUtilsE5valuexSgvp"
   }
 ]
