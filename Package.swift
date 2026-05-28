@@ -70,7 +70,7 @@ let package = Package(
     .target(
       name: "TypeUtils",
       dependencies: [
-        .target(name: "_Compatability"),
+        .target(name: "_Compatibility"),
         .target(name: "TypeUtilsMacros"),
       ]
     ),
@@ -133,7 +133,7 @@ let package = Package(
     .target(
       name: "ObservationUtils",
       dependencies: [
-        .target(name: "_Compatability"),
+        .target(name: "_Compatibility"),
       ]
     ),
     .testTarget(
@@ -145,7 +145,7 @@ let package = Package(
 
     // MARK: Internal
     .target(
-      name: "_Compatability"
+      name: "_Compatibility"
     ),
     // FIXME: Known issue with macro dependencies, see
     // https://forums.swift.org/t/swift-macro-linker-failures-on-linux-and-when-building-with-xcodebuild/84306

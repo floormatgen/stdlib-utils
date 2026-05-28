@@ -1,6 +1,6 @@
 #if canImport(Observation)
 public import Observation
-import _Compatability
+import _Compatibility
 
 /// Provided new values of an `Observable` property
 ///
