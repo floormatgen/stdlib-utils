@@ -1,4 +1,4 @@
-import SwiftSyntax
+package import SwiftSyntax
 import SwiftSyntaxMacros
 
 package struct FunctionAnalysis {

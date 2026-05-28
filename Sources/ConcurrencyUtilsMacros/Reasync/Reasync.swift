@@ -1,7 +1,7 @@
-import SwiftSyntax
-import SwiftSyntaxMacros
+public import SwiftSyntax
+public import SwiftSyntaxMacros
 import SwiftDiagnostics
-import MacroUtils
+import _MacroUtils
 
 public struct Reasync: PeerMacro {
   static let name = "CustomReasync"
@@ -184,7 +184,7 @@ private final class FunctionParameterSyntaxRewriter: SyntaxRewriter {
     return TypeSyntax(attributedType)
   }
   
-  #if canImport(SwiftSynta602)
+  #if canImport(SwiftSyntax602)
   private func addNonisolatedNonsending(to typeSpecifierList: inout TypeSpecifierListSyntax) {
     
     let nonsending = NonisolatedSpecifierArgumentSyntax()

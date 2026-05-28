@@ -1,4 +1,4 @@
-import SwiftSyntax
+package import SwiftSyntax
 
 package extension AttributeListSyntax {
   

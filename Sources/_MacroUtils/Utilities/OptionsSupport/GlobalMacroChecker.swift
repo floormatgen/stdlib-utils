@@ -1,4 +1,4 @@
-import SwiftSyntax
+package import SwiftSyntax
 
 package final class GlobalMacroChecker: SyntaxVisitor {
   private var containsGlobalMacro: Bool = false

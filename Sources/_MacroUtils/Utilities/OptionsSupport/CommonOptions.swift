@@ -1,6 +1,6 @@
-import SwiftSyntax
+package import SwiftSyntax
 import SwiftSyntaxMacros
-import SwiftDiagnostics
+package import SwiftDiagnostics
 import SwiftParser
 
 package enum CommonOptions {

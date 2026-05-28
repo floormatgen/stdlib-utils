@@ -1,9 +1,9 @@
-import SwiftSyntax
-import SwiftSyntaxMacros
+public import SwiftSyntax
+public import SwiftSyntaxMacros
 import SwiftDiagnostics
 import SwiftSyntaxBuilder
 import SwiftBasicFormat
-import MacroUtils
+import _MacroUtils
 
 public struct AddCaseKind: MemberMacro {
   

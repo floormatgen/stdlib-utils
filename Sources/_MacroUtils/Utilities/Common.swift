@@ -1,4 +1,4 @@
-import SwiftSyntax
+public import SwiftSyntax
 
 public enum Common {
   

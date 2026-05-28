@@ -1,7 +1,7 @@
-import SwiftSyntax
-import SwiftSyntaxMacros
+public import SwiftSyntax
+public import SwiftSyntaxMacros
 import SwiftDiagnostics
-import MacroUtils
+import _MacroUtils
 
 public struct AddConcurrent: PeerMacro {
   

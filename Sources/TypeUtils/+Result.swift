@@ -1,4 +1,4 @@
-import Compatability
+public import _Compatability
 
 extension Result {
 

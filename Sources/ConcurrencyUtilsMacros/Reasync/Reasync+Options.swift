@@ -1,5 +1,5 @@
 import SwiftSyntax
-import MacroUtils
+import _MacroUtils
 
 extension Reasync {
   

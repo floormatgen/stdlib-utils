@@ -70,13 +70,14 @@ let package = Package(
     .target(
       name: "TypeUtils",
       dependencies: [
-        .target(name: "TypeUtilsMacros")
+        .target(name: "_Compatability"),
+        .target(name: "TypeUtilsMacros"),
       ]
     ),
     .macro(
       name: "TypeUtilsMacros",
       dependencies: [
-        .target(name: "MacroUtils"),
+        .target(name: "_MacroUtils"),
         .product(name: "SwiftSyntax",         package: "swift-syntax"),
         .product(name: "SwiftSyntaxMacros",   package: "swift-syntax"),
         .product(name: "SwiftCompilerPlugin", package: "swift-syntax"),
@@ -107,7 +108,7 @@ let package = Package(
     .macro(
       name: "ConcurrencyUtilsMacros",
       dependencies: [
-        .target(name: "MacroUtils"),
+        .target(name: "_MacroUtils"),
         .product(name: "SwiftSyntax",         package: "swift-syntax"),
         .product(name: "SwiftSyntaxMacros",   package: "swift-syntax"),
         .product(name: "SwiftCompilerPlugin", package: "swift-syntax"),
@@ -132,7 +133,7 @@ let package = Package(
     .target(
       name: "ObservationUtils",
       dependencies: [
-        .target(name: "Compatability"),
+        .target(name: "_Compatability"),
       ]
     ),
     .testTarget(
@@ -144,14 +145,14 @@ let package = Package(
 
     // MARK: Internal
     .target(
-      name: "Compatability"
+      name: "_Compatability"
     ),
     // FIXME: Known issue with macro dependencies, see
     // https://forums.swift.org/t/swift-macro-linker-failures-on-linux-and-when-building-with-xcodebuild/84306
     //
     // Currently using symlinks to prevent code duplication
     .target(
-      name: "MacroUtils",
+      name: "_MacroUtils",
       dependencies: [
         .product(name: "SwiftSyntax",         package: "swift-syntax"),
         .product(name: "SwiftSyntaxMacros",   package: "swift-syntax"),
@@ -169,8 +170,9 @@ let package = Package(
 let swiftSettings: [SwiftSetting] = [
   // .enableUpcomingFeature("NonisolatedNonsendingByDefault"),
   .enableUpcomingFeature("ExistentialAny"),
-  .enableUpcomingFeature("MemberImportVisibility"),
   .enableUpcomingFeature("ImmutableWeakCaptures"),
+  .enableUpcomingFeature("InternalImportsByDefault"),
+  .enableUpcomingFeature("MemberImportVisibility"),
 ]
 
 for target in package.targets {
@@ -190,6 +192,6 @@ let runningFromXcode = environment["__CFBundleIdentifier"] == "com.apple.dt.Xcod
 
 if !runningFromXcode {
   for target in package.targets where target.type == .macro {
-    target.exclude = ["./MacroUtils"]
+    target.exclude += ["./_MacroUtils"]
   }
 }
