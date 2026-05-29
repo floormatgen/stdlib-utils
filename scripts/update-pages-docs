@@ -12,6 +12,7 @@ PACKAGE_ROOT="$(dirname $(dirname $(absolute-path $0)))"
 PACKAGE_TARGETS=("ConcurrencyUtils" "ObservationUtils" "TypeUtils")
 HOSTING_BASE_PATH="swift-stdlib-utils"
 OUTPUT_PATH="${PACKAGE_ROOT}/gh-pages/docs"
+SOURCE_SERVICE_BASE_URL="https://github.com/floormatgen/${HOSTING_BASE_PATH}/blob/main"
 
 # Move to the package root
 cd "$PACKAGE_ROOT"
@@ -38,7 +39,10 @@ swift package \
     --disable-indexing \
     --transform-for-static-hosting \
     --hosting-base-path "${HOSTING_BASE_PATH}" \
-    --output-path "${OUTPUT_PATH}"
+    --output-path "${OUTPUT_PATH}" \
+    --source-service "github" \
+    --source-service-base-url "${SOURCE_SERVICE_BASE_URL}" \
+    --checkout-path "${PACKAGE_ROOT}"
 
 # Get current commit hash for current branch
 current_commit_hash=$(git rev-parse --short HEAD)
