@@ -167,6 +167,10 @@
         "unavailable" : false
       }
     ],
+    "remoteSource" : {
+      "fileName" : "PropertyChanges.swift",
+      "url" : "https:\/\/github.com\/floormatgen\/swift-stdlib-utils\/blob\/main\/Sources\/ObservationUtils\/PropertyChanges.swift#L120"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -180,7 +184,7 @@
             "swift"
           ],
           "platforms" : [
-            "Linux"
+            "macOS"
           ],
           "tokens" : [
             {

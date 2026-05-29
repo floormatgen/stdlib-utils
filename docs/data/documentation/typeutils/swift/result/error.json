@@ -92,6 +92,10 @@
         ]
       }
     ],
+    "remoteSource" : {
+      "fileName" : "+Result.swift",
+      "url" : "https:\/\/github.com\/floormatgen\/swift-stdlib-utils\/blob\/main\/Sources\/TypeUtils\/+Result.swift#L48"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
@@ -105,7 +109,7 @@
             "swift"
           ],
           "platforms" : [
-            "Linux"
+            "macOS"
           ],
           "tokens" : [
             {

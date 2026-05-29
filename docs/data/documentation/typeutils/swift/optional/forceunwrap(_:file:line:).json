@@ -103,6 +103,10 @@
         ]
       }
     ],
+    "remoteSource" : {
+      "fileName" : "+Optional.swift",
+      "url" : "https:\/\/github.com\/floormatgen\/swift-stdlib-utils\/blob\/main\/Sources\/TypeUtils\/+Optional.swift#L17"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -116,7 +120,7 @@
             "swift"
           ],
           "platforms" : [
-            "Linux"
+            "macOS"
           ],
           "tokens" : [
             {

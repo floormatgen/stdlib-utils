@@ -61,6 +61,10 @@
         "name" : "TypeUtils"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "AddCaseKind.swift",
+      "url" : "https:\/\/github.com\/floormatgen\/swift-stdlib-utils\/blob\/main\/Sources\/TypeUtils\/AddCaseKind.swift#L63"
+    },
     "required" : true,
     "role" : "symbol",
     "roleHeading" : "Associated Type",
@@ -75,7 +79,7 @@
             "swift"
           ],
           "platforms" : [
-            "Linux"
+            "macOS"
           ],
           "tokens" : [
             {

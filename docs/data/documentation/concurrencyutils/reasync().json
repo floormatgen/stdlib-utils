@@ -79,6 +79,10 @@
         "unavailable" : false
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Reasync.swift",
+      "url" : "https:\/\/github.com\/floormatgen\/swift-stdlib-utils\/blob\/main\/Sources\/ConcurrencyUtils\/Reasync.swift#L48"
+    },
     "role" : "symbol",
     "roleHeading" : "Macro",
     "symbolKind" : "macro",
@@ -92,7 +96,7 @@
             "swift"
           ],
           "platforms" : [
-            "Linux"
+            "macOS"
           ],
           "tokens" : [
             {

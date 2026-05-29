@@ -189,6 +189,10 @@
         "unavailable" : false
       }
     ],
+    "remoteSource" : {
+      "fileName" : "+Actor.swift",
+      "url" : "https:\/\/github.com\/floormatgen\/swift-stdlib-utils\/blob\/main\/Sources\/ConcurrencyUtils\/+Actor.swift#L17"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -202,7 +206,7 @@
             "swift"
           ],
           "platforms" : [
-            "Linux"
+            "macOS"
           ],
           "tokens" : [
             {

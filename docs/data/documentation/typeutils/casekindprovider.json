@@ -44,6 +44,10 @@
         "text" : "CaseKindProvider"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "AddCaseKind.swift",
+      "url" : "https:\/\/github.com\/floormatgen\/swift-stdlib-utils\/blob\/main\/Sources\/TypeUtils\/AddCaseKind.swift#L60"
+    },
     "role" : "symbol",
     "roleHeading" : "Protocol",
     "symbolKind" : "protocol",
@@ -57,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "Linux"
+            "macOS"
           ],
           "tokens" : [
             {
