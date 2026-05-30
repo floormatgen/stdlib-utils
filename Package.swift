@@ -147,10 +147,6 @@ let package = Package(
     .target(
       name: "_Compatibility"
     ),
-    // FIXME: Known issue with macro dependencies, see
-    // https://forums.swift.org/t/swift-macro-linker-failures-on-linux-and-when-building-with-xcodebuild/84306
-    //
-    // Currently using symlinks to prevent code duplication
     .target(
       name: "_MacroUtils",
       dependencies: [

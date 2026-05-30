@@ -7,5 +7,6 @@ struct Plugin: CompilerPlugin {
   
   let providingMacros: [any Macro.Type] = [
     AddCaseKind.self,
+    AddMemberwiseInit.self,
   ]
 }

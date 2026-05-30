@@ -71,7 +71,7 @@ extension ProtocolDeclSyntax {
     }
     
     let swiftModuleName = "Swift"
-    #if canImport(SwiftSyntax630)
+    #if canImport(SwiftSyntax603)
     func isSwiftModuleSelector(_ moduleSelector: ModuleSelectorSyntax) -> Bool {
       moduleSelector.moduleName.text == swiftModuleName
     }
@@ -90,7 +90,7 @@ extension ProtocolDeclSyntax {
         }
         
         // Make sure the module selector refers to Swift, if present
-        #if canImport(SwiftSyntax630)
+        #if canImport(SwiftSyntax603)
         if let moduleSelector = memberType.moduleSelector {
           guard isSwiftModuleSelector(moduleSelector) else { continue }
         }
@@ -104,7 +104,7 @@ extension ProtocolDeclSyntax {
       } else if let identifierType = constraint.type.as(IdentifierTypeSyntax.self) {
         
         // Make sure the module selector refers to Swift
-        #if canImport(SwiftSyntax630)
+        #if canImport(SwiftSyntax603)
         if let moduleSelector = identifierType.moduleSelector {
           guard isSwiftModuleSelector(moduleSelector) else { continue }
         }
